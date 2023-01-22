@@ -8904,3 +8904,203 @@ export function Chaptertutorial73() {
     </ul>
   )
 }
+
+export function Chaptertutorial75() {
+  const router = useRouter()
+  console.log(router.pathname)
+  return (
+
+    <ul class="bg-gray-900">
+      <div>
+        <Link href="/engineer/tutorial/engineer_tutorial_chapter">
+          <div className="text-4xl flex justify-start">
+            <FontAwesomeIcon icon={faArrowCircleLeft} size="lg" style={{ color: 'white' }} />
+          </div>
+        </Link>
+      </div>
+      <div className='pl-28'>
+        <li class="py-3">
+          <Link href="./1">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_67/1' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">はじめに</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">はじめに</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./2">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_67/2' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">準備</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">準備</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./3">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_71/3' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">SearchBox</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">SearchBox</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./4">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_71/4' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">サーバーのディスク管理</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">サーバーのディスク管理</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./5">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_71/5' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">ハードウェアの管理</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">ハードウェアの管理</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./6">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_71/5' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">WordPressのインストール</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">WordPressのインストール</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./7">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_57/6' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">準備</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">準備</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./8">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_57/6' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">sanity</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">sanity</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./9">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_57/6' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500"></span>
+            ) : (
+              <span class="mx-3 text-2xl text-white"></span>
+            )}
+          </Link>
+        </li>
+      </div>
+    </ul>
+  )
+}
+
+export function Chaptertutorial76() {
+  const router = useRouter()
+  console.log(router.pathname)
+  return (
+
+    <ul class="bg-gray-900">
+      <div>
+        <Link href="/engineer/tutorial/engineer_tutorial_chapter">
+          <div className="text-4xl flex justify-start">
+            <FontAwesomeIcon icon={faArrowCircleLeft} size="lg" style={{ color: 'white' }} />
+          </div>
+        </Link>
+      </div>
+      <div className='pl-28'>
+        <li class="py-3">
+          <Link href="./1">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_67/1' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">はじめに</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">はじめに</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./2">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_67/2' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">準備</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">準備</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./3">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_71/3' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">SearchBox</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">SearchBox</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./4">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_71/4' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">サーバーのディスク管理</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">サーバーのディスク管理</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./5">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_71/5' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">ハードウェアの管理</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">ハードウェアの管理</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./6">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_71/5' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">WordPressのインストール</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">WordPressのインストール</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./7">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_57/6' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">準備</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">準備</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./8">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_57/6' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">sanity</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">sanity</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./9">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_57/6' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500"></span>
+            ) : (
+              <span class="mx-3 text-2xl text-white"></span>
+            )}
+          </Link>
+        </li>
+      </div>
+    </ul>
+  )
+}

@@ -5,7 +5,7 @@ import {Header_engineer} from '../../header/header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import {Chaptertutorial1,Chaptertutorial2,Chaptertutorial3,Chaptertutorial4,Chaptertutorial5,Chaptertutorial6,Chaptertutorial7,Chaptertutorial8,Chaptertutorial9,Chaptertutorial10, Chaptertutorial66, Chaptertutorial65, Chaptertutorial67, Chaptertutorial68, Chaptertutorial69, Chaptertutorial70, Chaptertutorial73} from '../../chapter/engineer/tutorial/chapter_programing_tutorial';
+import {Chaptertutorial1,Chaptertutorial2,Chaptertutorial3,Chaptertutorial4,Chaptertutorial5,Chaptertutorial6,Chaptertutorial7,Chaptertutorial8,Chaptertutorial9,Chaptertutorial10, Chaptertutorial66, Chaptertutorial65, Chaptertutorial67, Chaptertutorial68, Chaptertutorial69, Chaptertutorial70, Chaptertutorial73, Chaptertutorial75, Chaptertutorial76} from '../../chapter/engineer/tutorial/chapter_programing_tutorial';
 import {Chaptertutorial11,Chaptertutorial12,Chaptertutorial13,Chaptertutorial14,Chaptertutorial15,Chaptertutorial16,Chaptertutorial17,Chaptertutorial18,Chaptertutorial19,Chaptertutorial20} from '../../chapter/engineer/tutorial/chapter_programing_tutorial';
 import {Chaptertutorial21,Chaptertutorial22,Chaptertutorial23,Chaptertutorial24,Chaptertutorial25,Chaptertutorial26,Chaptertutorial27,Chaptertutorial28,Chaptertutorial29,Chaptertutorial30} from '../../chapter/engineer/tutorial/chapter_programing_tutorial';
 import {Chaptertutorial31,Chaptertutorial32,Chaptertutorial33,Chaptertutorial34,Chaptertutorial35,Chaptertutorial36,Chaptertutorial37,Chaptertutorial38,Chaptertutorial39,Chaptertutorial40} from '../../chapter/engineer/tutorial/chapter_programing_tutorial';
@@ -3936,6 +3936,116 @@ export function Layout_tutorial_73(props) {
       <div className="flex ">
         <div className="w-1/4">
           <Chaptertutorial73 />
+        </div>
+        <div className="w-3/4">
+          <div className="w-10/12 m-auto">
+            {props.children}
+          </div>
+          <div className="flex justify-between m-10">
+            <div class="w-44 rounded overflow-hidden shadow-2xl bg-blue-300 text-center flex float-left mr-20">
+              <div className="inline-block align-middle cursor-pointer">
+                <Link href="./engineer_tutorial_16_2">
+                  <div className="inline-block align-middle h-full">
+                    <FontAwesomeIcon icon={faArrowLeft} size="3x" />
+                  </div>
+                </Link>
+              </div>
+              <div class="inline-block flex-1">
+                <div class="">
+                  BEFORE
+                </div>
+                <div class="">
+                  はじめに
+                </div>
+              </div>
+
+            </div>
+            <div class="w-44 rounded overflow-hidden shadow-2xl bg-blue-300 text-center flex float-right mr-20">
+              <div class="inline-block flex-1">
+                <div class="">
+                  NEXT
+                </div>
+                <div class="">
+                  プロジェクト作成
+                </div>
+              </div>
+              <div className="inline-block align-middle cursor-pointer">
+                <Link href="./engineer_tutorial_16_2">
+                  <div className="inline-block align-middle h-full">
+                    <FontAwesomeIcon icon={faArrowRight} size="3x" />
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function Layout_tutorial_75(props) {
+  return (
+    <div class="">
+      <Header_engineer />
+      <div className="flex ">
+        <div className="w-1/4">
+          <Chaptertutorial75 />
+        </div>
+        <div className="w-3/4">
+          <div className="w-10/12 m-auto">
+            {props.children}
+          </div>
+          <div className="flex justify-between m-10">
+            <div class="w-44 rounded overflow-hidden shadow-2xl bg-blue-300 text-center flex float-left mr-20">
+              <div className="inline-block align-middle cursor-pointer">
+                <Link href="./engineer_tutorial_16_2">
+                  <div className="inline-block align-middle h-full">
+                    <FontAwesomeIcon icon={faArrowLeft} size="3x" />
+                  </div>
+                </Link>
+              </div>
+              <div class="inline-block flex-1">
+                <div class="">
+                  BEFORE
+                </div>
+                <div class="">
+                  はじめに
+                </div>
+              </div>
+
+            </div>
+            <div class="w-44 rounded overflow-hidden shadow-2xl bg-blue-300 text-center flex float-right mr-20">
+              <div class="inline-block flex-1">
+                <div class="">
+                  NEXT
+                </div>
+                <div class="">
+                  プロジェクト作成
+                </div>
+              </div>
+              <div className="inline-block align-middle cursor-pointer">
+                <Link href="./engineer_tutorial_16_2">
+                  <div className="inline-block align-middle h-full">
+                    <FontAwesomeIcon icon={faArrowRight} size="3x" />
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function Layout_tutorial_76(props) {
+  return (
+    <div class="">
+      <Header_engineer />
+      <div className="flex ">
+        <div className="w-1/4">
+          <Chaptertutorial76 />
         </div>
         <div className="w-3/4">
           <div className="w-10/12 m-auto">

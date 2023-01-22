@@ -121,6 +121,8 @@ export async function getStaticProps() {
         { id: 71, name: "チュートリアル71",  title: "NestJS + Next.js", href: "/engineer/tutorial/engineer_tutorial_71/1" },
         { id: 72, name: "チュートリアル72",  title: "Blog(Next.js + Sanity)", href: "/engineer/tutorial/engineer_tutorial_72/1" },
         { id: 72, name: "チュートリアル73",  title: "LIVE NEWS APP", href: "/engineer/tutorial/engineer_tutorial_73/1" },
+        { id: 75, name: "チュートリアル75",  title: "TypeScript&React-Nextjs", href: "/engineer/tutorial/engineer_tutorial_75/1" },
+        { id: 76, name: "チュートリアル76",  title: "Google Maps Travel Companion Application", href: "/engineer/tutorial/engineer_tutorial_76/1" },
     ];
 
     return {
