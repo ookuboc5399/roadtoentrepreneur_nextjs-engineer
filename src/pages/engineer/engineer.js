@@ -48,7 +48,7 @@ export default function Engineer() {
                     {contents.map((content) => {
                         return (
                             <Link href={content.href}>
-                                <div class="shadow-md bg-white m-6">
+                                <div className="shadow-md bg-white m-6">
                                     <h1 className="">{content.name}</h1>
                                     <Image
                                         src="/svg/1.svg"
