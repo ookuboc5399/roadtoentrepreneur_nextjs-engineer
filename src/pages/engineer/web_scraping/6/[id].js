@@ -333,121 +333,7 @@ const Code5 = () => {
 };
 
 
-const Code1 = () => {
-    const test = `
-   pip install scrapy
-     `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
-
-const Code2 = () => {
-    const test = `
-    scrapy version
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
-
-const Code3 = () => {
-    const test = `
-    sudo apt update
-    sudo apt install -y wget
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
-
-const Code4 = () => {
-    const test = `
-    chromedriver -version
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
-
-const Code5 = () => {
-    const test = `
-    browser = webdriver.Chrome('chromedriver')
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
-
-
-const Code1 = () => {
-    const test = `
-   pip install scrapy
-     `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
-
-const Code2 = () => {
-    const test = `
-    scrapy version
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
-
-const Code3 = () => {
-    const test = `
-    sudo apt update
-    sudo apt install -y wget
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
-
-const Code4 = () => {
-    const test = `
-    chromedriver -version
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
-
-const Code5 = () => {
-    const test = `
-    browser = webdriver.Chrome('chromedriver')
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
-
-
-const Code1 = () => {
+const Code6 = () => {
     const test = `
    class MyprojectPipeline(object):
        def process_item(self,item,spider):
@@ -460,7 +346,7 @@ const Code1 = () => {
     );
 };
 
-const Code2 = () => {
+const Code7 = () => {
     const test = `
     scrapy version
     `
@@ -471,7 +357,7 @@ const Code2 = () => {
     );
 };
 
-const Code3 = () => {
+const Code8 = () => {
     const test = `
     from pymongo import MongoClient
 
@@ -503,24 +389,3 @@ const Code3 = () => {
     );
 };
 
-const Code4 = () => {
-    const test = `
-    chromedriver -version
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
-
-const Code5 = () => {
-    const test = `
-    browser = webdriver.Chrome('chromedriver')
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};

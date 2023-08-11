@@ -146,13 +146,13 @@ const Post = () => {
                                                 <tbody>
                                                     <tr>
                                                         <td className='border px-4 py-2'>body要素の子孫であるh1要素</td>
-                                                        <td className='border px-4 py-2'>//body//h1</td>
+                                                        <td className='border px-4 py-2'>bodyh1</td>
                                                         <td>body h1</td>
                                                     </tr>
                                                     <tr>
                                                         <td className='border px-4 py-2'>body要素の子孫であるh1要素</td>
-                                                        <td className='border px-4 py-2'>//body/h1</td>
-                                                        <td>body ＞ h1</td>
+                                                        <td className='border px-4 py-2'>bodyh1</td>
+                                                        <td>body  h1</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
