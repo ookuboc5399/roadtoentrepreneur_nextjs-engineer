@@ -1549,72 +1549,47 @@ export function ChapterNodejs() {
             </div>
           </div>
           <nav className="">
-            <Link href="./engineer_nodejs_detail">
+            <Link href="./nodejs_detail">
               <div class="flex items-center justify-center mt-4 py-2 px-6 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100">
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" strokeLinejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
                   <path stroke-linecap="round" strokeLinejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
                 </svg>
 
-                {router.pathname == '/engineer/nodejs/0/engineer_nodejs_detail' ? (
+                {router.pathname == '/nodejs_detail' ? (
                   <span class="mx-3 text-2xl text-white bg-red-500">Node.jsって何？</span>
                 ) : (
                   <span class="mx-3 text-2xl text-white">Node.jsって何？</span>
                 )}
               </div>
             </Link>
-            <Link href="./engineer_nodejs_detail_development">
+            <Link href="./nodejs_detail_development">
               <div class="flex items-center justify-center mt-4 py-2 px-6 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100">
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" strokeLinejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"></path>
                 </svg>
 
-                {router.pathname == '/engineer/nodejs/0/engineer_nodejs_detail_development' ? (
+                {router.pathname == '/engineer/nodejs/0/nodejs_detail_development' ? (
                   <span class="mx-3 text-2xl text-white bg-red-500">開発環境の構築</span>
                 ) : (
                   <span class="mx-3 text-2xl text-white">開発環境の構築</span>
                 )}
               </div>
             </Link>
-            <Link href="./engineer_nodejs_detail_project">
+            <Link href="./nodejs_detail_project">
               <div class="flex items-center justify-center mt-4 py-2 px-6 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100">
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" strokeLinejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"></path>
                 </svg>
 
-                {router.pathname == '/engineer/nodejs/0/engineer_nodejs_detail_project' ? (
+                {router.pathname == '/engineer/nodejs/0/nodejs_detail_project' ? (
                   <span class="mx-3 text-2xl text-white bg-red-500">プロジェクト作成</span>
                 ) : (
                   <span class="mx-3 text-2xl text-white">プロジェクト作成</span>
                 )}
               </div>
             </Link>
-            <Link href="./engineer_django_detail_urls">
-              <div class="flex items-center justify-center mt-4 py-2 px-6 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100">
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" strokeLinejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"></path>
-                </svg>
-
-                {router.pathname == '/engineer/Django/0/engineer_django_detail_urls' ? (
-                  <span class="mx-3 text-2xl text-white bg-red-500">urls.pyファイル</span>
-                ) : (
-                  <span class="mx-3 text-2xl text-white">プロジェクト作成</span>
-                )}
-              </div>
-            </Link>engineer_django_detail_urls
-            <Link href="./engineer_django_detail_project">
-              <div class="flex items-center justify-center mt-4 py-2 px-6 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100">
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" strokeLinejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"></path>
-                </svg>
-
-                {router.pathname == '/engineer/Django/0/engineer_django_detail_project' ? (
-                  <span class="mx-3 text-2xl text-white bg-red-500">プロジェクト作成</span>
-                ) : (
-                  <span class="mx-3 text-2xl text-white">プロジェクト作成</span>
-                )}
-              </div>
-            </Link>engineer_django_detail_urls
+          
           </nav>
         </div>
       </div>
