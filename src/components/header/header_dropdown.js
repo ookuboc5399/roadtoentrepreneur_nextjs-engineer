@@ -502,10 +502,10 @@ export function Header_engineer2() {
           </Link>
         </div>
         <div>
-          <Dropdownblog />
+          {/* <Dropdownblog /> */}
         </div>
         <div>
-          <Dropdownmanual />
+          {/* <Dropdownmanual /> */}
         </div>
         {/* <Link href="/mypage">
           <div className="box-border list-item list-none text-center border-t-4 border-red-500 mt-4">
@@ -519,7 +519,7 @@ export function Header_engineer2() {
           </div>
         </Link> */}
 
-        <Dropdownmanual />
+        {/* <Dropdownmanual /> */}
         <Link href="/engineer/engineer_road">
           <div className="box-border list-item list-none text-center border-t-4 border-red-500 mt-4">
             <Image

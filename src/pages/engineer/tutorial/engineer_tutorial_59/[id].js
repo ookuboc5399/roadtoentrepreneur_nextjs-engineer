@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_59 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_59 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -177,11 +177,11 @@ const Post = () => {
             <p>プロジェクト用ルーティングを作成 </p>
             <p>プロジェクト用のルーティングに、アプリケーション用のルーティングを指定します。</p>
             <p className='text-red-400'>mysite/urls.py</p>
-            <Tutorial5261 />
+        
             <p>アプリケーション用ルーティングを作成</p>
             <p>app フォルダの下に、urls.py ファイルを作成します。</p>
             <p className='text-red-400'>api/urls.py</p>
-            <Tutorial5262 />
+      
 
           </Layout_tutorial_59>
         ) : id == 7 ? (
@@ -192,7 +192,7 @@ const Post = () => {
             <p>serializers.py ファイルを作成します</p>
             <p>serializers の ModelSerializer クラスを継承すことにより、簡単に書くことができます</p>
             <p className='text-red-400'>api/serializers.py</p>
-            <Tutorial5271 />
+          
 
           </Layout_tutorial_59>
         ) : id == 8 ? (
@@ -203,7 +203,7 @@ const Post = () => {
                 <p>Django REST Framework は、GenericAPIView の中に一般的に必要な開発のコードをすでに用意してくれています。</p>
                 <p>それを継承することで、簡単に開発をすることができます </p>
                 <p className='text-red-400'>api/views.py</p>
-                <Tutorial5281 />
+            
 
               </div>
               <div className='w-1/2'>

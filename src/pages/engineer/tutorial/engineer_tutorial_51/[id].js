@@ -45,7 +45,7 @@ const Post = () => {
                 <div class="flex flex-nowrap">
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                      <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                      <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                       <a href="#">
@@ -131,7 +131,7 @@ const Post = () => {
                 <div class="flex flex-nowrap">
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                      <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                      <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                       <a href="#">
@@ -324,7 +324,7 @@ const Post = () => {
                 <h3></h3>
                 <p>contextフォルダを作成し、StateProvider.tsxを作成。</p>
                 <p>typesフォルダを作成し、types.tsを作成。REST APIから取得するデータ型を定義します</p>
-                <Tutorial45111 />
+               
                 <p>srcフォルダの直下にfirebase.jsを作成します。</p>
                 <div class="flex p-4 mb-4 text-xl text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
                   <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -334,26 +334,26 @@ const Post = () => {
                 </div>
                 <h4>データ型</h4>
                 <p className='text-red-400'>types/types.ts</p>
-                <Tutorial45112 />
+         
                 <h4></h4>
                 <p>createContextを使ってStateContextを作成します</p>
                 <p className='text-red-400'>context/StateProvider.tsx</p>
-                <Tutorial45113 />
+            
                 <p>REST APIから取得したtaskの一覧を格納するtasks、darkモードを切り替えるをuseStateで定義します。</p>
                 <p className='text-red-400'>context/StateProvider.tsx</p>
-                <Tutorial45114 />
+            
                 <p>valueには共有したいstateや関数を指定します。</p>
                 <p className='text-red-400'>context/StateProvider.tsx</p>
-                <Tutorial45115 />
+                {/* <Tutorial45115 /> */}
                 <h4>hooks</h4>
                 <p>hooksフォルダを作成しを使ってuseClassicalFetch.tsxを作成します</p>
                 <p>useStateContextを使ってtasksとsetTasksを使える</p>
                 <p className='text-red-400'>hooks/useClassicalFetch.tsx</p>
-                <Tutorial45116 />
+             
                 <p>errorの場合はisErrorをtrueにする</p>
                 <p>通信の処理が終わったらisLoadingをfalseにする</p>
                 <p className='text-red-400'>hooks/useClassicalFetch.tsx</p>
-                <Tutorial45117 />
+         
                 <h4>ClassicalFetchA</h4>
                 <p>componentsフォルダにClassicalFetchA.tsxを作成します</p>
                 <h4>ClassicalFetchB</h4>
@@ -361,9 +361,9 @@ const Post = () => {
               </div>
               <div className='w-1/2'>
                 <p className='text-red-400'>SendMail.js</p>
-                <Tutorial33109 />
+              
                 <p className='text-red-400'>SendMail.css</p>
-                <Tutorial331010 />
+            
               </div>
             </div>
           </Layout_tutorial_51>
@@ -375,7 +375,7 @@ const Post = () => {
                 <h3></h3>
                 <p>contextフォルダを作成し、StateProvider.tsxを作成。</p>
                 <p>typesフォルダを作成し、types.tsを作成。REST APIから取得するデータ型を定義します</p>
-                <Tutorial45111 />
+                {/* <Tutorial45111 /> */}
                 <p>srcフォルダの直下にfirebase.jsを作成します。</p>
                 <div class="flex p-4 mb-4 text-xl text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
                   <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -385,26 +385,26 @@ const Post = () => {
                 </div>
                 <h4>データ型</h4>
                 <p className='text-red-400'>types/types.ts</p>
-                <Tutorial45112 />
+                {/* <Tutorial45112 /> */}
                 <h4></h4>
                 <p>createContextを使ってStateContextを作成します</p>
                 <p className='text-red-400'>context/StateProvider.tsx</p>
-                <Tutorial45113 />
+                {/* <Tutorial45113 /> */}
                 <p>REST APIから取得したtaskの一覧を格納するtasks、darkモードを切り替えるをuseStateで定義します。</p>
                 <p className='text-red-400'>context/StateProvider.tsx</p>
-                <Tutorial45114 />
+                {/* <Tutorial45114 /> */}
                 <p>valueには共有したいstateや関数を指定します。</p>
                 <p className='text-red-400'>context/StateProvider.tsx</p>
-                <Tutorial45115 />
+                {/* <Tutorial45115 /> */}
                 <h4>hooks</h4>
                 <p>hooksフォルダを作成しを使ってuseClassicalFetch.tsxを作成します</p>
                 <p>useStateContextを使ってtasksとsetTasksを使える</p>
                 <p className='text-red-400'>hooks/useClassicalFetch.tsx</p>
-                <Tutorial45116 />
+               
                 <p>errorの場合はisErrorをtrueにする</p>
                 <p>通信の処理が終わったらisLoadingをfalseにする</p>
                 <p className='text-red-400'>hooks/useClassicalFetch.tsx</p>
-                <Tutorial45117 />
+                {/* <Tutorial45117 /> */}
                 <h4>ClassicalFetchA</h4>
                 <p>componentsフォルダにClassicalFetchA.tsxを作成します</p>
                 <h4>ClassicalFetchB</h4>
@@ -412,9 +412,9 @@ const Post = () => {
               </div>
               <div className='w-1/2'>
                 <p className='text-red-400'>SendMail.js</p>
-                <Tutorial33109 />
+             
                 <p className='text-red-400'>SendMail.css</p>
-                <Tutorial331010 />
+           
               </div>
             </div>
           </Layout_tutorial_51>

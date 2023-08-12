@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_49 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_53 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -60,7 +60,7 @@ const Post = () => {
                           <div class="flex flex-nowrap">
                               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                   <a href="#">
-                                      <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                      <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                   </a>
                                   <div class="p-5">
                                       <a href="#">
@@ -898,23 +898,23 @@ const Tutorial5352 = () => {
 };
 
 
-const Tutorial5353 = () => {
-  const test = `
-  const [tweetImage, setTweetImage] = useState<File | null>(null);
+// const Tutorial5353 = () => {
+//   const test = `
+//   const [tweetImage, setTweetImage] = useState<File | null>(null);
 
-  const onChangeImageHandler = (e: React.ChangeEvent<HTMLInputElement>) => { 
-    if (e.target.files![0]) { 
-      setTweetImage(e.target.files![0]); 
-      e.target.value = ""; 
-    } 
-  };
-    `
-  return (
-    <SyntaxHighlighter language="js" style={syntaxStyle} >
-      {test}
-    </SyntaxHighlighter>
-  );
-};
+//   const onChangeImageHandler = (e: React.ChangeEvent<HTMLInputElement>) => { 
+//     if (e.target.files![0]) { 
+//       setTweetImage(e.target.files![0]); 
+//       e.target.value = ""; 
+//     } 
+//   };
+//     `
+//   return (
+//     <SyntaxHighlighter language="js" style={syntaxStyle} >
+//       {test}
+//     </SyntaxHighlighter>
+//   );
+// };
 
 
 const Tutorial5354 = () => {

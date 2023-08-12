@@ -209,7 +209,7 @@ const Post = () => {
                         <Tutorial856 />
                         <p>コード解説</p>
                         <p>get_object_or_404関数を使用することで、店舗データがひとつもない場合に、404エラーを返してくれます。</p>
-                        <p>self.kwargs['pk']でURLの店舗IDを取得することができます。説</p>
+                        <p>self.kwargs[&apos;pk&apos;]でURLの店舗IDを取得することができます。説</p>
                         <Tutorial857 />
                         <p>テンプレート</p>
                         <p>staff</p>

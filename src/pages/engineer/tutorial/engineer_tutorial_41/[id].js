@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_44 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_41 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()

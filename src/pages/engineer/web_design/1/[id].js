@@ -3,7 +3,6 @@ import React from 'react';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
 import { Design } from '../../../../components/layout/engineer/engineer';
-import Python from '../../../../components/layout/engineer/python/python';
 
 const Post = () => {
     const router = useRouter()

@@ -52,7 +52,7 @@ const Post = () => {
                             </div>
                         </div>
                         <p>int関数は小数点以下を切り捨てて整数としている</p>
-                        <p>end=""は末尾に何も出力しない</p>
+                        <p>end=&quot;&quot;は末尾に何も出力しない</p>
                         <div className='flex'>
                             <div className='m-6'>
                                 <p>コード入力</p>
@@ -67,7 +67,7 @@ const Post = () => {
 
                     </Python5 >
                 ) : id == "" ? (
-                    <Python>
+                    <Python5>
 
                         <div>
                             <h2 className='text-center'>mutableとimmutable</h2>
@@ -271,7 +271,7 @@ const Post = () => {
                                 <Code36 />
                             </div>
                         </div>
-                    </Python >
+                    </Python5 >
                 ) : (
                     <></>
                 )}
@@ -358,6 +358,402 @@ const Code4 = () => {
     # slider 
     age = st.slider('How old are you?', 0, 130, 25) 
     st.write("I'm ", age, 'years old')
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code5 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code6 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code7 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code8 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code9 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code10 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code11 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code12 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code13 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code14 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code15 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code16 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code17 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code18 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code19 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code20 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code21 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code22 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code23 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code24 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code25 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code26 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code27 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code28 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code29 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code30 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code31 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code32 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code33 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code34 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code35 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code36 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code37 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code38 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code39 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code40 = () => {
+    const test = `
+
     `
     return (
         <SyntaxHighlighter language="js" style={syntaxStyle} >

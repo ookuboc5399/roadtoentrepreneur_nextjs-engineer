@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_69 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_69 } from '../../../../components/layout/engineer/tutorial';
 import { File } from '../../../../components/Blog_comp';
 
 const Post = () => {
@@ -15,7 +15,7 @@ const Post = () => {
     <div>
       {
         id == 1 ? (
-          <Layout_tutorial_68>
+          <Layout_tutorial_69>
             <h3>はじめに </h3>
             <p></p>
             <p>バックエンドは Django REST Framework を使用して API サーバーを構築します。</p>
@@ -24,7 +24,7 @@ const Post = () => {
 
 
 
-          </Layout_tutorial_68>
+          </Layout_tutorial_69>
         ) : id == 2 ? (
           <Layout_tutorial_69>
             <h3>準備 </h3>
@@ -146,7 +146,7 @@ const Post = () => {
                 <p></p>
                 <p>grid grid-cols-2にすることでlabelとinputを横並びにさせることができる</p>
                 <p className='text-red-400'>create.tsx</p>
-                <Tutorial6561 />
+            
                 <h3>Suggestions</h3>
                 <p>componentsフォルダにSuggestions.jsファイルを作ります。</p>
                 <p>rfceでreactコンポーネントを作成 </p>

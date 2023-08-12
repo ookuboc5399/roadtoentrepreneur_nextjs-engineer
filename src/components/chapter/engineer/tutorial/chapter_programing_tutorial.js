@@ -1544,7 +1544,7 @@ export function Chaptertutorial13() {
       </div>
       <div className='pl-28'>
         <li class="py-3">
-          <Link href="./engineer_tutorial_13_1">
+          <Link href="./1">
             {router.pathname == '/engineer/engineer_tutorial' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">VPSデプロイ</span>
             ) : (
@@ -1553,7 +1553,7 @@ export function Chaptertutorial13() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_13_2">
+          <Link href="./2">
             {router.pathname == '/engineer/engineer_tutorial_3' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">Vultrサーバー構築</span>
             ) : (
@@ -1562,7 +1562,7 @@ export function Chaptertutorial13() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_13_3">
+          <Link href="./3">
             {router.pathname == '/engineer/engineer_tutorial_4' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">ログイン</span>
             ) : (
@@ -1571,7 +1571,7 @@ export function Chaptertutorial13() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_13_4">
+          <Link href="./4">
             {router.pathname == '/engineer/engineer_tutorial_4' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">デプロイ設定</span>
             ) : (
@@ -1580,7 +1580,7 @@ export function Chaptertutorial13() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_13_5">
+          <Link href="./5">
             {router.pathname == '/engineer/engineer_tutorial_4' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">デプロイ</span>
             ) : (
@@ -1589,7 +1589,7 @@ export function Chaptertutorial13() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_13_6">
+          <Link href="./6">
             {router.pathname == '/engineer/engineer_tutorial_4' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">ドメイン設定</span>
             ) : (
@@ -1598,7 +1598,7 @@ export function Chaptertutorial13() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_13_7">
+          <Link href="./7">
             {router.pathname == '/engineer/engineer_tutorial_4' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">HTTPS化</span>
             ) : (
@@ -1607,7 +1607,7 @@ export function Chaptertutorial13() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_13_8">
+          <Link href="./8">
             {router.pathname == '/engineer/engineer_tutorial_4' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">デプロイテクニック</span>
             ) : (
@@ -1616,7 +1616,7 @@ export function Chaptertutorial13() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_13_9">
+          <Link href="./9">
             {router.pathname == '/engineer/engineer_tutorial_5' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">おわりに</span>
             ) : (
@@ -1644,8 +1644,8 @@ export function Chaptertutorial14() {
       </div>
       <div className='pl-28'>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_1">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_1' ? (
+          <Link href="./1">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/1' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">はじめに</span>
             ) : (
               <span class="mx-3 text-2xl text-white">はじめに</span>
@@ -1653,8 +1653,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_2">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_2' ? (
+          <Link href="./2">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/2' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">準備</span>
             ) : (
               <span class="mx-3 text-2xl text-white">準備</span>
@@ -1662,8 +1662,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_3">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_3' ? (
+          <Link href="./3">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/3' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">プロジェクト作成</span>
             ) : (
               <span class="mx-3 text-2xl text-white">プロジェクト作成</span>
@@ -1671,8 +1671,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_4">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_4' ? (
+          <Link href="./4">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/4' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">アプリケーション作成</span>
             ) : (
               <span class="mx-3 text-2xl text-white">アプリケーション作成</span>
@@ -1680,8 +1680,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_5">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_5' ? (
+          <Link href="./5">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/5' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">カスタムユーザーモデル</span>
             ) : (
               <span class="mx-3 text-2xl text-white">カスタムユーザーモデル</span>
@@ -1689,8 +1689,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_6">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_6' ? (
+          <Link href="./6">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/6' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">URL</span>
             ) : (
               <span class="mx-3 text-2xl text-white">URL</span>
@@ -1698,8 +1698,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_7">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_7' ? (
+          <Link href="./7">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/7' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">Serializer</span>
             ) : (
               <span class="mx-3 text-2xl text-white">Serializer</span>
@@ -1707,8 +1707,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_8">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_8' ? (
+          <Link href="./8">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/8' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">ビュー</span>
             ) : (
               <span class="mx-3 text-2xl text-white">ビュー</span>
@@ -1716,8 +1716,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_9">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_9' ? (
+          <Link href="./9">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/9' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">API動作確認</span>
             ) : (
               <span class="mx-3 text-2xl text-white">API動作確認</span>
@@ -1725,8 +1725,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_10">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_10' ? (
+          <Link href="./10">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/10' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">フロントエンド構築</span>
             ) : (
               <span class="mx-3 text-2xl text-white">フロントエンド構築</span>
@@ -1734,8 +1734,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_11">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_11' ? (
+          <Link href="./11">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/11' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">TailwindCSS導入</span>
             ) : (
               <span class="mx-3 text-2xl text-white">TailwindCSS導入</span>
@@ -1743,8 +1743,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_12">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_12' ? (
+          <Link href="./12">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/12' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">ライブラリインストール</span>
             ) : (
               <span class="mx-3 text-2xl text-white">ライブラリインストール</span>
@@ -1752,8 +1752,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_13">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_13' ? (
+          <Link href="./13">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/13' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">Redux Store設定</span>
             ) : (
               <span class="mx-3 text-2xl text-white">Redux Store設定</span>
@@ -1761,8 +1761,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_14">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_14' ? (
+          <Link href="./14">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/14' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">トップページ</span>
             ) : (
               <span class="mx-3 text-2xl text-white">トップページ</span>
@@ -1770,8 +1770,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_15">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_15' ? (
+          <Link href="./15">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/15' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">レイアウト</span>
             ) : (
               <span class="mx-3 text-2xl text-white">レイアウト</span>
@@ -1779,8 +1779,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_16">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_16' ? (
+          <Link href="./16">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/16' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">アカウント登録</span>
             ) : (
               <span class="mx-3 text-2xl text-white">アカウント登録</span>
@@ -1788,7 +1788,7 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_17">
+          <Link href="./17">
             {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_4_17' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">ログイン</span>
             ) : (
@@ -1797,7 +1797,7 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_18">
+          <Link href="./18">
             {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_4_18' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">ユーザー情報取得</span>
             ) : (
@@ -1806,8 +1806,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_19">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_19' ? (
+          <Link href="./19">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/19' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">リフレッシュトークン</span>
             ) : (
               <span class="mx-3 text-2xl text-white">リフレッシュトークン</span>
@@ -1815,8 +1815,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_20">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_20' ? (
+          <Link href="./20">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/20' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">認証チェック</span>
             ) : (
               <span class="mx-3 text-2xl text-white">認証チェック</span>
@@ -1824,8 +1824,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_21">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_21' ? (
+          <Link href="./21">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/21' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">ログアウト</span>
             ) : (
               <span class="mx-3 text-2xl text-white">ログアウト</span>
@@ -1833,8 +1833,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_22">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_22' ? (
+          <Link href="./22">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/22' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">ナビゲーション修正</span>
             ) : (
               <span class="mx-3 text-2xl text-white">ナビゲーション修正</span>
@@ -1842,8 +1842,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_23">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_23' ? (
+          <Link href="./23">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/23' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">トップページ修正</span>
             ) : (
               <span class="mx-3 text-2xl text-white">トップページ修正</span>
@@ -1851,8 +1851,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_24">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_24' ? (
+          <Link href="./24">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/24' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">Stripe導入</span>
             ) : (
               <span class="mx-3 text-2xl text-white">Stripe導入</span>
@@ -1860,8 +1860,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_25">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_25' ? (
+          <Link href="./25">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/25' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">Serializer修正</span>
             ) : (
               <span class="mx-3 text-2xl text-white">Serializer修正</span>
@@ -1869,8 +1869,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_26">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_26' ? (
+          <Link href="./26">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/26' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">URL追加</span>
             ) : (
               <span class="mx-3 text-2xl text-white">URL追加</span>
@@ -1878,8 +1878,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_27">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_27' ? (
+          <Link href="./27">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/27' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">ビュー追加</span>
             ) : (
               <span class="mx-3 text-2xl text-white">ビュー追加</span>
@@ -1887,8 +1887,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_28">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_28' ? (
+          <Link href="./28">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/28' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">Stripe登録</span>
             ) : (
               <span class="mx-3 text-2xl text-white">Stripe登録</span>
@@ -1896,8 +1896,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_29">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_29' ? (
+          <Link href="./29">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/29' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">お支払い画面</span>
             ) : (
               <span class="mx-3 text-2xl text-white">お支払い画面</span>
@@ -1905,8 +1905,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_30">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_30' ? (
+          <Link href="./30">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/30' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">お支払い結果画面</span>
             ) : (
               <span class="mx-3 text-2xl text-white">お支払い結果画面</span>
@@ -1914,8 +1914,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_31">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_31' ? (
+          <Link href="./31">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/31' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">Webhook</span>
             ) : (
               <span class="mx-3 text-2xl text-white">Webhook</span>
@@ -1923,8 +1923,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_32">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_32' ? (
+          <Link href="./32">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/32' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">トップページ修正</span>
             ) : (
               <span class="mx-3 text-2xl text-white">トップページ修正</span>
@@ -1932,8 +1932,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_33">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_33' ? (
+          <Link href="./33">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/33' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">最終動作確認</span>
             ) : (
               <span class="mx-3 text-2xl text-white">最終動作確認</span>
@@ -1941,8 +1941,8 @@ export function Chaptertutorial14() {
           </Link>
         </li>
         <li class="py-3">
-          <Link href="./engineer_tutorial_14_34">
-            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/engineer_tutorial_14_34' ? (
+          <Link href="./34">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_14/34' ? (
               <span class="mx-3 text-2xl text-white bg-gray-500">おわりに</span>
             ) : (
               <span class="mx-3 text-2xl text-white">おわりに</span>

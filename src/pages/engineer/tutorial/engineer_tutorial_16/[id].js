@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_15 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_16 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -275,6 +275,7 @@ const Post = () => {
           </div>
           <p className='text-red-400'>app/views.py</p>
           <Tutorial1681 />
+
           <p>Django REST Framework には多くの汎用ビューが存在しますので、どんどん活用していきましょう。 </p>
           <p>公式ドキュメント - Generic views </p>
       </Layout_tutorial_16>
@@ -319,7 +320,7 @@ const Post = () => {
           <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                   <a href="#">
-                      <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                      <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                   </a>
                   <div class="p-5">
                       <a href="#">
@@ -426,35 +427,134 @@ const Post = () => {
           <p>｛props.children｝の中に、各画面のデータが入っていきます。</p>
       </Layout_tutorial_16>
         ) : id == 14 ? (
-          <Layout_tutorial_15>
-          <p>プロフィール編集</p>
-          <p>プロフィール編集機能を構築していきます。</p>
-          <p>プロフィール編集</p>
-          <p>プロフィール編集画面を作成します。</p>
-          <p>プロフィールの名前と画像を変更できるようにします。</p>
-          <p>名前はuser状態から取得することができます。</p>
-          <p>送信ボタンをクリックするとアクションのedit_profile関数がコールされます。</p>
-          <p>プロフィール編集が成功したら、トップページに遷移します。</p>
-          <Tutorial15141 />
-          <p>action</p>
-          <p>プロフィール編集と状態解除のアクションタイプを定義します。</p>
-          <Tutorial15142 />
-          <p>アクションにedit_profile関数を追加します。</p>
-          <p>画像を扱うので、FormDataオブジェクトに格納して送信します</p>
-          <Tutorial15143 />
-          <p>API</p>
-          <p>フロントエンド API は coolkie からアクセストークンを取得します。</p>
-          <Tutorial15144 />
-          <p>reducer</p>
-          <p>プロフィール編集用のアクションタイプを追加して、プロフィール編集が成功したら、edit_profile_successを true に設定します。</p>
-          <Tutorial15145 />
-          <p>トップページ</p>
-          <p>トップページに認証用の状態解除関数を追加します</p>
-          <Tutorial15146 />
-          <p>動作確認</p>
-          <p>プロフィール編集画面で名前とプロフィール画像を変更してみましょう。</p>
-        </Layout_tutorial_15>
-        ) : (
+            <Layout_tutorial_16>
+            <h3>ナビゲーション作成</h3>
+            <p>ナビゲーションコンポーネントを作成していきます。</p>
+            <p>layout フォルダに navigation.js ファイルを作成します。</p>
+            <p className='text-red-400'>components/layout/navigation.js</p>
+            <Tutorial16141 />
+          </Layout_tutorial_16>
+        ) : id == 15 ? (
+            <Layout_tutorial_16>
+            <h3>_app.js修正</h3>
+            <p>Next.js では App コンポーネントを使用して、全てのページを初期化しています</p>
+            <p>_app.jsファイルを使用することで、デフォルトの App コンポーネントを上書きすることができます</p>
+            <p>先ほど作成した共通レイアウトを持たせていきます</p>
+            <p className='text-red-400'>pages/_app.js</p>
+            <Tutorial16151 />
+            <p>画面確認</p>
+            <p>画面を確認すると、ヘッダーとフッターを表示することができました。</p>
+        </Layout_tutorial_16>
+        ) : id == 16 ? (
+            <Layout_tutorial_16>
+            <h3>aboutページ作成</h3>
+            <p>Next.js では pages フォルダの中にファイルを作成するだけで、自動でルーティングが設定されます。</p>
+            <p>pages/about.js ファイルを作成します。</p>
+            <p>そうすると、/aboutに遷移することができます。</p>
+            <p className='text-red-400'>pages/about.js</p>
+            <Tutorial16161 />
+            <p>画面確認</p>
+            <p>about ページを表示することができました。</p>
+        </Layout_tutorial_16>
+        ) : id == 17 ? (
+            <Layout_tutorial_16>
+            <h3>トップページ修正</h3>
+            <p>トップページを修正していきます。</p>
+            <p>トップ画面をtop.pngとして、public ファルダに格納します。</p>
+            <p className='text-red-400'>pages/index.js</p>
+            <Tutorial16171 />
+            <p>画面確認</p>
+            <p>トップ画像が表示されました。</p>
+          </Layout_tutorial_16>
+        ) : id == 18 ? (
+            <Layout_tutorial_16>
+            <h3>APIコール</h3>
+            <p>先ほど作成した、Django サーバーを起動して、API をコールできる状態にしておきます。</p>
+            <Tutorial16181 />
+            <p className='border-b-4 border-blue-400'>Next.js から Django の API をコールしていきます。</p>
+            <p>lib フォルダを作成し、posts.js ファイルを作成します。</p>
+
+            <p>ユーザー情報取得関数を追加します。</p>
+            <p className='text-red-400'>lib/posts.js</p>
+            <div className='flex'>
+                <div className='w-1/2'>
+                    <Tutorial16182 />
+                </div>
+                <div className='w-1/2 m-6'>
+                    <p>➀は新しいURLオブジェクトを作成する構文</p>
+                </div>
+            </div>
+
+
+            <Tutorial16183 />
+            <div class="flex flex-nowrap">
+                <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
+                    <a href="#">
+                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">map関数</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <a href="http://www.agile-software.site/2021/09/11/map%e3%83%a1%e3%82%bd%e3%83%83%e3%83%89/" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            記事を読む
+                            <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </Layout_tutorial_16>
+        ) : id == 19 ? (
+            <Layout_tutorial_16>
+            <p>投稿コンポーネント作成</p>
+            <p className='border-b-4 border-blue-400'>トップページに表示する投稿一覧のコンポーネントを作成していきます。</p>
+            <p>components フォルダの中に post フォルダを作成し、post.js ファイルを作成します。</p>
+            <p className='text-red-400'>components/post/post.js</p>
+            <Tutorial16191 />
+        </Layout_tutorial_16>
+        ): id == 20 ? (
+            <Layout_tutorial_16>
+            <h2>投稿一覧表示</h2>
+            <p>トップページに投稿一覧を表示させていきます</p>
+            <p className='text-red-400'>pages/index.js</p>
+            <Tutorial16201 />
+            <h3>SSG</h3>
+      
+            <p>SSG はStatic Site Generationの略で、静的サイト生成です。</p>
+            <p>ビルド時に HTML ファイルを生成して、リクエストがあったら、生成された HTML ファイルを返します。</p>
+            <p>静的ファイルなので、とても早く表示させることができます。</p>
+            <p>Next.js は SSG 用にgetStaticProps関数が用意されています。</p>
+      
+            <p>getStaticProps 内に外部データをコールする処理を書くと、ビルド時にサーバー側でデータを取得して HTML ファイルが生成されます。</p>
+            <h3>ISR</h3>
+            <p>ISR はIncremental Static Regenerationの略で、段階的な静的サイト生成です。</p>
+            <p>ビルド時に HTML ファイルを生成して、stale-while-revalidate というキャッシュの仕組みを使用して、指定時間経過後にリクエストがあった場合は裏側で HTML を再生成し次のリクエスト時にはそれを返すといった仕組みです。</p>
+            <p>Next.js では getStaticProps 関数でrevalidate: ＜秒数＞のオプションを指定することで使用することができます。</p>
+      
+            <p>今回は 3 秒としています。</p>
+            <p>Django で登録した Post データが表示されました。</p>
+          </Layout_tutorial_16>
+        ) : id == 21 ? (
+            <Layout_tutorial_16>
+            <h3>投稿詳細表示</h3>
+            <p>投稿詳細画面を作成していきます。</p>
+            <p>pages フォルダに posts フォルダを作成し、[id].jsファイルを作成します。</p>
+            <p>Next.js ではファイル名に[id].jsとすることで動的なルーティングを設定することができます</p>
+            <p>今回は、posts/[id].jsとすることで[id]に post の id が入っていきます。 </p>
+            <p>このように、投稿詳細画面を表示することができるようになります。</p>
+            <p className='text-red-400'>pages/posts/[id].js</p>
+            <Tutorial16211 />
+            <h3>getStaticPaths</h3>
+            <p>getStaticPaths は SSG(Static Site Generation) 用の関数であり、動的なルーティングの利用時に静的ファイルを生成します。</p>
+            <p>getStaticPaths 関数で投稿一覧の ID を取得しています。</p>
+      
+      
+            <p>画面確認</p>
+            <p>各投稿をクリックすると、詳細画面を表示することができます。</p>
+            <p>これで投稿一覧と詳細画面を作成することができました。</p>
+          </Layout_tutorial_16>
+        )  : (
           <></>
         )}
     </div>
@@ -798,4 +898,523 @@ const Tutorial1671 = () => {
         </SyntaxHighlighter>
     );
 };
+
+const Tutorial1681 = () => {
+    const test = `
+    from rest_framework import generics
+    from .serializers import PostSerializer
+    from .models import Post
+    
+    
+    class PostView(generics.ListAPIView):
+        queryset = Post.objects.all()
+        serializer_class = PostSerializer
+    
+    
+    class PostDetailView(generics.RetrieveAPIView):
+        queryset = Post.objects.all()
+        serializer_class = PostSerializer
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial1691 = () => {
+    const test = `
+    (myvenv) ~$ python3 manage.py runserver
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial1692 = () => {
+    const test = `
+    {
+        "id": 1,
+        "title": "xxxxxxx",
+        "image": "http://127.0.0.1:8000/media/images/xxxx.png",
+        "content": "xxxxxxxxxxxxxxxxxxxxxxx",
+        "created_at": "2021-03-31 18:17"
+        }
+        
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial16101 = () => {
+    const test = `
+    $ node -v
+    $ npm -v
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+
+
+const Tutorial16102 = () => {
+    const test = `
+    $ cd next-blog-tutorial
+    $ npx create-next-app . --use-npm
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+
+
+const Tutorial16103 = () => {
+    const test = `
+    npm run dev
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial16111 = () => {
+    const test = `
+$ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+$ npx tailwindcss init -p
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+
+
+const Tutorial16112 = () => {
+    const test = `
+    module.exports = {
+        purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+        darkMode: false, // or 'media' or 'class'
+        theme: {
+          extend: {},
+        },
+        variants: {
+          extend: {},
+        },
+        plugins: [],
+      };
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+
+
+const Tutorial16113 = () => {
+    const test = `
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial16121 = () => {
+    const test = `
+  import Head from "next/head";
+  
+  export default function Home() {
+    return (
+      <div>
+        <Head>
+          <title>NextJS Startup</title>
+        </Head>
+        <h1>TailwindCSS</h1>
+      </div>
+    );
+  }
+      `
+    return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+        {test}
+      </SyntaxHighlighter>
+    );
+  };
+  
+  const Tutorial16122 = () => {
+    const test = `
+      $ npm run dev
+      `
+    return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+        {test}
+      </SyntaxHighlighter>
+    );
+  };
+  
+  const Tutorial16123 = () => {
+    const test = `
+      import Head from "next/head";
+  
+      export default function Home() {
+        return (
+          <div>
+            <Head>
+              <title>NextJS Startup</title>
+            </Head>
+            <h1 className="text-9xl flex justify-center h-screen items-center text-indigo-500">
+              TailwindCSS
+            </h1>
+          </div>
+        );
+      }
+      `
+    return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+        {test}
+      </SyntaxHighlighter>
+    );
+  };
+
+  const Tutorial16131 = () => {
+    const test = `
+import Navigation from "./navigation";
+
+export default function Layout(props) {
+  return (
+    <div className="flex flex-col min-h-screen">
+      <Navigation />
+      <main className="container flex flex-1 justify-center mx-auto px-5 max-w-screen-lg">
+        {props.children}
+      </main>
+      <footer className="flex items-center justify-center w-full h-20 text-sm border-t">
+        © 2021 NextJS Startup
+      </footer>
+    </div>
+  );
+}
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial16141 = () => {
+    const test = `
+      import Link from "next/link";
+  
+      export default function Navigation() {
+        return (
+          <header className="container flex flex-row items-center mx-auto px-5 py-14 max-w-screen-lg">
+            <Link href="/">
+              <a className="text-4xl font-bold text-red-300">NextJS Startup</a>
+            </Link>
+            <nav className="ml-auto">
+              <Link href="/about">
+                <a className="mr-5">About</a>
+              </Link>
+            </nav>
+          </header>
+        );
+      }
+      
+      `
+    return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+        {test}
+      </SyntaxHighlighter>
+    );
+  };
+
+  const Tutorial16151 = () => {
+    const test = `
+    import "../styles/globals.css";
+
+    import Head from "next/head";
+    import Layout from "../components/layout/layout";
+    
+    function MyApp({ Component, pageProps }) {
+      return (
+        <Layout>
+          <Head>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+          </Head>
+          <Component {...pageProps} />
+        </Layout>
+      );
+    }
+    
+    export default MyApp;
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial16161 = () => {
+    const test = `
+    export default function About() {
+      return <div>about</div>;
+    }
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial16171 = () => {
+    const test = `
+      import Image from "next/image";
+      import Head from "next/head";
+      
+      export default function Home() {
+        return (
+          <div>
+            <Head>
+              <title>NextJS Startup</title>
+            </Head>
+            <div className="mb-10 p-3 border rounded">
+              <Image
+                className="object-cover rounded"
+                src="/top.png"
+                alt="top"
+                width={1280}
+                height={500}
+              />
+            </div>
+            <div className="flex justify-center flex-col items-center mb-10">
+              <div className="text-lg mb-3">BLOG POSTS</div>
+              <div className="border w-14"></div>
+            </div>
+          </div>
+        );
+      }
+      
+      `
+    return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+        {test}
+      </SyntaxHighlighter>
+    );
+  };
+
+  const Tutorial16181 = () => {
+    const test = `
+    (myvenv) ~$ python3 manage.py runserver
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial16182 = () => {
+    const test = `
+import fetch from "node-fetch";
+
+// Django APIサーバーURL
+const SERVERURL = "http://127.0.0.1:8000/";
+
+// 投稿一覧を取得　➀
+export async function getAllPostsData() {
+  const res = await fetch(new URL());
+  const posts = await res.json();
+  return posts;
+}
+
+// 投稿一覧のIDを取得
+export async function getAllPostIds() {
+  const res = await fetch(new URL());
+  const posts = await res.json();
+  return posts.map((post) => {
+    return {
+      params: {
+        id: String(post.id),
+      },
+    };
+  });
+}
+
+// 投稿詳細を取得
+export async function getPostData(id) {
+  const res = await fetch(new URL());
+  const post = await res.json();
+  return post;
+}
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+
+const Tutorial16183 = () => {
+    const test = `
+    const res = await fetch(new URL());
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial16191 = () => {
+    const test = `
+    import Link from "next/link";
+
+    export default function Post({ post }) {
+      return (
+        <Link href=>
+          <div className="p-4 cursor-pointer sm:w-1/2 lg:w-1/4">
+            <img alt="post" className="object-cover" src={post.image} />
+            <div className="text-center my-4">
+              <p>{post.title}</p>
+            </div>
+          </div>
+        </Link>
+      );
+    }
+    
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial16201 = () => {
+    const test = `
+      import Image from "next/image";
+      import Head from "next/head";
+      
+      import Post from "../components/post/post";
+      import { getAllPostsData } from "../lib/posts";
+      
+      export default function Home({ posts }) {
+        return (
+          <div>
+            <Head>
+              <title>NextJS Startup</title>
+            </Head>
+            <div className="mb-10 p-3 border rounded">
+              <Image
+                className="object-cover rounded"
+                src="/top.png"
+                alt="top"
+                width={1280}
+                height={500}
+              />
+            </div>
+            <div className="flex justify-center flex-col items-center mb-10">
+              <div className="text-lg mb-3">BLOG POSTS</div>
+              <div className="border w-14"></div>
+            </div>
+            <div className="flex flex-wrap -m-4 mb-5">
+              {posts && posts.map((post) => <Post key={post.id} post={post} />)}
+            </div>
+          </div>
+        );
+      }
+      
+      export async function getStaticProps() {
+        const posts = await getAllPostsData();
+      
+        return {
+          props: { posts },
+          revalidate: 3,
+        };
+      }
+      
+      `
+    return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+        {test}
+      </SyntaxHighlighter>
+    );
+  };
+
+  const Tutorial16211 = () => {
+    const test = `
+      import { useRouter } from "next/router";
+      import { getAllPostIds, getPostData } from "../../lib/posts";
+      
+      export default function PostData({ post }) {
+        const router = useRouter();
+      
+        if (router.isFallback || !post) {
+          return <div>Loading...</div>;
+        }
+      
+        return (
+          <div className="space-y-5 w-full">
+            <div className="flex justify-center flex-col items-center mb-5">
+              <h1 className="text-3xl mb-3 font-bold">{post.title}</h1>
+              <p className="mb-3">{post.created_at}</p>
+              <div className="border w-14"></div>
+            </div>
+            <p className="whitespace-pre-wrap">{post.content}</p>
+          </div>
+        );
+      }
+      
+      // 投稿一覧の ID を取得
+      export async function getStaticPaths() {
+        const paths = await getAllPostIds();
+      
+        return {
+          paths,
+          fallback: true,
+        };
+      }
+      
+      // 投稿詳細のデータを取得
+      export async function getStaticProps({ params }) {
+        const post = await getPostData(params.id);
+        return {
+          props: {
+            post,
+          },
+          revalidate: 3,
+        };
+      }
+      
+      `
+    return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+        {test}
+      </SyntaxHighlighter>
+    );
+  };
 

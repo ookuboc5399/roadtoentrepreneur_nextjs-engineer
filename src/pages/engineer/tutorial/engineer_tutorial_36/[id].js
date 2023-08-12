@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_44 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_36 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -79,12 +79,11 @@ const Post = () => {
                   <Tutorial3332 />
                   <h4>material-UIのインポート</h4>
                   <p>背景色と文字色の規定を設定できます。</p>
-                  <Tutorial3333 />
-                  <Tutorial3334 />
+         
                   <h4>header_left作成</h4>
                   <p>MenuアイコンとGmailの画像を使って。</p>
                   <p className='text-red-400'>Header.js</p>
-                  <Tutorial3335 />
+                 
                   <h4>heroiconsインストール</h4>
                   <p> Facebookrのサイドバーで使われているアイコンを実現するためにheroiconsを使用します</p>
                   <p>下記コマンドでインストールします</p>
@@ -121,7 +120,7 @@ const Post = () => {
                     <div class="flex flex-nowrap">
                         <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                             <a href="#">
-                                <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                             </a>
                             <div class="p-5">
                                 <a href="#">
@@ -167,7 +166,7 @@ const Post = () => {
                   <div class="flex flex-nowrap">
                       <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                           <a href="#">
-                              <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                              <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                           </a>
                           <div class="p-5">
                               <a href="#">

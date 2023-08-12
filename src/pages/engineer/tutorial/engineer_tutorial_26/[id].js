@@ -102,7 +102,7 @@ const Post = () => {
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -179,7 +179,7 @@ const Post = () => {
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -206,7 +206,7 @@ const Post = () => {
             <p>EmailList.jsと適用させるEmailList.cssを作成します。</p>
           </Layout_tutorial_26>
         ) : id == 6 ? (
-          <Layout_tutorial_28>
+          <Layout_tutorial_26>
             <h3>Results.js作成</h3>
             <p>ルーティングを設定します。</p>
             <p>プロジェクト用 URL を作成 </p>
@@ -216,9 +216,9 @@ const Post = () => {
             <p className='text-red-400'>components/Results.js</p>
             <Tutorial3761 />
 
-          </Layout_tutorial_28>
+          </Layout_tutorial_26>
         ) : id == 7 ? (
-          <Layout_tutorial_35>
+          <Layout_tutorial_26>
             <div className='flex'>
               <div className='mr-4 w-1/2'>
 
@@ -242,16 +242,16 @@ const Post = () => {
                 <Tutorial33710 />
               </div>
             </div>
-          </Layout_tutorial_35>
+          </Layout_tutorial_26>
         ) : id == 8 ? (
-          <Layout_tutorial_33>
+          <Layout_tutorial_26>
             <h3>Redux</h3>
             <p>mailとuserのreducerを作成します。</p>
             <p>できます </p>
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -273,7 +273,7 @@ const Post = () => {
             <Tutorial3383 />
             <p>Django REST Framework には多くの汎用ビューが存在しますので、どんどん活用していきましょう。 </p>
             <p>公式ドキュメント - Generic views </p>
-          </Layout_tutorial_33>
+          </Layout_tutorial_26>
         ) : (
           <></>
         )}

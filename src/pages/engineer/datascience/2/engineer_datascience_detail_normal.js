@@ -1,7 +1,7 @@
 import React from 'react'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import Datascience2 from '../../../../components/layout/engineer/datascience2';
+import { Datascience2 } from '../../../../components/layout/engineer/engineer';
 
 
 

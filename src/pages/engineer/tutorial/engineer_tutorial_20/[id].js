@@ -179,7 +179,7 @@ const Post = () => {
 
                     </Layout_tutorial_20>
                 ) : id == 6 ? (
-                    <Layout_tutorial_17>
+                    <Layout_tutorial_20>
                         <h3>URL追加</h3>
                         <p>ルーティングを設定します。</p>
                         <p>プロジェクト用 URL を作成 </p>
@@ -191,9 +191,9 @@ const Post = () => {
                         <p>app フォルダの下に、urls.py ファイルを作成します。</p>
                         <p className='text-red-400'>app/urls.py</p>
                         <Tutorial1662 />
-                    </Layout_tutorial_17>
+                    </Layout_tutorial_20>
                 ) : id == 7 ? (
-                    <Layout_tutorial_17>
+                    <Layout_tutorial_20>
                         <h3>Serializer追加</h3>
                         <p>Serializer とは？</p>
                         <p>Serializer とは、クエリセットやモデルインスタンスのような複雑なデータを、Json 形式のフォーマットに変換することを役割としています</p>
@@ -201,9 +201,9 @@ const Post = () => {
                         <p>serializers の ModelSerializer クラスを継承すことにより、簡単に書くことができます</p>
                         <p className='text-red-400'>app/serializers.py</p>
                         <Tutorial1671 />
-                    </Layout_tutorial_17>
+                    </Layout_tutorial_20>
                 ) : id == 8 ? (
-                    <Layout_tutorial_17>
+                    <Layout_tutorial_20>
                         <h3>Views追加</h3>
                         <p>Django REST Framework は、GenericAPIView の中に一般的に必要な開発のコードをすでに用意してくれています。</p>
                         <p>それを継承することで、簡単に開発をすることができます </p>
@@ -267,60 +267,143 @@ const Post = () => {
                         <Tutorial1681 />
                         <p>Django REST Framework には多くの汎用ビューが存在しますので、どんどん活用していきましょう。 </p>
                         <p>公式ドキュメント - Generic views </p>
-                    </Layout_tutorial_17>
+                    </Layout_tutorial_20>
                 ) : id == 9 ? (
-                    <Layout_tutorial_33>
-                        <div className='flex'>
-                            <div className='mr-4 w-1/2'>
+                    <Layout_tutorial_20>
+                        <h3>API確認</h3>
+                        <p>サーバー起動</p>
+                        <p>サーバーを起動させます</p>
 
-                                <h3>SendMail.js</h3>
-                                <p>iconを表示させます。</p>
-                                <p className='text-red-400'>Mail.js</p>
-                                <Tutorial3391 />
-                                <div class="flex p-4 mb-4 text-xl text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
-                                    <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                                    <div>
-                                        <span class="font-medium">history.push()</span>React-Routerでhistory.push()の引数に遷移先を指定することでページ遷移を行うことができます。
-                                    </div>
-                                </div>
-                                <h4>React Hook formのインストール</h4>
-                                <Tutorial3392 />
-                            </div>
-                            <div className='w-1/2'>
-                                <p className='text-red-400'>SendMail.js</p>
-                                <Tutorial3399 />
-                                <p className='text-red-400'>SendMail.css</p>
-                                <Tutorial33910 />
-                            </div>
-                        </div>
-                    </Layout_tutorial_33>
+
+                        <h3>API 画面</h3>
+                        <p>Django REST Framework には、API を管理する専用画面が用意されています。</p>
+
+                        <h4>一覧 </h4>
+                        <p>下記にアクセスすると、Post 一覧が表示されます。 </p>
+                        <p>http://127.0.0.1:8000/api/post/</p>
+                        <h4>詳細 </h4>
+                        <p>http://127.0.0.1:8000/api/post/1/</p>
+                        <p>Json</p>
+                        <p>API をコールすると、下記のような Json 形式でデータを取得することになります。</p>
+
+                        <p>フロントエンドからのリクエスト</p>
+                        <p>フロントエンドから GET、PUT、PUT/PATCH、DELETE などのメソッドを使うことで、データの取得や作成、更新、削除が用意になり、設計がしやすくなります。 </p>
+                        <p>ぜひ API を活用した設計にしてみましょう。</p>
+                        <p>次は Next.js を構築して、Django で構築した API をコールしていきます。</p>
+                    </Layout_tutorial_20>
                 ) : id == 10 ? (
-                    <Layout_tutorial_33>
-                        <div className='flex'>
-                            <div className='mr-4 w-1/2'>
+                    <Layout_tutorial_20>
+                        <h3>Next.js導入</h3>
+                        <p>Next.js とは？</p>
+                        <p>Next.js は React のライブラリとなります。</p>
+                        <p>React と組み合わせて開発を行い、サーバーサイドレンダリングを可能にします</p>
+                        <p>サーバー側で静的ファイルをレンダリングして、画面を表示するので、表示速度があがります</p>
+                        <p>静的ファイルを生成することができるので、SEO 的にも有利になります</p>
+                        <p>特徴</p>
+                        <p>React アプリのサーバーサイドレンダリング(SSR)を実現</p>
+                        <p>node/npm インストール</p>
+                        <p>node と npm がインストールされていることを確認します</p>
 
-                                <h3>firebase.js</h3>
-                                <p>firebaseをインストールします。</p>
-
-                                <Tutorial33101 />
-                                <p>srcフォルダの直下にfirebase.jsを作成します。</p>
-                                <div class="flex p-4 mb-4 text-xl text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
-                                    <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                                    <div>
-                                        <span class="font-medium">history.push()</span>React-Routerでhistory.push()の引数に遷移先を指定することでページ遷移を行うことができます。
-                                    </div>
+                        <p>まだインストールされていない方は、インストールしてください</p>
+                        <p>node インストール </p>
+                        <div class="flex flex-nowrap">
+                            <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
+                                <a href="#">
+                                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">node.js</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                    <a href="http://www.agile-software.site/2021/05/06/node-js/" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                        記事を読む
+                                        <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                    </a>
                                 </div>
-                                <h4>React Hook formのインストール</h4>
-                                <Tutorial33102 />
-                            </div>
-                            <div className='w-1/2'>
-                                <p className='text-red-400'>SendMail.js</p>
-                                <Tutorial33109 />
-                                <p className='text-red-400'>SendMail.css</p>
-                                <Tutorial331010 />
                             </div>
                         </div>
-                    </Layout_tutorial_33>
+                        <p>セットアップ </p>
+                        <p>Django とは別のフォルダを新規に作成します。 </p>
+                        <p>今回は、next-blog-tutorial というフォルダを作成しました。</p>
+
+                        <p>--use-npmは、npm でインストールするように指定しています </p>
+                        <p>インストールが完了すると、下記コマンドで Next.js を起動できます。</p>
+
+                        <p>下記に遷移すると、Next.js の初期画面が表示されます。</p>
+                    </Layout_tutorial_20>
+                ) : id == 11 ? (
+                    <Layout_tutorial_20>
+
+                    </Layout_tutorial_20>
+                ) : id == 12 ? (
+                    <Layout_tutorial_20>
+
+                    </Layout_tutorial_20>
+                ) : id == 13 ? (
+                    <Layout_tutorial_20>
+
+                    </Layout_tutorial_20>
+                ) : id == 14 ? (
+                    <Layout_tutorial_20>
+                        <h3>ナビゲーション作成</h3>
+                        <p>ナビゲーションコンポーネントを作成していきます。</p>
+                        <p>layout フォルダに navigation.js ファイルを作成します。</p>
+                        <p className='text-red-400'>components/layout/navigation.js</p>
+
+                    </Layout_tutorial_20>
+                ) : id == 15 ? (
+                    <Layout_tutorial_20>
+                        <h3>_app.js修正</h3>
+                        <p>Next.js では App コンポーネントを使用して、全てのページを初期化しています</p>
+                        <p>_app.jsファイルを使用することで、デフォルトの App コンポーネントを上書きすることができます</p>
+                        <p>先ほど作成した共通レイアウトを持たせていきます</p>
+                        <p className='text-red-400'>pages/_app.js</p>
+
+                        <p>画面確認</p>
+                        <p>画面を確認すると、ヘッダーとフッターを表示することができました。</p>
+                    </Layout_tutorial_20>
+                ) : id == 16 ? (
+                    <Layout_tutorial_20>
+                        <h3>aboutページ作成</h3>
+                        <p>Next.js では pages フォルダの中にファイルを作成するだけで、自動でルーティングが設定されます。</p>
+                        <p>pages/about.js ファイルを作成します。</p>
+                        <p>そうすると、/aboutに遷移することができます。</p>
+                        <p className='text-red-400'>pages/about.js</p>
+
+                        <p>画面確認</p>
+                        <p>about ページを表示することができました。</p>
+                    </Layout_tutorial_20>
+                ) : id == 17 ? (
+                    <Layout_tutorial_20>
+                        <h3>トップページ修正</h3>
+                        <p>トップページを修正していきます。</p>
+                        <p>トップ画面をtop.pngとして、public ファルダに格納します。</p>
+                        <p className='text-red-400'>pages/index.js</p>
+
+                        <p>画面確認</p>
+                        <p>トップ画像が表示されました。</p>
+                    </Layout_tutorial_20>
+                ) : id == 18 ? (
+                    <Layout_tutorial_20>
+                        <h3>トップページ修正</h3>
+                        <p>トップページを修正していきます。</p>
+                        <p>トップ画面をtop.pngとして、public ファルダに格納します。</p>
+                        <p className='text-red-400'>pages/index.js</p>
+
+                        <p>画面確認</p>
+                        <p>トップ画像が表示されました。</p>
+                    </Layout_tutorial_20>
+                ) : id == 19 ? (
+                    <Layout_tutorial_20>
+                        <h3>トップページ修正</h3>
+                        <p>トップページを修正していきます。</p>
+                        <p>トップ画面をtop.pngとして、public ファルダに格納します。</p>
+                        <p className='text-red-400'>pages/index.js</p>
+
+                        <p>画面確認</p>
+                        <p>トップ画像が表示されました。</p>
+                    </Layout_tutorial_20>
                 ) : (
                     <></>
                 )}

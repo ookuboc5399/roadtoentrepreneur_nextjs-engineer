@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_44 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_32 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -122,7 +122,7 @@ const Post = () => {
                       <div class="flex flex-nowrap">
                         <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                           <a href="#">
-                            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                            <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                           </a>
                           <div class="p-5">
                             <a href="#">
@@ -254,7 +254,7 @@ const Post = () => {
                   <div class="flex flex-nowrap">
                       <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                           <a href="#">
-                              <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                              <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                           </a>
                           <div class="p-5">
                               <a href="#">
@@ -278,7 +278,7 @@ const Post = () => {
                   <p>公式ドキュメント - Generic views </p>
                   </Layout_tutorial_32>
                 ) : id == 9 ? (
-                  <Layout_tutorial_29>
+                  <Layout_tutorial_32>
                   <div className='flex'>
                      <div className='mr-4 w-1/2'>
      
@@ -302,9 +302,9 @@ const Post = () => {
                      <Tutorial33910 />
                      </div>
                  </div>
-                 </Layout_tutorial_29>
+                 </Layout_tutorial_32>
                 ) : id == 10 ? (
-                  <Layout_tutorial_33>
+                  <Layout_tutorial_32>
                   <div className='flex'>
                      <div className='mr-4 w-1/2'>
      
@@ -329,7 +329,7 @@ const Post = () => {
                      <Tutorial331010 />
                      </div>
                  </div>
-                 </Layout_tutorial_33>
+                 </Layout_tutorial_32>
                 ) : (
                     <></>
                 )}

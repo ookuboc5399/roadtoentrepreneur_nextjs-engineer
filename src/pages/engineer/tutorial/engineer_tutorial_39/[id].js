@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_44 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_39 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -193,7 +193,7 @@ const Post = () => {
                   <Tutorial1662 />
                   </Layout_tutorial_39>
                 ) : id == 7 ? (
-                  <Layout_tutorial_40>
+                  <Layout_tutorial_39>
                   <h3>Serializer追加</h3>
                   <p>Serializer とは？</p>
                   <p>Serializer とは、クエリセットやモデルインスタンスのような複雑なデータを、Json 形式のフォーマットに変換することを役割としています</p>
@@ -201,9 +201,9 @@ const Post = () => {
                   <p>serializers の ModelSerializer クラスを継承すことにより、簡単に書くことができます</p>
                   <p className='text-red-400'>app/serializers.py</p>
                   <Tutorial1671 />
-                  </Layout_tutorial_40>
+                  </Layout_tutorial_39>
                 ) : id == 8 ? (
-                  <Layout_tutorial_40>
+                  <Layout_tutorial_39>
                   <h3>Views追加</h3>
                   <p>Django REST Framework は、GenericAPIView の中に一般的に必要な開発のコードをすでに用意してくれています。</p>
                   <p>それを継承することで、簡単に開発をすることができます </p>
@@ -267,9 +267,9 @@ const Post = () => {
                   <Tutorial1681 />
                   <p>Django REST Framework には多くの汎用ビューが存在しますので、どんどん活用していきましょう。 </p>
                   <p>公式ドキュメント - Generic views </p>
-                  </Layout_tutorial_40>
+                  </Layout_tutorial_39>
                 ) : id == 9 ? (
-                  <Layout_tutorial_40>
+                  <Layout_tutorial_39>
                   <h3>API確認</h3>
                   <p>サーバー起動</p>
                   <p>サーバーを起動させます</p>
@@ -290,9 +290,9 @@ const Post = () => {
                   <p>フロントエンドから GET、PUT、PUT/PATCH、DELETE などのメソッドを使うことで、データの取得や作成、更新、削除が用意になり、設計がしやすくなります。 </p>
                   <p>ぜひ API を活用した設計にしてみましょう。</p>
                   <p>次は Next.js を構築して、Django で構築した API をコールしていきます。</p>
-                  </Layout_tutorial_40>
+                  </Layout_tutorial_39>
                 ) : id == 10 ? (
-                  <Layout_tutorial_40>
+                  <Layout_tutorial_39>
                   <h3>Next.js導入</h3>
                   <p>Next.js とは？</p>
                   <p>Next.js は React のライブラリとなります。</p>
@@ -309,7 +309,7 @@ const Post = () => {
                   <div class="flex flex-nowrap">
                       <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                           <a href="#">
-                              <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                              <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                           </a>
                           <div class="p-5">
                               <a href="#">
@@ -331,9 +331,9 @@ const Post = () => {
                   <p>インストールが完了すると、下記コマンドで Next.js を起動できます。</p>
                   <Tutorial16103 />
                   <p>下記に遷移すると、Next.js の初期画面が表示されます。</p>
-                  </Layout_tutorial_40>
+                  </Layout_tutorial_39>
                 ) : id == 11 ? (
-                  <Layout_tutorial_40>
+                  <Layout_tutorial_39>
                   <h3>TailwindCSS導入</h3>
                   <p>TailwindCSS を導入していきます。</p>
                   <p>TailwindCSS とは？ </p>
@@ -375,7 +375,7 @@ const Post = () => {
       
                   <p>Home.module.css を削除します</p>
                   <p>api フォルダを削除します。</p>
-                  </Layout_tutorial_40>
+                  </Layout_tutorial_39>
                 ) : (
                     <></>
                 )}

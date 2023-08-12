@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import React from 'react';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import Python from '../../../../components/layout/engineer/python/python';
+import { Python } from '../../../../components/layout/engineer/engineer';
 
 const Post = () => {
     const router = useRouter()
@@ -79,7 +79,7 @@ const Post = () => {
                             </div>
                         </div>
                         <p>end= で文字列を指定することで末尾を変更できる</p>
-                        <p>end=""は末尾に何も出力しない</p>
+                        <p>end=&quot;&quot;は末尾に何も出力しない</p>
                         <div className='flex'>
                             <div className='m-6'>
                                 <p>コード入力</p>
@@ -117,7 +117,7 @@ const Post = () => {
                             </div>
                         </div>
                         <p>int関数は小数点以下を切り捨てて整数としている</p>
-                        <p>end=""は末尾に何も出力しない</p>
+                        <p>end=&quot;&quot;は末尾に何も出力しない</p>
                         <div className='flex'>
                             <div className='m-6'>
                                 <p>コード入力</p>
@@ -519,8 +519,8 @@ const Post = () => {
                         <div>
                             <p>Jupyter Notebookは記述したプログラムは随時自動で保存されます</p>
                             <p></p>
-                            <p></p>print('こんにちは')の文字列の部分「'こんにちは'」のみ赤色で表示されています。
-                            <p></p>これはJupyter Notebookの機能によるものであり「'」で囲まれた文字列の部分は自動で赤色になります
+                            <p></p>print(&apos;こんにちは&apos;)の文字列の部分「&apos;こんにちは&apos;」のみ赤色で表示されています。
+                            <p></p>これはJupyter Notebookの機能によるものであり「&apos;」で囲まれた文字列の部分は自動で赤色になります
 
                             <p></p>この機能によってコードがより読みやすく編集しやすくなります。
                             <p></p>
@@ -534,6 +534,81 @@ const Post = () => {
                             <p></p>
                             <p></p>
                         </div>
+                    </Python >
+                ) : id == "python_detail_fx" ? (
+                    <Python>
+                        <div>
+                            <p>Pythonを使って次の4つのETFの株価を取得しチャートを表示</p>
+                            <ul className='list-disc'>
+                                <li> Small Growth：VBK</li>
+                                <li>Small Value：VBR</li>
+                                <li>Large Growth：VUG</li>
+                                <li>Large Value：VTV</li>
+                                <li>S&P500：^GSPC</li>
+                                <li>NASDAQ：^IXIC</li>
+                                <li>10年国債：^TNX</li>
+                            </ul>
+
+                            <p>Pythonのyfinanceモジュールを使い</p>
+                            <Code72 />
+                            <Code74 />
+                            <p>上記で指定したティッカー、開始、終了のパラメータからデータをダウンロードしています。</p>
+                            <Code75 />
+                            <p></p>
+
+                            <h3>グラフ化した時に分かりやすいようにカラム名を変更</h3>
+                            <Code76 />
+                            <p>下記のコードでグラフ化をしているのですが、「subplots=True」を指定すると、グラフが複数に分かれて表示されます。</p>
+                            <Code77 />
+                            <p>このパラメータは凄く便利で、たとえば、
+                                subplots=True,layout=(2, 2)の様に（行、列）を指定すれば、
+                                下記の様に複数のチャートを並べる事も出来ます。</p>
+                            <Code78 />
+                            <Code79 />
+                            <div className="border border-pink-50 border-green-200 inline-block h-2/4">
+                                {/* <iframe src="https://colab.research.google.com/drive/1VHKJAEnNPI7SvXIH3wN3JfIA3QB5ELev?hl=ja" width="750" height="600" frameboader="0"></iframe> */}
+                            </div>
+                        </div>
+                    </Python >
+                ) : id == "python_detail_industry" ? (
+                    <Python>
+                                                   <div className="border-2 border-pink-50 inline-block  h-2/4">
+                                <div></div>
+                                <div>
+                                    <p></p>
+                                    <Code72 />
+                                    <h3>業種別の株価を表示する関数</h3>
+                                    <p></p>
+                                    <Code80 />
+
+
+                                </div>
+                            </div>
+                            <div className="border border-pink-50 border-green-200 inline-block h-2/4">
+                                {/* <iframe src="https://colab.research.google.com/drive/1VHKJAEnNPI7SvXIH3wN3JfIA3QB5ELev?hl=ja" width="750" height="600" frameboader="0"></iframe> */}
+                            </div>
+                    </Python >
+                ) : id == "python_detail_settlement" ? (
+                    <Python>
+                            
+                            <div className="border-2 border-pink-50 inline-block  h-2/4">
+                                <div></div>
+                                <div>
+                                    <p>edgarのデータを取得できるpackageのインストール</p>
+                                    <Code80 />
+                                 
+                                    <h3>edgarから決算を情報を取得して、html表示する関数</h3>
+                                    <p></p>
+                                    <Code81 />
+
+                                    <p>取得したい会社のticker、決算資料名、いつからのデータを取得するかdateを設定してください</p>
+
+                                    <Code82 />
+                                </div>
+                            </div>
+                            <div className="border border-pink-50 border-green-200 inline-block h-2/4">
+                                {/* <iframe src="https://colab.research.google.com/drive/1VHKJAEnNPI7SvXIH3wN3JfIA3QB5ELev?hl=ja" width="750" height="600" frameboader="0"></iframe> */}
+                            </div>
                     </Python >
                 ) : (
                     <></>
@@ -1484,4 +1559,271 @@ const Code71 = () => {
     );
 };
 
+
+
+const Code72 = () => {
+    const test = `
+    pip install yfinance
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code73 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+
+const Code74 = () => {
+    const test = `
+    #対象ティッカーシンボルのデータを取得
+    codelist = ["VUG","VTV","VBK","VBR","^TNX"]
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code75 = () => {
+    const test = `
+    data = yf.download(codelist, start=start, end=end)["Adj Close"]
+    df_all=(data.pct_change(60))#期間の変化率
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+
+const Code76 = () => {
+    const test = `
+    df_all.rename(columns={'VBR':'Small Value','VTV':'Large Value',
+    'VBK':'Small Growth','VUG':'Large Growth','^TNX':'10 Years Yield'},inplace=True)
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code77 = () => {
+    const test = `
+    df_all2.plot(figsize=(16,9),fontsize=20,linewidth=2,alpha=0.5,subplots=True,grid=True)
+    plt.xlabel(xlabel="")
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+
+const Code78 = () => {
+    const test = `
+    df_all.plot(figsize=(16,9),fontsize=10,linewidth=5,alpha=0.5,
+    subplots=True,layout=(2, 2))
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code79 = () => {
+    const test = `
+import yfinance as yf
+import datetime
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+start = datetime.date(2020,3,23)#コロナ底
+end = datetime.date.today()
+
+codelist = ["VUG","VTV","VBK","VBR"]
+
+data = yf.download(codelist, start=start, end=end)["Adj Close"]
+df_all=(1+data.pct_change()).cumprod()
+df_all.rename(columns={'VBR':'Small Value','VTV':'Large Value','VBK':'Small Growth','VUG':'Large Growth'},inplace=True)
+
+df_all.plot(figsize=(16,9),fontsize=30,linewidth=5,alpha=0.5)
+plt.legend(fontsize=18)  
+
+x1 = "2020-10-29" #転換点１
+plt.axvline(x1,color='gray',linewidth=2 )
+x1 = "2021-02-13" #転換点２
+plt.axvline(x1,color='gray',linewidth=2 )
+x1 = "2021-03-29" #転換点３
+plt.axvline(x1,color='gray',linewidth=2 )
+
+plt.title("Growth vs Value  ,  Small vs Large",color='gray', fontsize=50)
+plt.show()
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code80 = () => {
+    const test = `
+    import datetime
+import yfinanceas yf
+import matplotlib.pyplot as plt
+import pandas as pd
+%matplotlib inline
+
+#開始・終了日の設定
+start = datetime.date.today() - datetime.timedelta(days=100)
+end = datetime.date.today()
+
+#対象ティッカーシンボルのデータを取得
+codelist = ["VDE","VFH","VAW","VIS","IYR","VOX","VDC","VCR","VHT","VGT","VPU","^TNX"]
+data = yf.download(codelist, start=start, end=end)["Adj Close"]
+df_all=(1+data.pct_change()).cumprod()
+
+#'VDE'：'エネルギー','VFH'：'金融','VAW'：'素材','VIS'：'資本財','IYR'：'不動産',
+#'VOX'：'通信','VDC'：'生活必需品','VCR'：'一般消費財',
+#'VHT'：'ヘルスケア','VGT'：'情報通信','VPU'：'公共事業'
+
+df_all.rename(columns={'VDE':'Energy',
+                      'VFH':'Finance',
+                      'VAW':'Material',
+                      'VIS':'Industrials',
+                      'IYR':'Real Estate',
+                      'VOX':'Telecommunication Services',
+                      'VDC':'Consumer Staples',
+                      'VCR':'Consumer Discretionary',
+                      'VHT':'Health Care',
+                      'VGT':'Information Technology',
+                      'VPU':'Utilities',
+                      '^TNX':'10 Year Treasury'},inplace=True)
+#グラフ化 3パターン
+df_all.plot(figsize=(16,9),fontsize=10,linewidth=2,alpha=0.5,subplots=True,layout=(4,4),grid=True)
+df_all.iloc[:,[0,1,2,3,4,5,6,7,8,9,10]].plot(figsize=(16,9),fontsize=10,linewidth=2,alpha=0.5,grid=True)
+df_all.plot(figsize=(9,20),fontsize=10,linewidth=2,alpha=0.5,subplots=True,grid=True)
+plt.show()
+
+#ここまで
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+
+const Code81 = () => {
+    const test = `
+    pip install sec-edgar-downloader
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code82 = () => {
+    const test = `
+    import pandas as pd
+    from IPython.display import display, HTML
+    from sec_edgar_downloader import Downloader
+    import glob
+    
+    
+    #　20201208更新　⭐️これ追加。
+    from bs4 import BeautifulSoup
+
+    #エドガーのデータを格納するためのファイルパスを設定
+    save_path = "/Users/XXXXXX/Desktop/edgar"
+    
+    #取得したい会社のticker、決算資料名、いつからのデータを取得するかdateを引数とする
+    
+    def get_edgar(ticker,file,after_date):
+    
+       dl = Downloader(save_path)
+       
+       #取得実行
+       file_count = dl.get(file, ticker ,after_date=after_date)
+       
+       if file_count == 0:
+           print('取得ファイルなし')
+           return 
+    
+       #最新決算を取得(⭐️txtデータのみを取得、20201208更新)
+       #print(save_path + "/edgar/sec_edgar_filings/" + ticker +"/8-K/*.txt")
+       kessan_list = glob.glob(save_path + "/sec_edgar_filings/" + ticker +"/"+file+"/"+"*")
+       #ファイルをソート
+       kessan_list.sort()
+       #最新の決算情報を取得
+       ticker_file_path = kessan_list[-1]
+       
+       #一旦開いてゴミを削除
+       #-----------------------------------------------------------
+       with open(ticker_file_path) as f:
+           txt = f.read()
+    
+           if file == 'S-1':
+               txt = txt.split('XBRL INSTANCE DOCUMENT')[0]
+                      
+           txt = txt.split('XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT')[0]  
+           #txt = txt.split('@(" @("')[0]    
+           txt = txt.split('EXCEL')[0]        
+       #-----------------------------------------------------------
+       
+       # HTMLで保存し直す　20201208更新　⭐️これ追加。
+       #---------------------------------------------------
+       # txtから BeautifulSoup オブジェクトを作る
+       soup = BeautifulSoup(txt, 'html.parser')
+       #print(soup.prettify()) 
+    
+       #HTMLを整形
+       soup_txt = soup.prettify()
+       #保存するファイル名作成
+       path_w = ticker_file_path + '.html'
+    
+       #HTMLファイル出力
+       with open(path_w, mode='w') as f:
+           f.write(soup_txt)
+       #----------------------------------------------------
+       
+       # HTMLを返す
+       return display(HTML(txt))
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Code83 = () => {
+    const test = `
+    get_edgar('ZM',"10-Q",20201001)
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
 

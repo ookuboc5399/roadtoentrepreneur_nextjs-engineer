@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import Header_engineer from '../../../../components/header/header_engineer';
+import Header_engineer from '../../../../components/header/header';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
 import 'swiper/css';
-import ChapterCommand from '../../../../components/chapter/programing/command/chapter_command';
+import { ChapterCommand } from '../../../../components/chapter/engineer/chapter_engineer';
 
 
 export default function Home() {
@@ -246,7 +246,7 @@ export default function Home() {
 
                         </tbody>
                     </table>
-                    <a target="_blank" href="https://qiita.com/oruponu/items/ae9c720d4522c1606daf"
+                    <a target="_blank" rel="noopener noreferrer" href="https://qiita.com/oruponu/items/ae9c720d4522c1606daf"
                     >参考：Visual Studio Code キーボード ショートカット</a
                     >
                 </div>

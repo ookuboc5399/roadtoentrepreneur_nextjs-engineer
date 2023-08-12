@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_3 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_3 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -255,7 +255,7 @@ const Post = () => {
                         <p>Workデータをテンプレートに渡しています。</p>
                         <Tutorial373 />
                         <p>コード解説 </p>
-                        <p>self.kwargs['pk']はURLで指定したpkの値を取得することができます。</p>
+                        <p>self.kwargs[&apos;pk&apos;]はURLで指定したpkの値を取得することができます。</p>
                         <Tutorial374 />
                         <p>テンプレート </p>
                         <p>index </p>

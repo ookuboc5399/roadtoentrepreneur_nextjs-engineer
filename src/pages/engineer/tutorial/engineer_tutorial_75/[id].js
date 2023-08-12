@@ -64,8 +64,8 @@ const Post = () => {
           </p>
 
           <p>
-            includeオプションに"src//.ts",
-            "src//.tsx"を指定し、コンパイル対象とします。
+            includeオプションに&quot;src//.ts&quot;,
+            &quot;src//.tsx&quot;を指定し、コンパイル対象とします。
           </p>
           <p>
             TypeScriptの厳格な型チェックを行うためにstrictオプションをオンにします。
@@ -105,7 +105,7 @@ const Post = () => {
           </p>
           <p>
             import React from
-            'react'はReact17から不必要になったので、"react/react-in-jsx-scopeのルールをオフにしてあります。
+            &apos;react&apos;はReact17から不必要になったので、&quot;react/react-in-jsx-scopeのルールをオフにしてあります。
           </p>
           <p>
             import/orderはimportの順番をアルファベット順に昇順で並べる設定にします
@@ -157,7 +157,7 @@ const Post = () => {
 
               <h4></h4>
               <p>検索窓に入力した値はinputに格納されます</p>
-              <Tutorial7531 />
+              {/* <Tutorial7531 /> */}
               <p>
                 検索窓に入力されていない場合はボタンを押すことができないようにdisabled属性を設定します。
               </p>
@@ -268,29 +268,28 @@ const Post = () => {
             <div className="">
               <h3>準備 </h3>
               <p>プロジェクトを作成します</p>
-              <Tutorial7571 />
+              {/* <Tutorial7571 /> */}
               <h3>MiniProfile</h3>
               <p>pagesフォルダのindex.tsxと_app.tsxを削除します。</p>
               <p>プロジェクト直下にappフォルダを作成します。</p>
               <p>page.tsxを作成します。</p>
               <p className="text-red-400">app/page.tsx</p>
-              <Tutorial7575 />
+            
               <p>next.config.jsにappディレクトリの設定を追加します。</p>
               <p className="text-red-400">next.config.js</p>
-              <Tutorial7575 />
+          
 
               <p>変更を適用するためnpm run devを再度実行します。</p>
               <p>appフォルダに新しくhead.tsxとlayout.tsxが作成されます。</p>
               <h3>Sanityインストール</h3>
-              <Tutorial7574 />
-              <Tutorial7575 />
+           
               <h3>next-sanityインストール</h3>
-              <Tutorial7576 />
+              {/* <Tutorial7576 /> */}
               <p>
-                作成したnextjs13-sanity-blogのpackage.jsonからプロジェクトのpackage.jsonにdependenciesの"@sanity/vision"、"sanity"、"styled-components"をコピーします。
+                作成したnextjs13-sanity-blogのpackage.jsonからプロジェクトのpackage.jsonにdependenciesの&quot;@sanity/vision&quot;、sanity、styled-componentsをコピーします。
               </p>
               <p>
-                また、"devDependencies"の"@sanity/eslint-config-studio"も追加します。{" "}
+                また、&quot;devDependencies&quot;の&quot;@sanity/eslint-config-studio&quot;も追加します。{" "}
               </p>
               <p>
                 sanityのプロジェクトからschemasフォルダ、sanity.cli.ts、sanity.config.tsもプロジェクト直下に移動させます。
@@ -298,7 +297,7 @@ const Post = () => {
               <p>sanityプロジェクトを削除します。</p>
               <h4></h4>
               <p>変更を反映させます。</p>
-              <Tutorial75710 />
+              {/* <Tutorial75710 /> */}
 
               <p>componentsフォルダにSuggestions.jsファイルを作ります。</p>
               <p>rfceでreactコンポーネントを作成 </p>
@@ -312,24 +311,24 @@ const Post = () => {
             <div className="">
               <h3>準備 </h3>
               <p>プロジェクトを作成します</p>
-              <Tutorial7581 />
+              {/* <Tutorial7581 /> */}
               <h3>MiniProfile</h3>
               <p>pagesフォルダのindex.tsxと_app.tsxを削除します。</p>
               <p>プロジェクト直下にtheme.tsxを作成します。</p>
               <p className="text-red-400">theme.tsx</p>
-              <Tutorial7582 />
+              {/* <Tutorial7582 /> */}
               <p>sanity.config.tsに設定を追加します。</p>
               <p className="text-red-400">next.config.js</p>
-              <Tutorial7583 />
+              {/* <Tutorial7583 /> */}
               <h4></h4>
               <p>
                 componentsフォルダを作成し、StudioNavbar.tsxファイルを作ります。
               </p>
               <p className="text-red-400">StudioNavbar.tsx</p>
-              <Tutorial7584 />
+              {/* <Tutorial7584 /> */}
               <p>rfceでreactコンポーネントを作成 </p>
               <h4>heroiconsインストール</h4>
-              <Tutorial7585 />
+              {/* <Tutorial7585 /> */}
             </div>
           </div>
         </Layout_tutorial_75>

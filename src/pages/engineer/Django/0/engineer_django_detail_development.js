@@ -1,18 +1,17 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import Header_engineer from '../../../../components/header/header_engineer';
+import Header_engineer from '../../../../components/header/header';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { NextPage } from 'next';
 import { Document, Page, pdfjs } from 'react-pdf';
-import PdfPage from '../../../../components/pdf/test';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import ChapterDjango from '../../../../components/chapter/programing/django/chapter_django';
+import { ChapterDjango } from '../../../../components/chapter/engineer/chapter_engineer';
 
 export default function Home() {
     return (
@@ -56,7 +55,7 @@ export default function Home() {
                             <div class="flex flex-nowrap">
                                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -72,7 +71,7 @@ export default function Home() {
 
                                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">

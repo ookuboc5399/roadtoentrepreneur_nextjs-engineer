@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_63 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_63 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -141,7 +141,7 @@ const Post = () => {
           <Layout_tutorial_63>
              
             <h3>インストール</h3>
-            <Tutorial6251 />
+         
             <p>仮想ネットワークの作成をクリック</p>
             
             <p>リソースグループ名と名前を設定</p>
@@ -153,7 +153,7 @@ const Post = () => {
             
           </Layout_tutorial_63>
         ) : id == 6 ? (
-          <Layout_tutorial_62>
+          <Layout_tutorial_63>
 
             <h3>URL追加</h3>
             <h4>ロードバランサの作成</h4>
@@ -256,9 +256,9 @@ const Post = () => {
             </div>
 
 
-          </Layout_tutorial_62>
+          </Layout_tutorial_63>
         ) : id == 7 ? (
-          <Layout_tutorial_60>
+          <Layout_tutorial_63>
             <h3>Serializer追加</h3>
             <p>Serializer とは？</p>
             <p>Serializer とは、クエリセットやモデルインスタンスのような複雑なデータを、Json 形式のフォーマットに変換することを役割としています</p>
@@ -266,16 +266,16 @@ const Post = () => {
             <p>serializers の ModelSerializer クラスを継承すことにより、簡単に書くことができます</p>
 
 
-          </Layout_tutorial_60>
+          </Layout_tutorial_63>
         ) : id == 8 ? (
-          <Layout_tutorial_59>
+          <Layout_tutorial_63>
             <div className='flex'>
               <div className='mr-4 w-1/2'>
                 <h3>Views追加</h3>
                 <p>Django REST Framework は、GenericAPIView の中に一般的に必要な開発のコードをすでに用意してくれています。</p>
                 <p>それを継承することで、簡単に開発をすることができます </p>
                 <p className='text-red-400'>api/views.py</p>
-                <Tutorial5281 />
+            
 
               </div>
               <div className='w-1/2'>
@@ -286,7 +286,7 @@ const Post = () => {
               </div>
             </div>
 
-          </Layout_tutorial_59>
+          </Layout_tutorial_63>
         ) : (
           <></>
         )}

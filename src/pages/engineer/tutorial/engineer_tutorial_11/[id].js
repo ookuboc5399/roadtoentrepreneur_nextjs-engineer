@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_11 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_11 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -484,7 +484,7 @@ const Post = () => {
                       
                         <p>設定変更</p>
                         <p>Vuetifyをインストールしたので、vue.config.jsが書き変わっています。</p>
-                        <p>もとにもどし、transpileDependencies: ["vuetify"],を追加します。</p>
+                        <p>もとにもどし、transpileDependencies: [&quot;vuetify&quot;],を追加します。</p>
                         <Tutorial11162 />
                         <p>フロントエンド起動</p>
                         <p>frontendフォルダでvue.jsを起動させます。</p>

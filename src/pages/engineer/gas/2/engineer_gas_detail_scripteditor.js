@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import Header_engineer from '../../../../components/header/header_engineer';
-import Chaptergasscript from '../../../../components/chapter/programing/gas/chapter_programing_gas_script';
+import { Header_engineer } from '../../../../components/header/header';
+import { Chaptergasscript } from '../../../../components/chapter/engineer/chapter_engineer';
 
 
 

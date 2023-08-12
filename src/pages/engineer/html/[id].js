@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import React from 'react';
+import Image from 'next/image';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
 import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';

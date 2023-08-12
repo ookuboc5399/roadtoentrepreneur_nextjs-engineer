@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_7 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_7 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -405,7 +405,7 @@ const Post = () => {
                     <p>いますぐ始めるボタンをクリックして、アカウントを登録しましょう。</p>
                     <p>Stripe</p>
                     <p>APIキー取得</p>
-                    <p>ログインしてダッシュボードを開き、開発者->APIキー画面を開きます</p>
+                    <p>ログインしてダッシュボードを開き、開発者-APIキー画面を開きます</p>
                     <p>ダッシュボード</p>
                     <p>公開可能キーとシークレットキーが表示されますので、メモしておきます</p>
                     <p>APIキー</p>
@@ -437,7 +437,7 @@ const Post = () => {
                     <Tutorial7126 />
                     <p>コード解説</p>
                     <p>クレジットカードのテンプレートです。</p>
-                    <p>JavaScriptで設定しているので、id="card-element"エリアにクレジットカードが表示されます。</p>
+                    <p>JavaScriptで設定しているので、id=card-elementエリアにクレジットカードが表示されます。</p>
                     <Tutorial7127 />
                     <p>Stripeの設定をここで読み込みます。</p>
                     <Tutorial7128 />

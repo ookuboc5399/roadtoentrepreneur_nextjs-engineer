@@ -23,7 +23,7 @@ const Post = () => {
                 <div class="flex flex-nowrap">
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                      <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                      <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                       <a href="#">
@@ -39,7 +39,7 @@ const Post = () => {
 
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                      <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                      <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                       <a href="#">
@@ -172,7 +172,7 @@ const Post = () => {
                 <p>reloadするか</p>
                 <h4>MySQLログイン</h4>
                 <Tutorial6447 />
-                <p>mysql>となっていれば成功です</p>
+                <p>mysqlとなっていれば成功です</p>
                 <p>データベースを表示する</p>
                 <Tutorial6448 />
                 <h4>文字コードの変更</h4>

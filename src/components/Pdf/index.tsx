@@ -1,11 +1,11 @@
 import { NextPage } from 'next';
 import React from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import Header_invester from '../header/header_invester';
-import pdfjsWorkerSrc from '../../pdf-worker';
+import {Header_invester} from '../header/header';
+// import pdfjsWorkerSrc from '../../pdf-worker';
 import Link from 'next/link';
 
-pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorkerSrc;
+// pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorkerSrc;
 
 const PdfPage: NextPage = () => {
   const url = 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/examples/learning/helloworld.pdf';
@@ -71,7 +71,7 @@ const PdfPage: NextPage = () => {
                 <div className="w-4/12">
                     <div className="text-center">
                         <div className="flex justify-center">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/k57V9FVvtho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/k57V9FVvtho" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
 
                     </div>

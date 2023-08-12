@@ -89,7 +89,7 @@ const Post = () => {
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -109,7 +109,7 @@ const Post = () => {
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -178,7 +178,7 @@ const Post = () => {
             <p></p>
             <Tutorial2244 />
             <h4>set Nicknameボタンをクリックしたとき関数</h4>
-            <p>ユーザーかつnicknameがあるなら設定、nicknameがない場合「Can't set empty nickname」と表示する。</p>
+            <p>ユーザーかつnicknameがあるなら設定、nicknameがない場合「Can&apos;t set empty nickname」と表示する。</p>
             <p>ユーザー出ない場合「No user」と表示する</p>
             <Tutorial2245 />
           </Layout_tutorial_22>
@@ -233,7 +233,7 @@ const Post = () => {
             </div>
           </Layout_tutorial_22>
         ) : id == 6 ? (
-          <Layout_tutorial_17>
+          <Layout_tutorial_22>
             <h3>URL追加</h3>
             <p>ルーティングを設定します。</p>
             <p>プロジェクト用 URL を作成 </p>
@@ -244,18 +244,18 @@ const Post = () => {
             <p>アプリケーション用ルーティングを作成</p>
             <p>app フォルダの下に、urls.py ファイルを作成します。</p>
             <p className='text-red-400'>app/urls.py</p>
-            <Tutorial1662 />
-          </Layout_tutorial_17>
+   
+          </Layout_tutorial_22>
         ) : id == 7 ? (
-          <Layout_tutorial_17>
+          <Layout_tutorial_22>
             <h3>Serializer追加</h3>
             <p>Serializer とは？</p>
             <p>Serializer とは、クエリセットやモデルインスタンスのような複雑なデータを、Json 形式のフォーマットに変換することを役割としています</p>
             <p>serializers.py ファイルを作成します</p>
             <p>serializers の ModelSerializer クラスを継承すことにより、簡単に書くことができます</p>
             <p className='text-red-400'>app/serializers.py</p>
-            <Tutorial1671 />
-          </Layout_tutorial_17>
+           
+          </Layout_tutorial_22>
         ) : id == 8 ? (
           <Layout_tutorial_22>
             <h3>はじめに </h3>

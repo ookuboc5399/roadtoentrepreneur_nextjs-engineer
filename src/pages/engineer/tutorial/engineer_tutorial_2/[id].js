@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import React from 'react';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_2 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_2 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -127,7 +127,7 @@ const Post = () => {
                         <p>投稿画面に画像アップロードを追加します。</p>
                         <Tutorial2315 />
                         <p>コード解説</p>
-                        <p>画像をフォームからアップロードする場合は、必ずフォームにenctype="multipart/form-data"を指定する必要があります。</p>
+                        <p>画像をフォームからアップロードする場合は、必ずフォームにenctype=&quot;multipart/form-data&quot;を指定する必要があります。</p>
                         <p>これがないと、画像をフォームからアップロードできません。</p>
                         <p>エラーも出ないので、よく覚えておいて下さい。</p>
                         <Tutorial2316 />

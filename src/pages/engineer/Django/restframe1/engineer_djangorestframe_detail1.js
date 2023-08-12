@@ -7,8 +7,7 @@ import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import ChapterDjango from '../../../../components/chapter/programing/django/chapter_django';
-import Layout_restframe_1 from '../../../../components/layout/engineer/Django/restframe1/Layout_restframe_1';
+import { Layout_restframe_1 } from '../../../../components/layout/engineer/engineer';
 
 export default function Home() {
     return (
@@ -25,7 +24,7 @@ export default function Home() {
             <div class="flex flex-nowrap">
                 <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="#">
@@ -41,7 +40,7 @@ export default function Home() {
 
                 <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="#">
@@ -80,7 +79,7 @@ export default function Home() {
                 <div class="flex flex-nowrap">
                 <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="#">
@@ -96,7 +95,7 @@ export default function Home() {
 
                 <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="#">

@@ -60,9 +60,9 @@ export default function Home({ data }) {
         {itemData && itemData.map((data) => {
           console.log(data)
           return (
-            <div>
+            <div key={index}>
               <div>
-                <img src={data.Item.smallImageUrls[0].imageUrl} />
+                <Image src={data.Item.smallImageUrls[0].imageUrl} alt='' />
               </div>
               <div>
               {data.Item.itemName}

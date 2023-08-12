@@ -107,7 +107,7 @@ const Post = () => {
                                             </div>
                                             <p></p>borderColorとborderWidthはバーにボーダー(輪郭線)を表示したい際に使います。
                                             <p></p>単純にバー全体を指定のカラーで塗りつぶすだけならbackgroundColorに表示されます
-                                            <p></p>backgroundColorとborderColorの色はスタイルシートのカラー指定と同じく"red"や"blue"のように色名を使った方法、<br />"#ff00aa"というような16進数のテキスト、"rgba(1,1,0,0.1)"というrgbaを使った指定などが利用できます
+                                            <p></p>backgroundColorとborderColorの色はスタイルシートのカラー指定と同じく&quot;red&quot;や&quot;blue&quot;のように色名を使った方法、<br />&quot;#ff00aa&quot;というような16進数のテキスト、&quot;rgba(1,1,0,0.1)&quot;というrgbaを使った指定などが利用できます
                                             <Code5 />
                                             <p></p>複数のカラーを配列で用意することで表示されるバー1つ1つに値を設定することができるようになります
                                             <p></p>
@@ -134,7 +134,7 @@ const Post = () => {
                                         <div>
                                             <p></p>データセットの値を変更することで2019年のデータが表示されており、必要に応じて2020年、2021年と変わっていく操作ができます。
                                             <p></p>「Update」ボタンをクリックすると2019年から2020へ、さらに2021年へと表示が変わります
-                                            <p></p>backgroundColorとborderColorの色はスタイルシートのカラー指定と同じく"red"や"blue"のように色名を使った方法、<br />"#ff00aa"というような16進数のテキスト、"rgba(1,1,0,0.1)"というrgbaを使った指定などが利用できます
+                                            <p></p>backgroundColorとborderColorの色はスタイルシートのカラー指定と同じく&quot;red&quot;や&quot;blue&quot;のように色名を使った方法、<br />&quot;#ff00aa&quot;というような16進数のテキスト、&quot;rgba(1,1,0,0.1)&quot;というrgbaを使った指定などが利用できます
                                             <Code7 />
                                             <p></p>複数のカラーを配列で用意することで表示されるバー1つ1つに値を設定することができるようになります
                                             <p></p>

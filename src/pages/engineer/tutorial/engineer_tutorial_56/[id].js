@@ -295,26 +295,26 @@ const Post = () => {
             
                       <h3>準備 </h3>
                       <p>Linux環境でプロジェクトを作成します</p>
-                      <Tutorial5691 />
+                     
                       <h4>TailwindCSS導入</h4>
-                      <Tutorial5692 />
+                     
                       <h3>tailwind.config.js修正</h3>
                       <p>tailwindのデフォルトの状態だと全てのクラスユーティリティがデプロイの時に自動で生成されてCSSのファイルを作ってくれる。</p>
-                      <Tutorial5693 />
+                    
                       <h3>global.css修正</h3>
-                      <Tutorial5694 />
+                    
                       <h3>react-query、heroiconsインストール</h3>
-                      <Tutorial5695 />
+                    
                       <h3>touch .prettierrc</h3>
-                      <Tutorial5696 />
+                    
                       <p className='text-red-400'>.prettierrc</p>
-                      <Tutorial5697 />
+                     
                     </div>
                     <div className='w-1/2'>
                       <p className='text-red-400'>SendMail.js</p>
-                      <Tutorial5699 />
+                   
                       <p className='text-red-400'>SendMail.css</p>
-                      <Tutorial56910 />
+                   
                     </div>
                   </div>
                 </Layout_tutorial_56>

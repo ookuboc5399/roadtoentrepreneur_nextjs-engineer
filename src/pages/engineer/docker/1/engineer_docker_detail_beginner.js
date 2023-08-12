@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import Header_engineer from '../../components/header_engineer';
+import { Header_engineer } from '../../../../components/header/header';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import Chapterdocker from '../../../../components/chapter/programing/docker/chapter_programing_docker';
+import { Chapterdocker } from '../../../../components/chapter/engineer/chapter_engineer';
 
 export default function Home() {
     return (

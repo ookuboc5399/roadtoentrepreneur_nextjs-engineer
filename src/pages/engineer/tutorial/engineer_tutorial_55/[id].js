@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_55 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_55 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -142,19 +142,19 @@ const Post = () => {
                 <h3>Youtube </h3>
                 <p>アプリケーションを作成してきます。 </p>
                 <p>app という名前のアプリケーションを作成します。</p>
-                <Tutorial5441 />
+            
                 <h3>サンプルコード</h3>
                 <p>管理ユーザーを作成しておきましょう。</p>
-                <Tutorial5442 />
+               
                 <p>search.list()によって検索するための条件を設定しています。</p>
                 <p>詳しくは<a href='https://developers.google.com/youtube/v3/docs/search/list?hl=ja'>こちら</a></p>
-                <Tutorial5443 />
+             
                 <h3>パラメーターの変更</h3>
                 <p>動画を再生順が多い順にするorderとtypeを追加する</p>
-                <Tutorial5444 />
+           
                 <p>エラーメッセージを格納させるためのstateを作成します</p>
                 <p className='text-red-400'>components/Auth.tsx</p>
-                <Tutorial5454 />
+            
                 <p>Yupのバリデーションを適用させるために以下のコードが必要です。</p>
                 <p>またinitialValuesには初期値を設定</p>
                 <p className='text-red-400'>components/Auth.tsx</p>
@@ -246,7 +246,7 @@ const Post = () => {
             <p>serializers.py ファイルを作成します</p>
             <p>serializers の ModelSerializer クラスを継承すことにより、簡単に書くことができます</p>
             <p className='text-red-400'>api/serializers.py</p>
-            <Tutorial5471 />
+          
 
           </Layout_tutorial_55>
         ) : id == 8 ? (

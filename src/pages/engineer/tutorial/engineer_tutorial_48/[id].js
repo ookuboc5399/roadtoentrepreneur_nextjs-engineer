@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_48 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_48 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -244,7 +244,7 @@ const Post = () => {
             
                 </Layout_tutorial_48>
                 ): id == 9 ? (
-                  <Layout_tutorial_45>
+                  <Layout_tutorial_48>
                   <div className='flex'>
                     <div className='mr-4 w-1/2'>
                       <p>新しくプロジェクトを作ります。</p>
@@ -273,7 +273,7 @@ const Post = () => {
                       <Tutorial45910 />
                     </div>
                   </div>
-                </Layout_tutorial_45>
+                </Layout_tutorial_48>
                 ): (
                     <></>
                 )}

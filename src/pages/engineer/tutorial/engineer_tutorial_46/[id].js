@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_46 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_46 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -122,7 +122,7 @@ const Post = () => {
                   </div>
                 </Layout_tutorial_46>
                 ) : id == 4 ? (
-                  <Layout_tutorial_45>
+                  <Layout_tutorial_46>
                   <div className='flex'>
                     <div className='w-1/2 mr-2'>
                       <h3>アプリケーション作成 </h3>
@@ -161,9 +161,9 @@ const Post = () => {
             
                   </div>
             
-                </Layout_tutorial_45>
+                </Layout_tutorial_46>
                 ) : id == 5 ? (
-                  <Layout_tutorial_45>
+                  <Layout_tutorial_46>
                   <h3>Model追加</h3>
                   <p>ブログに必要な項目をモデルに追加します。 </p>
                   <p>on_deleteをCASCADEに設定することでTaskモデルに紐づいたTagが削除されたときにはTaskも削除される</p>
@@ -193,9 +193,9 @@ const Post = () => {
                   <p>管理画面に遷移して、Post データを登録してみましょう </p>
                   <p>イメージ画像は正方形の画像をアップロードしてください。 </p>
             
-                </Layout_tutorial_45>
+                </Layout_tutorial_46>
                 ) : id == 6 ? (
-                  <Layout_tutorial_45>
+                  <Layout_tutorial_46>
 
                   <h3>URL追加</h3>
                   <p>ルーティングを設定します。</p>
@@ -209,9 +209,9 @@ const Post = () => {
                   <p className='text-red-400'>api/urls.py</p>
                   <Tutorial4562 />
         
-            </Layout_tutorial_45>
+            </Layout_tutorial_46>
                 ) : id == 7 ? (
-                  <Layout_tutorial_45>
+                  <Layout_tutorial_46>
                   <h3>Serializer追加</h3>
                   <p>Serializer とは？</p>
                   <p>Serializer とは、クエリセットやモデルインスタンスのような複雑なデータを、Json 形式のフォーマットに変換することを役割としています</p>
@@ -220,7 +220,7 @@ const Post = () => {
                   <p className='text-red-400'>api/serializers.py</p>
                   <Tutorial4571 />
       
-              </Layout_tutorial_45>
+              </Layout_tutorial_46>
                 ) : (
                     <></>
                 )}

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_9 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_9 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -191,7 +191,7 @@ const Post = () => {
                       <Tutorial9411 />
                       <p>＜v-toolbar-items＞の中にナビゲーションを追加します。</p>
                       <Tutorial9412 />
-                      <p>textで文字のみを表示し、v-if="!user"でuserがFalseの時に表示されます。</p>
+                      <p>textで文字のみを表示し、v-if=&quot;!user&quot;でuserがFalseの時に表示されます。</p>
                       <p>:to=でクリックした時のリンク先を設定します。</p>
                       <Tutorial9413 />
                       <p>@clickでクリックした時の関数を呼び出すことができます。</p>
@@ -236,7 +236,7 @@ const Post = () => {
                       <p>vuetifyの<v-card></v-card>を使用することにより、綺麗にデザインすることができます。。</p>
                       <Tutorial953 />
 
-                      <p>v-bind:type="showPassword ? 'text' : 'password'"はshowPasswordがtrueであればフィールドのtypeがtext、falseであればpasswordとなります。</p>
+                      <p>v-bind:type=&quot;showPassword ? &apos;text&apos; : &apos;password&apos;はshowPasswordがtrueであればフィールドのtypeがtext、falseであればpasswordとなります。</p>
                       <p>このように1行で判定できるのでかなり便利です。</p>
                       <Tutorial954 />
                       <p>サインアップボタンがクリックされた時の関数です。</p>
@@ -245,7 +245,7 @@ const Post = () => {
                    
                       <p>firebase.auth().createUserWithEmailAndPassword(this.email, this.password)をコールすることで、Firebaseにアカウントを登録することができます。。</p>
                       <Tutorial956 />
-                      <p>アカウント登録に成功したら、this.$router.push(｛ name: "Home" ｝)でホーム画面に遷移します。</p>
+                      <p>アカウント登録に成功したら、this.$router.push(｛ name: &quot;Home&quot; ｝)でホーム画面に遷移します。</p>
                       <Tutorial957 />
                       <p>確認</p>
                       <p>サインアップ画面が表示されます。</p>
@@ -274,7 +274,7 @@ const Post = () => {
                       <p>コード解説</p>
                       <p>ログインボタンをクリックした時は、firebase.auth().signInWithEmailAndPassword(this.email, this.password)をコールすることで、Firebaseにログインすることができます。。</p>
                       <Tutorial963 />
-                      <p>ログインが成功したら、this.$router.push(｛ name: "Home" ｝)でホーム画面を表示させます。</p>
+                      <p>ログインが成功したら、this.$router.push(｛ name: &quot;Home&quot; ｝)でホーム画面を表示させます。</p>
                       <Tutorial964 />
                       <p>確認</p>
                     

@@ -1,6 +1,9 @@
 import { useRouter } from 'next/router'
 import React from 'react';
+import Image from 'next/image';
 import Docker from '../../../../components/layout/engineer/engineer';
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
 
 const Post = () => {
   const router = useRouter()
@@ -230,7 +233,7 @@ const Post = () => {
                 <div className='text-2xl text-center m-4 border-b-4 border-blue-400'>RSIシステム</div>
                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                   <a href="#">
-                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                   </a>
                   <div class="p-5">
                     <a href="#">

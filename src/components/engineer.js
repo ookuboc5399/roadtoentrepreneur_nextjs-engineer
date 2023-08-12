@@ -57,6 +57,34 @@ export function Python({ python }) {
   );
 }
 
+export function JQUERY({ jquery }) {
+  return (
+      <div className="flex bg-white my-4">
+        <div className="bg-green-300 items-center flex ">
+          <Image
+            src="/svg/20.svg"
+            alt=""
+            width={160}
+            height={160}
+          />
+        </div>
+        <div className="w-full m-4">
+        <p className="p-1 text-2xl ">{jquery.name}</p>
+          <span className="p-1 text-2xl">{jquery.title}</span>
+          <div className="mt-3 justify-end flex">
+            <Link href={`${jquery.href}`}>
+              <div>
+                <button className="text-green-300 runded-full border px-6 py-2 rounded-sm">
+                  レッスン詳細へ
+                </button>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </div>
+  );
+}
+
 export function JavaScript({ javascript }) {
   return (
       <div className="flex bg-white my-4">

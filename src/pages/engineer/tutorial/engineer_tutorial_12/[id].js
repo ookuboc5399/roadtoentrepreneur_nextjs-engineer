@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_12 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_12 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -176,29 +176,29 @@ const Post = () => {
                 <p>GitHubにコミットします</p>
                 <p>Herokuにデプロイ</p>
                 <p>Herokuにデプロイしていきます</p>
-                <Tutorial1244 />
+               
                 <p>これで本番環境でデバッグ機能が無効になり、詳細な情報が表示されなくなりました</p>
                 <p>SECRET KEYがハードコーディングされている</p>
                 <p>セキュリティ上、SECRET KEYを直接書くのは良くありません</p>
                 <p>local_settings</p>
                 <p>先ほど作成した、local_settings.pyにSECRET_KEYを移動させましょう。</p>
-                <Tutorial1245 />
+             
                 <p>settings</p>
                 <p>settings.pyのSECRET_KEYは削除します。</p>
-                <Tutorial1246 />
+             
                 <p>環境設定</p>
                 <p>本番環境でSECRET_KEYを設定するには、heroku config:setコマンドで環境設定を登録します。</p>
                 <p>実際のSECRET_KEYに置き換えて実行しましょう。</p>
-                <Tutorial1247 />
+              
                 <p>環境設定確認</p>
                 <p>heroku configコマンドでHerokuの環境変数を見ることができます</p>
-                <Tutorial1248 />
+            
                 <p>SECRET_KEYが表示されていれば成功です</p>
                 <p>GitHubにコミット</p>
                 <p>GitHubにコミットします</p>
                 <p>Herokuにデプロイ</p>
                 <p>Herokuにデプロイしていきます。</p>
-                <Tutorial1249 />
+          
                 <p>Procfile作成</p>
               </div>
             </div>

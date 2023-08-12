@@ -1,8 +1,9 @@
 import { useRouter } from 'next/router'
 import React from 'react';
+import Image from 'next/image';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_1 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_1 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -168,7 +169,7 @@ const Post = () => {
                 <div class="flex justify-center">
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                      <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                      <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                       <a href="#">
@@ -184,7 +185,7 @@ const Post = () => {
 
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                      <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                      <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                       <a href="#">
@@ -204,7 +205,7 @@ const Post = () => {
 
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                      <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                      <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                       <a href="#">
@@ -220,7 +221,7 @@ const Post = () => {
 
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                      <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                      <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                       <a href="#">
@@ -307,7 +308,7 @@ const Post = () => {
             <p className='text-red-400'>app/urls.py</p>
             <Tutorial173 />
             <h3>コード解説</h3>
-            <p>トップページ('')にviewのIndexView関数を割り当てます。</p>
+            <p>トップページ(&apos;&apos;)にviewのIndexView関数を割り当てます。</p>
             <p>トップページにアクセスした時に、IndexView関数の処理をすることになります。</p>
             <p className='border-b-4 border-blue-400'>as_viewメソッドは、クラス汎用ビューをビュー関数化する働きをします。</p>
             <p>次のページで説明しますが、IndexViewはクラス汎用ビューと言って、Djangoが用意した関数を継承して作ります。</p>
@@ -341,7 +342,7 @@ const Post = () => {
               <div class="flex justify-center">
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                       <a href="#">
-                          <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                          <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                       </a>
                       <div class="p-5">
                           <a href="#">
@@ -402,7 +403,7 @@ const Post = () => {
               <div class="flex justify-center">
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                       <a href="#">
-                          <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                          <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                       </a>
                       <div class="p-5">
                           <a href="#">
@@ -605,7 +606,7 @@ const Post = () => {
           <p>Postモデルを呼び出し、降順に並び変えています</p>
           <Tutorial194 />
           <p>render関数を使用して、テンプレートにデータを渡します。</p>
-          <p>'post_data': post_dataは</p>
+          <p>&apos;post_data&apos;: post_dataは</p>
           <Tutorial195 />
       </Layout_tutorial_1>
         ) : id == 10 ? (
@@ -680,7 +681,7 @@ const Post = () => {
           <p>URLにIDがないと、どの投稿の詳細画面を開いているかが分からなくなります</p>
           <Tutorial1122 />
           <p>コード解説</p>
-          <p>self.kwargs['pk']でURLのIDを取得することができます。</p>
+          <p>self.kwargs[&apos;pk&apos;]でURLのIDを取得することができます。</p>
           <p>取得したIDでモデルデータのフィルターをかけて、データを取得します。</p>
           <p className='text-red-400'>app/views.py</p>
           <Tutorial1123 />
@@ -963,7 +964,7 @@ const Post = () => {
               <div class="flex flex-nowrap">
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                       <a href="#">
-                          <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                          <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                       </a>
                       <div class="p-5">
                           <a href="#">
@@ -979,7 +980,7 @@ const Post = () => {
 
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                       <a href="#">
-                          <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                          <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                       </a>
                       <div class="p-5">
                           <a href="#">
@@ -995,7 +996,7 @@ const Post = () => {
 
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                       <a href="#">
-                          <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                          <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                       </a>
                       <div class="p-5">
                           <a href="#">

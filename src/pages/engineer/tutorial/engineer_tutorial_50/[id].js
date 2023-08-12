@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_50 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_50 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -60,7 +60,7 @@ const Post = () => {
                 <h3>日付のフォーマット</h3>
                 <Tutorial5025 />
                 <h3>行と列の入れ替え</h3>
-                <Tutorial5026 />
+                {/* <Tutorial5026 /> */}
               </div>
               <div className='w-1/2'>
                 <Tutorial5029 />
@@ -88,7 +88,7 @@ const Post = () => {
                 <h3>日付のフォーマット</h3>
                 <Tutorial5025 />
                 <h3>行と列の入れ替え</h3>
-                <Tutorial5026 />
+                {/* <Tutorial5026 /> */}
               </div>
               <div className='w-1/2'>
                 <Tutorial5029 />
@@ -116,7 +116,7 @@ const Post = () => {
                 <h3>日付のフォーマット</h3>
                 <Tutorial5025 />
                 <h3>行と列の入れ替え</h3>
-                <Tutorial5026 />
+                {/* <Tutorial5026 /> */}
               </div>
               <div className='w-1/2'>
                 <Tutorial5029 />
@@ -144,7 +144,7 @@ const Post = () => {
                 <h3>日付のフォーマット</h3>
                 <Tutorial5025 />
                 <h3>行と列の入れ替え</h3>
-                <Tutorial5026 />
+                {/* <Tutorial5026 /> */}
               </div>
               <div className='w-1/2'>
                 <Tutorial5029 />
@@ -172,7 +172,7 @@ const Post = () => {
                 <h3>日付のフォーマット</h3>
                 <Tutorial5025 />
                 <h3>行と列の入れ替え</h3>
-                <Tutorial5026 />
+                {/* <Tutorial5026 /> */}
               </div>
               <div className='w-1/2'>
                 <Tutorial5029 />
@@ -228,7 +228,7 @@ const Post = () => {
                 <h3>日付のフォーマット</h3>
                 <Tutorial5025 />
                 <h3>行と列の入れ替え</h3>
-                <Tutorial5026 />
+                {/* <Tutorial5026 /> */}
               </div>
               <div className='w-1/2'>
                 <Tutorial5029 />
@@ -256,7 +256,7 @@ const Post = () => {
                 <h3>日付のフォーマット</h3>
                 <Tutorial5025 />
                 <h3>行と列の入れ替え</h3>
-                <Tutorial5026 />
+                {/* <Tutorial5026 /> */}
               </div>
               <div className='w-1/2'>
                 <Tutorial5029 />
@@ -307,7 +307,7 @@ const Post = () => {
                 <Tutorial50123 />
                 <h3>インストール</h3>
                 <Tutorial50124 />
-                <p>fastAPIをインスタンス化した後、@app.get("/"")でHTTPメソッドのgetでアクセスがあったときにreturnを返す。 </p>
+                <p>fastAPIをインスタンス化した後、@app.get(&quot;/&quot;)でHTTPメソッドのgetでアクセスがあったときにreturnを返す。 </p>
                 <p className='text-red-400'>jsonplaceholder.ipynb</p>
                 <Tutorial50125 />
                 <h3>サーバー起動</h3>
@@ -315,11 +315,11 @@ const Post = () => {
                 <p>Swagger UIとはAPIの仕様書をWeb上で見やすくしてくれる</p>
                 <h3>パスパラメーター</h3>
                 <p>urlのcountries/直下の値を取得して関数内で使用することができる。</p>
-                <p>例えばcountries/japanのときは｛"country_name": japan｝と表示される</p>
+                <p>例えばcountries/japanのときは｛&quot;country_name&quot;: japan｝と表示される</p>
                 <Tutorial50126 />
                 <h3>クエリパラメーター</h3>
                 <p>urlの?以下がクエリパラメーター。</p>
-                <p>例えばcountries/japanのときは｛"country_name": japan｝と表示される</p>
+                <p>例えばcountries/japanのときは｛&quot;country_name&quot;: japan｝と表示される</p>
                 <Tutorial50127 />
                 <h3>リクエストボディ</h3>
                 <p>データ構造をクラスで定義</p>
@@ -360,7 +360,7 @@ const Post = () => {
                 <Tutorial50123 />
                 <h3>インストール</h3>
                 <Tutorial50124 />
-                <p>fastAPIをインスタンス化した後、@app.get("/"")でHTTPメソッドのgetでアクセスがあったときにreturnを返す。 </p>
+                <p>fastAPIをインスタンス化した後、@app.get(&quot;/&quot;)でHTTPメソッドのgetでアクセスがあったときにreturnを返す。 </p>
                 <p className='text-red-400'>jsonplaceholder.ipynb</p>
                 <Tutorial50125 />
                 <h3>サーバー起動</h3>
@@ -368,11 +368,11 @@ const Post = () => {
                 <p>Swagger UIとはAPIの仕様書をWeb上で見やすくしてくれる</p>
                 <h3>パスパラメーター</h3>
                 <p>urlのcountries/直下の値を取得して関数内で使用することができる。</p>
-                <p>例えばcountries/japanのときは｛"country_name": japan｝と表示される</p>
+                <p>例えばcountries/japanのときは｛&quot;country_name&quot;: japan｝と表示される</p>
                 <Tutorial50126 />
                 <h3>クエリパラメーター</h3>
                 <p>urlの?以下がクエリパラメーター。</p>
-                <p>例えばcountries/japanのときは｛"country_name": japan｝と表示される</p>
+                <p>例えばcountries/japanのときは｛&quot;country_name&quot;: japan｝と表示される</p>
                 <Tutorial50127 />
                 <h3>リクエストボディ</h3>
                 <p>データ構造をクラスで定義</p>
@@ -462,6 +462,18 @@ const Tutorial5025 = () => {
     </SyntaxHighlighter>
   );
 };
+
+const Tutorial5026 = () => {
+  const test = `
+
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
 
 
 const Tutorial5029 = () => {

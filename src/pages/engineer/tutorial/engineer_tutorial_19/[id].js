@@ -4,339 +4,907 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_44 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_19 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
-    const router = useRouter()
-    const { id } = router.query
+  const router = useRouter()
+  const { id } = router.query
 
-    return (
-        <div>
-            {
-                id == 1 ? (
-                  <Layout_tutorial_35>
-                  <h3>はじめに </h3>
-                  <p></p>
-                  <p>バックエンドは Django REST Framework を使用して API サーバーを構築します。</p>
-                  <p>フロントエンドは Next.js と TailwindCSS を使用します。</p>
-                  <p>Django REST Framework と Next.js の使い方を学習していきましょう。 </p>
-      
-      
-                  <h3>目標</h3>
-                  <p>下記を学習していきます。 </p>
-                  <ul className='list-disc'>
-                      <li>Django REST Framework で API 構築方法</li>
-                      <li>Next.js でサイト構築方法</li>
-                      <li>Django REST Framework と Next.js の連携方法</li>
-                      <li>TailwindCSS の使い方</li>
-                  </ul>
-                  <div className="text-3xl m-4">
-                      Youtube
-                  </div>
-                  <div className="flex justify-center">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/tbvguOj8C-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                  <h3>#エラーが発生した場合</h3>
-                  <p>詳しいコードの解説は、Django REST Framework、NextJS の公式ページを参考にして下さい。</p>
-      
-                  <p>Django REST Framework 公式ドキュメント</p>
-                  <p>Next.js 公式ドキュメント</p>
-      
-                  <p>もしエラーが発生したり、分かりにくい箇所は下記のGitHubにてソースコードを参考にして下さい。</p>
-                  <p>DRF 参照コード</p>
-                  <p>Next.js 参照コード</p>
-                  <h3>#前提知識</h3>
-      
-                  <p>では、始めて行きましょう！！</p>
-              </Layout_tutorial_35>
-                ) : id == 2 ? (
-                  <Layout_tutorial_35>
-                  <h3>準備 </h3>
-                  <p>Linux環境でプロジェクトを作成します</p>
-                  <Tutorial3321 />
-                  <h3>既定のCssを削除します。</h3>
-                  <p className='text-red-400'>App.css</p>
-                  <Tutorial3322 />
-                  <p>features/counterの中にあるcounterSlice.jsをfeatures直下に移動させます。</p>
-                  <p>Counter.jsとCounter.module.cssを格納しているcounterフォルダは削除しておきます。</p>
-                  <h3>index.cssに追加</h3>
-                  <p></p>
-                  <p className='text-red-400'>index.css</p>
-                  <Tutorial3324 />
-                  <p>store.jsにおけるcounterReducer内を削除します。</p>
-                  <p className='text-red-400'>app/store.js</p>
-                  <Tutorial3323 />
-                  
-              </Layout_tutorial_35>
-                ) : id == 3 ? (
-                  <Layout_tutorial_35>
-                  <h3>ヘッダー作成</h3>
-                  <p>componentsフォルダを作成し、その直下にHeader.jsファイルを作ります。</p>
-                  <p>rfceでreactコンポーネントを作成 </p>
-                  <p></p>
-                  <p className='text-red-400'>src/components/Header.js</p>
-                  <Tutorial3331 />
-                  <h4>app.js</h4>
-                  <p>必要のないコードは削除します。＜header＞＜/header＞内を削除してimport ｛Counter｝とlogoを削除します</p>
-                  <p> app.jsにHeaderコンポーネントを読み込ませておきます。</p>
-                  <p className='text-red-400'>app.js</p>
-                  <Tutorial3332 />
-                  <h4>material-UIのインポート</h4>
-                  <p></p>
-                  <Tutorial3333 />
-                  <Tutorial3334 />
-                  <h4>styled-componentsのインポート</h4>
-                  <p></p>
-                  <Tutorial3335 />
-                  <p>package.jsonに追加します。</p>
-                  <Tutorial3336 />
-                  <p>vscodeにはstyled-componentsの機能があるので追加します。</p>
-                  <h4>header_left作成</h4>
-                  <p>MenuアイコンとGmailの画像を使って。</p>
-                  <p className='text-red-400'>Header.js</p>
-                  <Tutorial3335 />
-                 
-      
-                  <p className='text-red-400'>components/Header.js</p>
-                  
-                  <p>HeaderIcon.jsを作成</p>
-              </Layout_tutorial_35>
-                ) : id == 4 ? (
-                  <Layout_tutorial_35>
-                  <h3>Sidebar.js作成</h3>
-                    <p>srcフォルダにSidebar.jsファイルを作ります。</p>
-                    
-                    <p>適用させるSidebar.cssも作成します。</p>
-                    <p className='text-red-400'>components/Nav.js</p>
-                    <Tutorial3341/>
-                    <p>App.jsにSidebarコンポーネントを読み込ませておきます</p>
-        
-                    <p>rafceでreactコンポーネントを作成 </p>
-                  
-                    <Tutorial3345/>
-        
-                    <p>utilsフォルダを作り、その中にrequests.jsファイルを作ります。</p>
-                    <p className='text-red-400'>utils/request.js</p>
-                    <Tutorial3342/>
-                    <p>index.jsにNavコンポーネントを読み込ませておきます</p>
-                    <h3>SidebarOption.js作成</h3>
-                    <p>。</p>
-                    <Tutorial3346/>
-                    <p>requests.jsのfetchTrendingのurl</p>
-                    <p>返ってきたresponseはjson形式に変換</p>
-                    <Tutorial3347/>
-                    
-                    <div class="flex flex-nowrap">
-                        <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
-                            <a href="#">
-                                <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">React(getServerSideProps)</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                <a href="http://www.agile-software.site/2022/06/05/reactgetserversideprops/" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    記事を読む
-                                    <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </div>
-                        </div>
+  return (
+    <div>
+      {
+        id == 1 ? (
+          <Layout_tutorial_19>
+            <h3>Redux + React Hooks + TypeScript COVID19 </h3>
+
+            <h3>目標</h3>
+            <p>下記を学習していきます。 </p>
+            <ul className='list-disc'>
+              <li>Django REST Framework で API 構築方法</li>
+              <li>Next.js でサイト構築方法</li>
+              <li>Django REST Framework と Next.js の連携方法</li>
+              <li>TailwindCSS の使い方</li>
+            </ul>
+
+            <h3>機能 </h3>
+            <ul className='list-disc'>
+              <li>投稿一覧</li>
+              <li>投稿詳細</li>
+              <li>About</li>
+            </ul>
+            <h3>#エラーが発生した場合</h3>
+            <p>詳しいコードの解説は、Django REST Framework、NextJS の公式ページを参考にして下さい。</p>
+
+            <p>Django REST Framework 公式ドキュメント</p>
+            <p>Next.js 公式ドキュメント</p>
+
+            <p>もしエラーが発生したり、分かりにくい箇所は下記のGitHubにてソースコードを参考にして下さい。</p>
+            <p>DRF 参照コード</p>
+            <p>Next.js 参照コード</p>
+            <h3>#前提知識</h3>
+
+            <p>このチュートリアルを始める前に、下記は学習しておいて下さい。</p>
+            <ul className='list-disc'>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Django</li>
+            </ul>
+
+            <p>では、始めて行きましょう！！</p>
+          </Layout_tutorial_19>
+        ) : id == 2 ? (
+          <Layout_tutorial_19>
+            <h3>React-Chartjsでグラフプロット </h3>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+
+            <p> </p>
+            <p> </p>
+            <p></p>
+            <p> </p>
+            <Tutorial1921 />
+
+            <h3>Chart.jsのインストール</h3>
+            <p> </p>
+
+            <Tutorial1922 />
+            <h3>Lineチャート</h3>
+            <p></p>
+            <p></p>
+            <p></p>
+            <Tutorial1923 />
+            <h3>Pieチャート</h3>
+            <p>Reactのfunctionalコンポーネントの型を指定</p>
+            <p></p>
+            <p></p>
+            <Tutorial1924 />
+            <h4>Barチャート</h4>
+            <p></p>
+            <Tutorial1925 />
+            <h4>RadarPlot</h4>
+            <p></p>
+            <Tutorial1926 />
+            <p></p>
+
+          </Layout_tutorial_19>
+        ) : id == 3 ? (
+          <Layout_tutorial_19>
+            <h3>Material UI</h3>
+            <p></p>
+            <p> </p>
+            <h4>Material UIインストール</h4>
+            <Tutorial1931 />
+            <p className='text-red-400'>MaterialUI.tsx</p>
+            <p>。</p>
+            <Tutorial1932 />
+            <p></p>
+            <h4>makeStyles</h4>
+            <Tutorial1933 />
+            <p>。</p>
+            <p>。</p>
+          </Layout_tutorial_19>
+        ) : id == 4 ? (
+          <Layout_tutorial_19>
+            <h3>プロジェクト作成 </h3>
+            <p>covid_dashboardという名前でフォルダを作成します。 </p>
+            <p>下記コマンドでプロジェクトを作成します。</p>
+            <Tutorial1941 />
+
+            <p>npm startでローカルサーバーが立ち上がります</p>
+            <p>Redux DevToolsでStateを見ることが出来る</p>
+            <h4>モジュールのインポート</h4>
+            <p>外部のAPIにaxiosを使ってアクセスする</p>
+            <Tutorial1945 />
+            <p>matarialUIのインストール</p>
+            <Tutorial1942 />
+            <p>グラフを使うためにchart.jsをインストール</p>
+            <Tutorial1943 />
+            <p>reactのchart.jsもインストール</p>
+            <Tutorial1944 />
+            <p>1秒かけて設定した値まで動的に</p>
+            <Tutorial1947 />
+            <p>アイコン</p>
+            <Tutorial1948 />
+
+            <p></p>
+          </Layout_tutorial_19>
+        ) : id == 5 ? (
+          <Layout_tutorial_19>
+            <h3>Resux Tool Kit</h3>
+            <p>数値型。 </p>
+            <p>sliceの名前はcounter。第二引数に作成したinitialState。reducersというところにactionを記載</p>
+            <p>incrementは今のstateに+1をする処理。このincrementがReactのコンポーネントからdispatchを使って呼び出される</p>
+            <p className='text-red-400'>features/counter/counterSlice.ts</p>
+            <p>incrementByAmountではPayloadActionによってnumberの値を受け取れる </p>
+            <p>この3つをReactのコンポーネントで使えるようにexport</p>
+            <p>stateの中のcounterの値をselectCountに代入している</p>
+            <p>sliceを複数作った場合RootStateはオブジェクト状にひとまとめにしてくれる。 </p>
+            <Tutorial1951 />
+            <div class="flex p-4 mb-4 text-xl text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
+              <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+              <div>
+                <span class="font-medium">verbose_name:</span>
+              </div>
+            </div>
+            <h3>Google Chrome拡張機能のJSON Formatterをインストールして下さい。</h3>
+
+            https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=ja-JP
+
+
+          </Layout_tutorial_19>
+        ) : id == 6 ? (
+          <Layout_tutorial_19>
+            <h3>Covid19用のSliceを</h3>
+            <p>featuresの直下にcovidという名前でフォルダーを作ります</p>
+            <p>covidSlice.tsというファイルを作成する </p>
+            <p>createSliceとcreateAsyncThunkをインポート。createSliceはSliceを作るものでcreateAsyncThunkは非同期の</p>
+            <p>RootStateはappフォルダーのstore.tsでexportされている</p>
+
+            <p>covidフォルダ内にdata.jsonと時系列データのdataDaily.json</p>
+            <p>この2つのファイルをインポート。</p>
+            <p>typeofを使ってdataJsonの型を取得</p>
+            <h4>slice全体のstateの構造を定義</h4>
+            <h4>initialStateを定義</h4>
+            <p>dataには初期値。countryは空の文字列</p>
+            <p></p>
+            <p></p>
+            <h4>sliceの作成</h4>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p className='text-red-400'>app/urls.py</p>
+            <Tutorial1662 />
+
+          </Layout_tutorial_19>
+        ) : id == 7 ? (
+          <Layout_tutorial_19>
+            <h3>Cardsコンポーネント作成</h3>
+            <p>features-covidフォルダの下にCardsとChart、DashBoard、PieChart、SwitchCountryフォルダーを作成します。</p>
+            <p>まずはCardsコンポーネントから作成していきます。</p>
+            <p>Cardsフォルダの下にCards.tsxを作成</p>
+            <p>またCards.module.cssを作成します</p>
+            <p className='text-red-400'>Cards/Cards.module.css</p>
+            <Tutorial1971 />
+            <p>Cards.module.cssからstylesをインポート</p>
+            <p>materialUIからCard,CardContent,Typography,Gridをインポートします。</p>
+            <p>reactのiconsからGiHastyGrave,MdLocalHospital,AiFillLike</p>
+            <p>データのstateを取得したいのでuseSelectorとcovidSlice.tsで作成したselectDataの関数をインポート</p>
+            <p>useSelectorを使ってstoreの中の属性をdata変数に格納。こうすることでdataにアクセスすることでstateの値を読み取ることができる。</p>
+            <p></p>
+            <h4>レスポンシブ</h4>
+            <p>横幅が960px以上の時はCardsが3つ並ぶようにして960px以下の時は1つだけ</p>
+            <Tutorial1973 />
+            <p></p>
+            <p></p>
+            <p></p>
+
+            <p></p>
+            <p className='text-red-400'>Cards/Cards.tsx</p>
+            <Tutorial1972 />
+            <p>App.tsxで作成したCardsコンポーネントを表示</p>
+            <p>画面をリフレッシュした時に動的に1.5秒かけて最終的な値まで</p>
+            <div class="flex flex-nowrap">
+              <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
+                <a href="#">
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                  <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">useSelector</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                  <a href="http://www.agile-software.site/2022/05/25/useselector/" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    記事を読む
+                    <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </a>
+                </div>
+              </div>
+              <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
+                <a href="#">
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                  <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MaterialUI</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                  <a href="http://www.agile-software.site/2021/08/03/materialui/" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    記事を読む
+                    <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </Layout_tutorial_19>
+        ) : id == 8 ? (
+          <Layout_tutorial_19>
+          <h3>Chartコンポーネント作成</h3>
+          <p>またChart.module.cssを作成します</p>
+          <p className='text-red-400'>Chart/Chart.module.css</p>
+          <Tutorial1981 />
+          <p>Cards.module.cssからstylesをインポート</p>
+          <p>chartjsからLine,Barをインポート</p>
+          <p>データのstateを取得したいのでuseSelectorとcovidSlice.tsで作成したselectData,selectDailyData,selectCountryの関数をインポート</p>
+          <p>React.FCで型を定義します。</p>
+          <p className='text-red-400'>Chart/Chart.tsx</p>
+          <Tutorial1982 />
+          <h4>Barチャート</h4>
+          <p>data &&でデータが存在するときだけBarチャートを表示させることができる。 </p>
+          <p>下記コードで凡例を非表示にさせている。</p>
+          <Tutorial1983 />
+          <p>その時に選ばれているcountryを表示させることができる。</p>
+          <Tutorial1984 />
+          <h4>Lineチャート</h4>
+          <p>fill:trueとは線からX軸までの下の部分を色塗りするかどうか            </p>
+          <p>barchartを表示してそれ以外はlinechartを表示する</p>
+          </Layout_tutorial_19>
+        ) : id == 9 ? (
+          <Layout_tutorial_19>
+          <h3>PieChartコンポーネント作成</h3>
+          <p>materialUIからTypographyをインポートします。</p>
+          <p>chartjsからDoughnutをインポート</p>
+          <p className='text-red-400'>PieChart/PieChart.tsx</p>
+          <Tutorial1991 />
+          <p>下記コードでデータが存在するときだけ死者数を感染者数で割った致死率を表示させる。 </p>
+          <Tutorial1992 />
+
+          <p>データが存在する時だけTypographyでMotality。toFixed(2) は小数点以下2桁まで表示</p>
+
+          </Layout_tutorial_19>
+        ) : id == 10 ? (
+          <Layout_tutorial_19>
+            <h3>SwitchCountryコンポーネント</h3>
+            <p>materialUIからmakestylesをインポートします。</p>
+            <p>materialUIから</p>
+            <p>materialUIをmakestylesを使って装飾する場合</p>
+            <p>関数コンポーネント外でuseStyles</p>
+
+
+            <Tutorial19101 />
+            <p>covidSlice.tsで定義したfetchAsyncGetCountry関数に選択した国を引数で渡す</p>
+            <Tutorial19102 />
+            <p>Django とは別のフォルダを新規に作成します。 </p>
+
+            <p>下記に遷移すると、Next.js の初期画面が表示されます。</p>
+            </Layout_tutorial_19>
+        ) : id == 11 ? (
+          <Layout_tutorial_19>
+            <h3>DashBoardコンポーネント</h3>
+            <p>DashBoardフォルダ内にDashBoard.tsxとDashBoard.module.cssファイルを作成</p>
+            
+            <Tutorial19111 />
+            <p>react-reduxからuseSelectorとuseDispatchをインポート </p>
+            <p>covidSlice.tsで定義したfetchAsyncGet,fetchAsyncGetDaily,selectData関数をインポート</p>
+            <p>TailwindCSS は utility class を活用した CSS フレームワークです。 </p>
+            <Tutorial19112 />
+            <p>useStylesを使ってmaterialUIを装飾するてデザインを行っていきます。</p>
+            <p>TailwindCSS の方がどんなデザインでも対応できます</p>
+            <div class="flex flex-nowrap">
+                <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
+                    <a href="#">
+                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">useState・useEffect</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <Link href="/engineer/react_nextjs/react/0/engineer_react_detail_use" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            記事を読む
+                            <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </Link>
                     </div>
-                    {/* <Tutorial3743/>
-                    <Tutorial3744/>
-                
-                    <p>サーバーを起動して表示を確認しましょう。</p>
-                    <h3>アイコンのCSS</h3>
-                    <p>SidebarRow.jsにCSSを適用していきます</p>
-                    <div class="flex p-4 mb-4 text-xl text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
-                        <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                        <div>
-                            <span class="font-medium">max-w-fit</span>hoverした時のエリアが
-                        </div>
+                </div>
+                <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
+                    <a href="#">
+                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MaterialUI</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <a href="http://www.agile-software.site/2021/08/03/materialui/" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            記事を読む
+                            <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </a>
                     </div>
-                       <p>max-w-fit</p> */}
-                    
-                    
-                    
-                </Layout_tutorial_35>
-                ) : id == 5 ? (
-                  <Layout_tutorial_35>
-                  <h3>React-router</h3>
-                  <p>React-routerをインストールします。 </p>
-                  <p>React Router v6だとSwithが使用できないエラーが発生した場合はv5に下げてインストールしてください。</p>
-                  <Tutorial3351/>
-                  <p className='text-red-400'>エラーが発生した場合</p>
-                  <Tutorial3358/>
-                  <p>React-routerを適用するためにApp.jsにおいて全体をRouterで囲みます。 </p>
-                  <Tutorial3352/>
-                  <h3>Routerの設定</h3>
-                  <p>メールを選択した時に/mailに遷移し、/の時はEmailリストを表示させることができます</p>
-                  <p>App.jsにRouteの設定を記述します。</p>
-                  <Tutorial3353/>
-                  <div class="flex flex-nowrap">
-                      <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
-                          <a href="#">
-                              <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                          </a>
-                          <div class="p-5">
-                              <a href="#">
-                                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">TMDB API取得方法</h5>
-                              </a>
-                              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                              <a href="http://www.agile-software.site/2021/05/06/node-js/" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                  記事を読む
-                                  <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-                  <h3>Mail.js作成</h3>
-                  <p>Mail.jsと適用させるMail.cssを作成します。</p>
-                  <p>App.jsにRouteの設定を記述します。</p>
-                  <Tutorial3354/>
-                  <h3>EmailList.js作成</h3>
-                  <p>EmailList.jsと適用させるEmailList.cssを作成します。</p>
-                  <p>App.jsにRouteの設定を記述します。</p>
-                  <Tutorial3355/>
-                  <p>SidebarとSwitchを横並びにするためにApp.cssの.app__bodyに対してflexを適用させます。</p>
-                  <h3>Section.js作成</h3>
-                  <p>EmailList.jsと適用させるEmailList.cssを作成します。</p>
-              </Layout_tutorial_35>
-                ) : id == 6 ? (
-                  <Layout_tutorial_35>
-                  <h3>Results.js作成</h3>
-                  <p>ルーティングを設定します。</p>
-                  <p>プロジェクト用 URL を作成 </p>
-                  <p>プロジェクト用ルーティングを作成 </p>
-                  <p>プロジェクト用のルーティングに、アプリケーション用のルーティングを指定します。</p>
-                   <h4>SideBar.tsx</h4>
-                  <p className='text-red-400'>components/Results.js</p>
-                  <Tutorial3761 />
-                
-              </Layout_tutorial_35>
-                ) : id == 7 ? (
-                  <Layout_tutorial_35>
-                  <div className='flex'>
-                      <div className='mr-4 w-1/2'>
-      
-                          <h3>Mail.js</h3>
-                          <p>iconを表示させます。</p>
-                          <p className='text-red-400'>Mail.js</p>
-                          <Tutorial3371 />
-                          <div class="flex p-4 mb-4 text-xl text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
-                              <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                              <div>
-                                  <span class="font-medium">history.push()</span>React-Routerでhistory.push()の引数に遷移先を指定することでページ遷移を行うことができます。
-                              </div>
-                          </div>
-                          <h4>React Hook formのインストール</h4>
-      
-                      </div>
-                      <div className='w-1/2'>
-                          <p className='text-red-400'>Mail.js</p>
-                          <Tutorial3379 />
-                          <p className='text-red-400'>Mail.css</p>
-                          <Tutorial33710 />
-                      </div>
-                  </div>
-              </Layout_tutorial_35>
-                ) : id == 8 ? (
-                  <Layout_tutorial_33>
-                  <h3>Redux</h3>
-                  <p>mailとuserのreducerを作成します。</p>
-                  <p>できます </p>
-                  <div class="flex flex-nowrap">
-                      <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
-                          <a href="#">
-                              <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                          </a>
-                          <div class="p-5">
-                              <a href="#">
-                                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Redux</h5>
-                              </a>
-                              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                              <a href="http://www.agile-software.site/2021/05/06/node-js/" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                  記事を読む
-                                  <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-                  <p className='text-red-400'>app/store.js</p>
-                  <Tutorial3381 />
-                  <p className='text-red-400'>features/mailSlice.js</p>
-                  <Tutorial3382 />
-                  <p className='text-red-400'>features/userSlice.js</p>
-                  <Tutorial3383 />
-                  <p>Django REST Framework には多くの汎用ビューが存在しますので、どんどん活用していきましょう。 </p>
-                  <p>公式ドキュメント - Generic views </p>
-              </Layout_tutorial_33>
-                ) : id == 9 ? (
-                  <Layout_tutorial_33>
-                  <div className='flex'>
-                     <div className='mr-4 w-1/2'>
+                </div>
+            </div>
+            <h3>TailwindCSS インストール </h3>
+            <p>TailwindCSS は下記の公式ドキュメントを参考にインストールをしていきます。 </p>
+          
+            </Layout_tutorial_19>
+        ): id == 12 ? (
+          <Layout_tutorial_19>
+          <h3>トップページ作成</h3>
+          <p>トップページを修正していきます。</p>
      
-                         <h3>SendMail.js</h3>
-                         <p>iconを表示させます。</p>
-                         <p className='text-red-400'>Mail.js</p>
-                         <Tutorial3391 />
-                         <div class="flex p-4 mb-4 text-xl text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
-                             <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                             <div>
-                                 <span class="font-medium">history.push()</span>React-Routerでhistory.push()の引数に遷移先を指定することでページ遷移を行うことができます。
-                             </div>
-                         </div>
-                         <h4>React Hook formのインストール</h4>
-                         <Tutorial3392 />
-                     </div>
-                     <div className='w-1/2'>
-                     <p className='text-red-400'>SendMail.js</p>
-                     <Tutorial3399 />
-                     <p className='text-red-400'>SendMail.css</p>
-                     <Tutorial33910 />
-                     </div>
-                 </div>
-                 </Layout_tutorial_33>
-                ) : id == 10 ? (
-                  <Layout_tutorial_33>
-                  <div className='flex'>
-                     <div className='mr-4 w-1/2'>
-     
-                         <h3>firebase.js</h3>
-                         <p>firebaseをインストールします。</p>
-                         
-                         <Tutorial33101 />
-                         <p>srcフォルダの直下にfirebase.jsを作成します。</p>
-                         <div class="flex p-4 mb-4 text-xl text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
-                             <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                             <div>
-                                 <span class="font-medium">history.push()</span>React-Routerでhistory.push()の引数に遷移先を指定することでページ遷移を行うことができます。
-                             </div>
-                         </div>
-                         <h4>React Hook formのインストール</h4>
-                         <Tutorial33102 />
-                     </div>
-                     <div className='w-1/2'>
-                     <p className='text-red-400'>SendMail.js</p>
-                     <Tutorial33109 />
-                     <p className='text-red-400'>SendMail.css</p>
-                     <Tutorial331010 />
-                     </div>
-                 </div>
-                 </Layout_tutorial_33>
-                ) : (
-                    <></>
-                )}
-        </div>
-    )
+          <p>サーバー起動</p>
+       
+          <p>画面を表示すると、TailwindCSSという文字が表示されているはずです。</p>
+          <p>TailwindCSS</p>
+          <p>ここで少し TailwindCSS でスタイルを適応してみましょう</p>
+          <p>このチートシートを使用すると、どのクラス名を使用したらいいのかが分かります。</p>
+    
+          <p>TailwindCSS はclassNameを使用してスタイルを適応させます。。 </p>
+       
+    
+          <p>この例は、画面の中央にfont-size:128pxのテキストを配置しました。</p>
+          <p>TailwindCSSを使用すると簡単にスタイルを適応することができます </p>
+          <p>チートシートを使用して、色々なスタイルを適応してみましょう。</p>
+          <div className='justify-center flex'>
+            <Image
+              className='m-2 border border-black '
+              src="/images/programing/django/4.png"
+              alt="tailwindcss.com thumbnail image"
+              width={600}
+              height={675 / 2}
+            />
+          </div>
+          </Layout_tutorial_19>
+        )  : (
+          <></>
+        )}
+    </div>
+  )
 }
 
 export default Post
 
-const Tutorial3321 = () => {
+
+const Tutorial1921 = () => {
   const test = `
-  npx create-react-app slack-clone-youtube --template redux
+
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial1922 = () => {
+  const test = `
+
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial1923 = () => {
+  const test = `
+
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial1924 = () => {
+  const test = `
+import React from "react";
+import {Pie, Doughnut} from "react-chartjs-2";
+
+const data = {
+  labels = ["Windows", "Mac", "Linux"],
+  datasets = [
+      {
+          data: [90,7,3],
+          backgroundColor: [],
+          hoverBackgroundColor:
+          border
+      }
+  ]
+}
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial1925 = () => {
+  const test = `
+  import React from "react";
+  import {Bar, HorizontalBar} from "react-chartjs-2";
+  
+  const data = {
+      labels: ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+      datasets = [
+          {
+              label: "Demo bar plot",
+              backgroundColor: "#20b2aa",
+              hoverBackgroundColor: "#5f9ea0",
+              data: [50, 30, 70, 15, 50, 0, 100],
+          }
+      ]
+  }
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial1926 = () => {
+  const test = `
+  import React from "react";
+  import { Radar } from "react-chartjs-2";
+  
+  const data = {
+      labels: [
+          "React",
+          "Vue",
+          "Angular",
+          "JavaScript",
+          "TypeScript",
+          "Redux",
+          "REST API",
+      ],
+      datasets = [
+          {
+              label: "Person A",
+              backgroundColor: "rgba(179,181,198,0.2)",
+              borderColor: "#008b8b",
+              pointBackgroundColor: "#008b8b",
+              pointBorderColor: "#fff",
+              data: [100, 30, 70, 15, 50, 0, 100],
+          }
+      ]
+  }
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+const Tutorial1931 = () => {
+  const test = `
+  npm install @material-ui/core --legacy-peer-deps
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+
+const Tutorial1932 = () => {
+  const test = `
+import React from "react";
+import { Button } from "@material-ui/core";
+
+const MaterialUI: React.FC = () =>{
+  return(
+      <div>
+        <Button variant="contained" color="primary"></Button>
+      </div>
+  );
+};
+
+export default MaterialUI;
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+
+const Tutorial1933 = () => {
+  const test = `
+import React from "react";
+import { Button } from "@material-ui/core";
+
+const useStyles = makeStyles({
+  btnStyle:{
+      background:"green",
+      padding:"3px 50px"
+  }
+})
+
+
+const MaterialUI: React.FC = () =>{
+  const classes = useStyle();
+  return(
+      <div>
+        <Button className={classes.btnStyle} variant="contained" color="primary">
+          Test Button
+        </Button>
+      </div>
+  );
+};
+
+export default MaterialUI;
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+const Tutorial1941 = () => {
+  const test = `
+  npx create-react-app . --template redux-typescript --use-npm
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+
+const Tutorial1942 = () => {
+  const test = `
+  npm i @material-ui/core --legacy-peer-deps
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial1943 = () => {
+  const test = `
+  npm install chart.js@2.9.3
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial1944 = () => {
+  const test = `
+  npm install react-chartjs-2@2.9.0 --legacy-peer-deps
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial1945 = () => {
+  const test = `
+ npm install axios
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+const Tutorial1947 = () => {
+  const test = `
+  npm install react-countup
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial1948 = () => {
+  const test = `
+  npm install react-icons
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+const Tutorial1951 = () => {
+  const test = `
+
+  import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+  import { AppThunk, RootState } from '../../app/store';
+  
+  // ここでstateに保存する形を定義する
+  interface CounterState {
+    value: number;
+  }
+  // 初期値を定義する
+  const initialState: CounterState = {
+    value: 0,
+  };
+  
+  // Reducerの定義をする
+  export const counterSlice = createSlice({
+    name: 'counter',
+    initialState,
+    reducers: {
+      increment: state => {
+        state.value += 1;
+      },
+    },
+  });
+  
+  export const { increment } = counterSlice.actions;
+  
+  export const selectCount = (state: RootState) => state.counter.value;
+  
+  export default counterSlice.reducer;
+  
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+
+const Tutorial1952 = () => {
+  const test = `
+
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+
+const Tutorial1953 = () => {
+  const test = `
+
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+
+const Tutorial1954 = () => {
+  const test = `
+  (myvenv) ~$ python3 manage.py runserver
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+const Tutorial1661 = () => {
+  const test = `
+  from django.contrib import admin
+  from django.urls import path, include
+  
+  from django.conf.urls.static import static
+  from django.conf import settings
+  
+  urlpatterns = [
+      path('admin/', admin.site.urls),
+      path('api/', include('app.urls')),
+  ]
+  
+  if settings.DEBUG:
+      urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+
+const Tutorial1662 = () => {
+  const test = `
+  from django.urls import path
+  from app import views
+  
+  
+  urlpatterns = [
+      path('post/', views.PostView.as_view(), name='post'),
+      path('post/<str:pk>/', views.PostDetailView.as_view(), name='post-detail'),
+  ]
+  
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+const Tutorial1971 = () => {
+  const test = `
+  .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+    
+    .infected {
+      border-left: 5px solid #33a3ff;
+      border-radius: 0% !important;
+      margin: 2% 2% !important;
+    }
+    
+    .recovered {
+      border-left: 5px solid #3cb371;
+      border-radius: 0% !important;
+      margin: 2% 2% !important;
+    }
+    
+    .deaths {
+      border-left: 5px solid #ff3370;
+      border-radius: 0% !important;
+      margin: 2% 2% !important;
+    }
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial1972 = () => {
+  const test = `
+  import React from "react";
+  import styles from "./Cards.module.css";
+  import CountUp from "react-countup";
+  import { Card, CardContent, Typography, Grid } from "@material-ui/core";
+  
+  import { GiHastyGrave } from "react-icons/gi";
+  import { MdLocalHospital } from "react-icons/md";
+  import { AiFillLike } from "react-icons/ai";
+  
+  import { useSelector } from "react-redux";
+  import { selectData } from "../covidSlice";
+  
+  const Cards: React.FC = () => {
+    const data = useSelector(selectData);
+    return (
+      <div className={styles.container}>
+        <Grid container spacing={1} justify="center">
+          <Grid item xs={12} md={3} component={Card} className={styles.infected}>
+            <CardContent>
+              <Typography color="textSecondary" gutterBottom>
+                <MdLocalHospital />
+                Infected persons
+              </Typography>
+              <Typography variant="h5">
+                {/* <CountUp
+                  start={0}
+                  end={data.confirmed.value}
+                  duration={1.5}
+                  separator=","
+                /> */}
+                {data.confirmed.value}
+              </Typography>
+            </CardContent>
+          </Grid>
+          <Grid item xs={12} md={3} component={Card} className={styles.recovered}>
+            <CardContent>
+              <Typography color="textSecondary" gutterBottom>
+                <AiFillLike /> Recovered persons
+              </Typography>
+              <Typography variant="h5">
+                <CountUp
+                  start={0}
+                  end={data.recovered.value}
+                  duration={1.5}
+                  separator=","
+                />
+              </Typography>
+            </CardContent>
+          </Grid>
+          <Grid item xs={12} md={3} component={Card} className={styles.deaths}>
+            <CardContent>
+              <Typography color="textSecondary" gutterBottom>
+                <GiHastyGrave />
+                Dead persons
+              </Typography>
+              <Typography variant="h5">
+                <CountUp
+                  start={0}
+                  end={data.deaths.value}
+                  duration={1.5}
+                  separator=","
+                />
+              </Typography>
+            </CardContent>
+          </Grid>
+        </Grid>
+      </div>
+    );
+  };
+  
+  export default Cards;
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+const Tutorial1973 = () => {
+  const test = `
+  <Grid item xs={12} md={3} component={Card} className={styles.infected}>
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial1981 = () => {
+  const test = `
+  .container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
   `
   return (
       <SyntaxHighlighter language="js" style={syntaxStyle} >
@@ -345,23 +913,76 @@ const Tutorial3321 = () => {
   );
 };
 
-
-
-const Tutorial3322 = () => {
+const Tutorial1982 = () => {
   const test = `
-
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-
-
-const Tutorial3323 = () => {
-  const test = `
+  import React from "react";
+  import styles from "./Chart.module.css";
+  import { Line, Bar } from "react-chartjs-2";
+  
+  import { useSelector } from "react-redux";
+  import { selectData, selectDailyData, selectCountry } from "../covidSlice";
+  
+  const Chart: React.FC = () => {
+    const data = useSelector(selectData);
+    const dailyData = useSelector(selectDailyData);
+    const country = useSelector(selectCountry);
+  
+    const barChart = data && (
+      <Bar
+        data={{
+          labels: ["Infected", "Recovered", "Deaths"],
+          datasets: [
+            {
+              backgroundColor: [
+                "rgba(0, 0, 255, 0.5)",
+                "#008080",
+                "rgba(255, 0, 0, 0.5)",
+              ],
+              data: [
+                data.confirmed.value,
+                data.recovered.value,
+                data.deaths.value,
+              ],
+            },
+          ],
+        }}
+        options={{
+          legend: { display: false },
+          title: { display: true, text: ’Latest status in $｛country｝’ },
+        }}
+      />
+    );
+  
+    const lineChart = dailyData[0] && (
+      <Line
+        data={{
+          labels: dailyData.map(({ reportDate }) => reportDate),
+          datasets: [
+            {
+              data: dailyData.map((data) => data.confirmed.total),
+              label: "Infected",
+              borderColor: "#3333ff",
+              fill: true,
+            },
+            {
+              data: dailyData.map((data) => data.deaths.total),
+              label: "Deaths",
+              borderColor: "#ff3370",
+              fill: true,
+            },
+          ],
+        }}
+      />
+    );
+  
+    return (
+      <div className={styles.container}>
+        {country.length ? barChart : lineChart}
+      </div>
+    );
+  };
+  
+  export default Chart;
   
   `
   return (
@@ -372,28 +993,9 @@ const Tutorial3323 = () => {
 };
 
 
-const Tutorial3324 = () => {
+const Tutorial1983 = () => {
   const test = `
-* {
-  margin: 0;
-}
-
-body {
-  --slack-color: #3f0f40;
-  overflow: hidden;
-
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+  legend: { display: false }
   `
   return (
       <SyntaxHighlighter language="js" style={syntaxStyle} >
@@ -402,7 +1004,283 @@ code {
   );
 };
 
-const Tutorial3725 = () => {
+const Tutorial1984 = () => {
+  const test = `
+  Latest status in ＄{country}
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial1991 = () => {
+  const test = `
+  import React from "react";
+import { Typography } from "@material-ui/core";
+import { Doughnut } from "react-chartjs-2";
+
+import { useSelector } from "react-redux";
+import { selectData } from "../covidSlice";
+
+const PieChart: React.FC = () => {
+const data = useSelector(selectData);
+const motality =
+  data.confirmed && (100 * data.deaths.value) / data.confirmed.value;
+
+const pieChart = data && (
+  <Doughnut
+    data={{
+      labels: ["Infected", "Recovered", "Deaths"],
+      datasets: [
+        {
+          data: [
+            data.confirmed.value,
+            data.recovered.value,
+            data.deaths.value,
+          ],
+          backgroundColor: [
+            "rgba(0, 0, 255, 0.5)",
+            "#008080",
+            "rgba(255, 0, 0, 0.5)",
+          ],
+          hoverBackgroundColor: ["#36A2EB", "#3cb371", "#FF6384"],
+          borderColor: ["transparent", "transparent", "transparent"],
+        },
+      ],
+    }}
+    options={{
+      legend: {
+        position: "bottom",
+        labels: {
+          boxWidth: 15,
+        },
+      },
+    }}
+  />
+);
+
+return (
+  <>
+    {data.confirmed && (
+      <Typography align="center" color="textSecondary" gutterBottom>
+        Motarity {data.confirmed && motality.toFixed(2)} [%]
+      </Typography>
+    )}
+    {pieChart}
+  </>
+);
+};
+
+export default PieChart;
+
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial1992 = () => {
+  const test = `
+  const motality =
+  data.confirmed && (100 * data.deaths.value) / data.confirmed.value;
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial19101 = () => {
+  const test = `
+  import React from "react";
+  import { makeStyles } from "@material-ui/core/styles";
+  import { NativeSelect, FormControl } from "@material-ui/core";
+  
+  import { useDispatch } from "react-redux";
+  import { fetchAsyncGetCountry } from "../covidSlice";
+  
+  const useStyles = makeStyles((theme) => ({
+    formControl: {
+      marginBottom: theme.spacing(3),
+      minWidth: 320,
+    },
+  }));
+  
+  const SwitchCoutry: React.FC = () => {
+    const classes = useStyles();
+    const dispatch = useDispatch();
+  
+    const countries = [
+      "japan",
+      "china",
+      "us",
+      "france",
+      "italy",
+      "spain",
+      "united kingdom",
+      "germany",
+      "russia",
+      "brazil",
+      "taiwan",
+      "thailand",
+      "new zealand",
+      "sweden",
+      "india",
+    ];
+  
+    return (
+      <FormControl className={classes.formControl}>
+        <NativeSelect
+          onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+            dispatch(fetchAsyncGetCountry(e.target.value))
+          }
+        >
+          <option value="">Worldwide</option>
+          {countries.map((country, i) => (
+            <option key={i} value={country}>
+              {country}
+            </option>
+          ))}
+        </NativeSelect>
+      </FormControl>
+    );
+  };
+  
+  export default SwitchCoutry;
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+
+
+const Tutorial19102 = () => {
+  const test = `
+  dispatch(fetchAsyncGetCountry(e.target.value))
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial19111 = () => {
+  const test = `
+  .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }      
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+
+
+const Tutorial19112 = () => {
+  const test = `
+  import React, { useEffect } from "react";
+  import styles from "./DashBoard.module.css";
+  import { makeStyles } from "@material-ui/core/styles";
+  import {
+    AppBar,
+    Toolbar,
+    Typography,
+    Container,
+    Grid,
+  } from "@material-ui/core";
+  
+  import { useSelector } from "react-redux";
+  import { useDispatch } from "react-redux";
+  
+  import { fetchAsyncGet, fetchAsyncGetDaily, selectData } from "../covidSlice";
+  import Cards from "../Cards/Cards";
+  import Chart from "../Chart/Chart";
+  import PieChart from "../PieChart/PieChart";
+  import SwithCountry from "../SwitchCountry/SwitchCountry";
+  
+  const useStyles = makeStyles((theme) => ({
+    title: {
+      flexGrow: 1,
+    },
+    content: {
+      marginTop: 85,
+    },
+  }));
+  
+  const DashBoard: React.FC = () => {
+    const classes = useStyles();
+    const dispatch = useDispatch();
+    const data = useSelector(selectData);
+  
+    useEffect(() => {
+      dispatch(fetchAsyncGet());
+      dispatch(fetchAsyncGetDaily());
+    }, [dispatch]);
+  
+    return (
+      <div>
+        <AppBar position="absolute">
+          <Toolbar>
+            <Typography variant="h6" className={classes.title}>
+              Covid 19 Live Dashboard
+            </Typography>
+            {data && (
+              <Typography variant="body1">
+                {new Date(data.lastUpdate).toDateString()}
+              </Typography>
+            )}
+          </Toolbar>
+        </AppBar>
+        <Container className={classes.content}>
+          <div className={styles.container}>
+            <SwithCountry />
+          </div>
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={7}>
+              <Chart />
+            </Grid>
+  
+            <Grid item xs={12} md={5}>
+              <PieChart />
+            </Grid>
+  
+            <Grid item xs={12} md={12}>
+              <Cards />
+            </Grid>
+          </Grid>
+        </Container>
+      </div>
+    );
+  };
+  
+  export default DashBoard;
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+
+
+const Tutorial16113 = () => {
   const test = `
   @tailwind base;
   @tailwind components;
@@ -415,1208 +1293,4 @@ const Tutorial3725 = () => {
   );
 };
 
-const Tutorial3726 = () => {
-  const test = `
-  import Head from 'next/head'
-  
-  export default function Home() {
-    return (
-      <div>
-        <Head>
-          <title>Hulu 2.0</title>
-          <meta name="description" content="Generated by create next app" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <h1>Lets build Hulu 2.0</h1>
-      </div>
-    )
-  }
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
 
-
-const Tutorial3331 = () => {
-  const test = `
-  import React from 'react';
-  import Link from 'next/link';
-  
-  function Header() {
-      return (
-          <header className="flex justify-between p-5 m-w-7xl mx-auto">
-  
-  
-              <div className="flex items-center space-x-5">
-                  <Link href="/">
-                      <img className="w-44 object-contain cursor-pointer" src="https://links.papareact.com/yvf" alt="" />
-                  </Link>
-                  <div className="hidden md:inline-flex items-center space-x-5">
-                      <h3>About</h3>
-                      <h3>Contact</h3>
-                      <h3 className="text-white bg-green-600 px-4 py-1 rounded-full">Follow</h3>
-                  </div>
-              </div>
-              <div className="flex items-center space-x-5 text-green-600">
-                  <h3>Sign In</h3>
-                  <h3 className="border px-4 py-1 rounded-full border-green-600">Get Started</h3>
-                  
-                  </div>
-          </header>
-      )
-  }
-  
-  export default Header
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-
-
-const Tutorial3332 = () => {
-  const test = `
-  import React from 'react';
-  import './App.css';
-  import Header from './Header';
-
-  function App() {
-    return (
-      <div className="App">
-       <Header />
-      </div>
-    );
-  }
-  export default App;
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-
-const Tutorial3333 = () => {
-  const test = `
-  npm install @mui/material @emotion/react @emotion/styled
-`
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-
-
-const Tutorial3334 = () => {
-  const test = `
-  npm install @mui/icons-material
-`
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-
-const Tutorial3335 = () => {
-  const test = `
- npm add styled-components
-`
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-
-const Tutorial3336 = () => {
-  const test = `
-  "resolutions": { 
-      "styled-components": "^5" 
-    }
-`
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial3037 = () => {
-  const test = `
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-body {
-  @apply bg-[#06202A]  text-gray-300;
-}
-}
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial3038 = () => {
-  const test = `
-  function HeaderItem({ Icon, title }) {
-      return (
-        <div className="flex flex-col items-center group cursor-pointer w-12 sm:w-20 hover:text-white">
-          <Icon className="h-8 mb-1 group-hover:animate-bounce" />
-          <p className="opacity-0 group-hover:opacity-100 tracking-widest">
-            {title}
-          </p>
-        </div>
-      );
-    }
-    
-    export default HeaderItem;
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-
-const Tutorial3341 = () => {
-  const test = `
-  import { useRouter } from "next/router";
-  import requests from "../utils/requests";
-  
-  function Nav() {
-    const router = useRouter();
-  
-    return (
-      <nav className="relative">
-        <div className="flex px-10 sm:px-20 text-2xl whitespace-nowrap space-x-10 sm:space-x-20 overflow-x-scroll scrollbar-hide">
-          {Object.entries(requests).map(([key, { title, url }]) => (
-            <h2
-              key={key}
-              className="last:pr-24 cursor-pointer transition duration-100 transform hover:scale-125 hover:text-white active:text-red-500"
-              onClick={() => router.push('/?genre=＄{key}')}
-            >
-              {title}
-            </h2>
-          ))}
-        </div>
-        <div className="absolute top-0 right-0 bg-gradient-to-l from-[#06202A] h-10 w-1/12" />
-      </nav>
-    );
-  }
-  
-  export default Nav;
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial3342 = () => {
-const test = `
-// Typically we would store in {process.env.API_KEY}
-const API_KEY = process.env.API_KEY;
-
-export default {
-  fetchTrending: {
-    title: "Trending",
-    url: '/trending/all/week?api_key=＄{API_KEY}&language=en-US',
-  },
-  fetchTopRated: {
-    title: "Top Rated",
-    url: '/movie/top_rated?api_key=＄{API_KEY}&language=en-US',
-  },
-  fetchActionMovies: {
-    title: "Action",
-    url: '/discover/movie?api_key=＄{API_KEY}&with_genres=28',
-  },
-  fetchComedyMovies: {
-    title: "Comedy",
-    url: '/discover/movie?api_key=＄{API_KEY}&with_genres=35',
-  },
-  fetchHorrorMovies: {
-    title: "Horror",
-    url: '/discover/movie?api_key=＄{API_KEY}&with_genres=27',
-  },
-  fetchRomanceMovies: {
-    title: "Romance",
-    url: '/discover/movie?api_key=＄{API_KEY}&with_genres=10749',
-  },
-  fetchMystery: {
-    title: "Mystery",
-    url: '/discover/movie?api_key=＄{API_KEY}&with_genres=9648',
-  },
-  fetchSciFi: {
-    title: "Sci-Fi",
-    url: '/discover/movie?api_key=＄{API_KEY}&with_genres=878',
-  },
-  fetchWestern: {
-    title: "Western",
-    url: '/discover/movie?api_key=＄{API_KEY}&with_genres=37',
-  },
-  fetchAnimation: {
-    title: "Animation",
-    url: '/discover/movie?api_key=＄{API_KEY}&with_genres=16',
-  },
-  fetchTV: {
-    title: "TV Movie",
-    url: '/discover/movie?api_key=＄{API_KEY}&with_genres=10770',
-  },
-};
-`
-return (
-    <SyntaxHighlighter language="js" style={syntaxStyle} >
-        {test}
-    </SyntaxHighlighter>
-);
-};
-
-const Tutorial3343 = () => {
-const test = `
-plugins: [require("tailwind-scrollbar-hide")],
-`
-return (
-    <SyntaxHighlighter language="js" style={syntaxStyle} >
-        {test}
-    </SyntaxHighlighter>
-);
-};
-
-const Tutorial3344 = () => {
-const test = `
-npm i tailwind-scrollbar-hide
-`
-return (
-    <SyntaxHighlighter language="js" style={syntaxStyle} >
-        {test}
-    </SyntaxHighlighter>
-);
-};
-
-const Tutorial3345 = () => {
-const test = `
-<div className="absolute top-0 right-0 bg-gradient-to-l from-[#06202A] h-10 w-1/12" />
-`
-return (
-    <SyntaxHighlighter language="js" style={syntaxStyle} >
-        {test}
-    </SyntaxHighlighter>
-);
-};
-
-const Tutorial3346 = () => {
-const test = `
-import Head from "next/head";
-import Header from "../components/Header";
-import Nav from "../components/Nav";
-import Results from "../components/Results";
-import requests from "../utils/requests";
-
-export default function Home({ results }) {
-console.log(results);
-
-return (
-  <div>
-    <Head>
-      <title>Hulu</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-
-    <Header />
-    <Nav />
-    <Results results={results} />
-  </div>
-);
-}
-
-export async function getServerSideProps(context) {
-const genre = context.query.genre;
-
-const request = await fetch(
-  'https://api.themoviedb.org/3＄{
-    requests[genre]?.url || requests.fetchTrending.url
-  }'
-).then((res) => res.json());
-
-return {
-  props: {
-    results: request.results,
-  },
-};
-}
-`
-return (
-    <SyntaxHighlighter language="js" style={syntaxStyle} >
-        {test}
-    </SyntaxHighlighter>
-);
-};
-
-const Tutorial3347 = () => {
-const test = `
-const request = await fetch(
-  'https://api.themoviedb.org/3＄{
-    requests[genre]?.url || requests.fetchTrending.url
-  }'
-).then((res) => res.json());
-`
-return (
-    <SyntaxHighlighter language="js" style={syntaxStyle} >
-        {test}
-    </SyntaxHighlighter>
-);
-};
-
-
-const Tutorial3351 = () => {
-  const test = `
-npm add react-router-dom
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-
-
-const Tutorial3352 = () => {
-  const test = `
-  function App() {
-    return (
-      <Router>
-        <div className="app">
-          <Header />
-          <Sidebar />
-        </div>
-      </Router>
-    );
-  }
-    
-    export default App;
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-
-
-const Tutorial3353 = () => {
-  const test = `
-  function App() {
-      return (
-        <Router>
-          <div className="app">
-            <Header />
-            <div className='app_body'>
-              <Sidebar />
-              <Switch>
-                <Route path="/mail">
-                  <Mail />
-                </Route>
-                <Route path="/">
-                  <EmailList />
-                </Route>
-              </Switch>
-            </div>
-          </div>
-        </Router>
-      );
-    }
-    export default App;
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial3354 = () => {
-  const test = `
-  function App() {
-      return (
-        <Router>
-          <div className="app">
-            <Header />
-            <div className='app_body'>
-              <Sidebar />
-              <Switch>
-                <Route path="/mail">
-                  <Mail />
-                </Route>
-                <Route path="/">
-                  <EmailList />
-                </Route>
-              </Switch>
-            </div>
-          </div>
-        </Router>
-      );
-    }
-    export default App;
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial3355 = () => {
-  const test = `
-  function App() {
-      return (
-        <Router>
-          <div className="app">
-            <Header />
-            <div className='app_body'>
-              <Sidebar />
-              <Switch>
-                <Route path="/mail">
-                  <Mail />
-                </Route>
-                <Route path="/">
-                  <EmailList />
-                </Route>
-              </Switch>
-            </div>
-          </div>
-        </Router>
-      );
-    }
-    export default App;
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial3358 = () => {
-const test = `
-npm add react-router-dom@5
-`
-return (
-    <SyntaxHighlighter language="js" style={syntaxStyle} >
-        {test}
-    </SyntaxHighlighter>
-);
-};
-
-
-const Tutorial3761 = () => {
-  const test = `
-  import Thumbnail from "./Thumbnail";
-  import FlipMove from "react-flip-move";
-  
-  function Results({ results }) {
-    return (
-      <FlipMove className="px-5 my-10 sm:grid md:grid-cols-2 xl:grid-cols-3 3xl:flex flex-wrap justify-center">
-        {results.map((result) => (
-          <Thumbnail key={result.id} result={result} />
-        ))}
-      </FlipMove>
-    );
-  }
-  
-  export default Results;
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-
-
-const Tutorial3762 = () => {
-  const test = `
-  <div className="col-span-7 max-h-screen overflow-scroll border-x scrollbar-hide lg:col-span-5">
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial3763 = () => {
-  const test = `
-  <div className="col-span-2 mt-2 hidden items-start px-2 lg:inline">
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial3764 = () => {
-  const test = `
-  npm add react-flip-move
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-
-const Tutorial3371 = () => {
-  const test = `
-<IconButton onClick={() => history.push("/")}>
-  <ArrowBackIcon />
-</IconButton>
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial3379 = () => {
-  const test = `
-  import { IconButton } from '@mui/material' 
-  import React from 'react' 
-  import "./Mail.css"; 
-  import { useHistory } from "react-router-dom"; 
-  import ArrowBackIcon from '@mui/icons-material/ArrowBack'; 
-  import MoveToInboxIcon from '@mui/icons-material/MoveToInbox'; 
-  import ErrorIcon from '@mui/icons-material/Error'; 
-  import DeleteIcon from '@mui/icons-material/Delete'; 
-  import EmailIcon from '@mui/icons-material/Email'; 
-  import WatchLaterIcon from '@mui/icons-material/WatchLater'; 
-  import CheckCircleIcon from '@mui/icons-material/CheckCircle'; 
-  import LabelImportantIcon from '@mui/icons-material/LabelImportant'; 
-  import MoreVertIcon from '@mui/icons-material/MoreVert'; 
-  import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore'; 
-  import PrintIcon from '@mui/icons-material/Print'; 
-  import ExitToAppIcon from '@mui/icons-material/ExitToApp'; 
-  function Mail() { 
-      const history = useHistory(); 
-      return ( 
-          <div className='mail'> 
-              <div className='mail__tools'> 
-                  <div className='mail__toolsLeft'> 
-                      <IconButton onClick={() => history.push("/")}> 
-                          <ArrowBackIcon /> 
-                      </IconButton> 
-                      <IconButton> 
-                          <MoveToInboxIcon /> 
-                      </IconButton> 
-                      <IconButton> 
-                          <ErrorIcon /> 
-                      </IconButton> 
-                      <IconButton> 
-                          <DeleteIcon /> 
-                      </IconButton> 
-                      <IconButton> 
-                          <EmailIcon /> 
-                      </IconButton> 
-                      <IconButton> 
-                          <WatchLaterIcon /> 
-                      </IconButton> 
-                      <IconButton> 
-                          <CheckCircleIcon /> 
-                      </IconButton> 
-                      <IconButton> 
-                          <LabelImportantIcon /> 
-                      </IconButton> 
-                      <IconButton> 
-                          <MoreVertIcon /> 
-                      </IconButton> 
-                  </div> 
-                  <div className='mail__toolsRight'> 
-                      <IconButton> 
-                          <UnfoldMoreIcon /> 
-                      </IconButton> 
-                      <IconButton> 
-                          <PrintIcon /> 
-                      </IconButton> 
-                      <IconButton> 
-                          <ExitToAppIcon /> 
-                      </IconButton> 
-                  </div> 
-              </div> 
-          </div> 
-      ) 
-  } 
-  export default Mail
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial33710 = () => {
-  const test = `
-  .mail {
-      flex: 1;
-      background-color: whitesmoke;
-    }
-    
-    .mail__tools {
-      display: flex;
-      justify-content: space-between;
-      background-color: white;
-    }
-    
-    .mail__toolsLeft {
-      display: flex;
-    }
-    
-    .mail__body {
-      display: flex;
-      flex-direction: column;
-      margin: 30px;
-      background-color: white;
-      padding: 20px;
-      height: 100vh;
-      box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.24);
-    }
-    
-    .mail__bodyHeader {
-      display: flex;
-      align-items: center;
-      border-bottom: 1px solid whitesmoke;
-      padding: 20px;
-      position: relative;
-    }
-    
-    .mail__important {
-      color: #e8ab02 !important;
-    }
-    
-    .mail__bodyHeader > h2 {
-      font-weight: 400;
-      margin-right: 20px;
-    }
-    
-    .mail__bodyHeader > p {
-      margin-left: 20px;
-    }
-    
-    .mail__time {
-      position: absolute;
-      top: 24px;
-      right: 0;
-      font-size: 12px;
-      color: gray;
-    }
-    
-    .mail__message > p {
-      padding: 10px;
-      margin-right: 20px;
-      overflow-wrap: break-word;
-    }
-    
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-
-const Tutorial3381 = () => {
-  const test = `
-import { configureStore } from "@reduxjs/toolkit";
-import mailReducer from "../features/mailSlice";
-import userReducer from "../features/userSlice";
-
-export default configureStore({
-reducer: {
-  mail: mailReducer,
-  user: userReducer,
-},
-});
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial3382 = () => {
-  const test = `
-  import { createSlice } from "@reduxjs/toolkit";
-
-  export const mailSlice = createSlice({
-    name: "mail",
-    initialState: {
-      selectedMail: null,
-      sendMessageIsOpen: false,
-    },
-    reducers: {
-      selectMail: (state, action) => {
-        state.selectedMail = action.payload;
-      },
-      openSendMessage: (state) => {
-        state.sendMessageIsOpen = true;
-      },
-      closeSendMessage: (state) => {
-        state.sendMessageIsOpen = false;
-      },
-    },
-  });
-  
-  export const {
-    selectMail,
-    openSendMessage,
-    closeSendMessage,
-  } = mailSlice.actions;
-  
-  export const selectOpenMail = (state) => state.mail.selectedMail;
-  export const selectSendMessageIsOpen = (state) => state.mail.sendMessageIsOpen;
-  
-  export default mailSlice.reducer;
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial3383 = () => {
-  const test = `
-  import { createSlice } from "@reduxjs/toolkit";
-
-  export const userSlice = createSlice({
-    name: "user",
-    initialState: {
-      user: null,
-    },
-    reducers: {
-      login: (state, action) => {
-        state.user = action.payload;
-      },
-      logout: (state) => {
-        state.user = null;
-      },
-    },
-  });
-  
-  export const { login, logout } = userSlice.actions;
-  
-  export const selectUser = (state) => state.user.user;
-  
-  export default userSlice.reducer;
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-
-const Tutorial3391 = () => {
-  const test = `
-  (myvenv) ~$ python3 manage.py runserver
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial3392 = () => {
-  const test = `
-  npm add react-hook-form        
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial3399 = () => {
-  const test = `
-  import React from "react";
-  import "./SendMail.css";
-  import CloseIcon from "@material-ui/icons/Close";
-  import { Button } from "@material-ui/core";
-  import { useForm } from "react-hook-form";
-  import { useDispatch } from "react-redux";
-  import { closeSendMessage } from "./features/mailSlice";
-  import { db } from "./firebase";
-  import firebase from "firebase";
-  
-  function SendMail() {
-    const { register, handleSubmit, watch, errors } = useForm();
-    const dispatch = useDispatch();
-  
-    const onSubmit = (formData) => {
-      console.log(formData);
-      db.collection("emails").add({
-        to: formData.to,
-        subject: formData.subject,
-        message: formData.message,
-        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-      });
-  
-      dispatch(closeSendMessage());
-    };
-  
-    return (
-      <div className="sendMail">
-        <div className="sendMail__header">
-          <h3>New Message</h3>
-          <CloseIcon
-            onClick={() => dispatch(closeSendMessage())}
-            className="sendMail__close"
-          />
-        </div>
-  
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <input
-            name="to"
-            placeholder="To"
-            type="email"
-            ref={register({ required: true })}
-          />
-          {errors.to && <p className="sendMail__error">To is Required!</p>}
-  
-          <input
-            name="subject"
-            placeholder="Subject"
-            type="text"
-            ref={register({ required: true })}
-          />
-          {errors.subject && (
-            <p className="sendMail__error">Subject is Required!</p>
-          )}
-  
-          <input
-            name="message"
-            placeholder="Message..."
-            type="text"
-            className="sendMail__message"
-            ref={register({ required: true })}
-          />
-          {errors.message && (
-            <p className="sendMail__error">Message is Required!</p>
-          )}
-  
-          <div className="sendMail__options">
-            <Button
-              className="sendMail__send"
-              variant="contained"
-              color="primary"
-              type="submit"
-            >
-              Send
-            </Button>
-          </div>
-        </form>
-      </div>
-    );
-  }
-  
-  export default SendMail;
-  
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial33910 = () => {
-  const test = `
-  .sendMail {
-      position: absolute;
-      bottom: 0px;
-      right: 50px;
-      background-color: #404040;
-      width: 40%;
-      height: 40%;
-      max-width: 500px;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      border: 1px solid whitesmoke;
-      box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.24);
-    }
-    
-    .sendMail__header {
-      padding: 13px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: gray;
-    }
-    
-    .sendMail__header > h3 {
-      color: whitesmoke;
-      font-size: 13px;
-    }
-    
-    .sendMail__send {
-      background-color: #3079ed !important;
-      text-transform: capitalize !important;
-      margin: 15px !important;
-    }
-    
-    .sendMail__close {
-      cursor: pointer;
-    }
-    
-    .sendMail > form {
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-    }
-    
-    .sendMail__error {
-      background-color: white;
-      color: red;
-      text-align: right;
-      padding: 2px;
-    }
-    
-    .sendMail > form > input {
-      height: 30px;
-      padding: 10px;
-      border: none;
-      border-bottom: 1px solid whitesmoke;
-      outline: none;
-    }
-    
-    .sendMail__message {
-      flex: 1;
-    }
-    
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-
-const Tutorial33101 = () => {
-  const test = `
-  npm add firebase
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial33102 = () => {
-  const test = `
-  npm add react-hook-form        
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial33109 = () => {
-  const test = `
-  import React from "react";
-  import "./SendMail.css";
-  import CloseIcon from "@material-ui/icons/Close";
-  import { Button } from "@material-ui/core";
-  import { useForm } from "react-hook-form";
-  import { useDispatch } from "react-redux";
-  import { closeSendMessage } from "./features/mailSlice";
-  import { db } from "./firebase";
-  import firebase from "firebase";
-  
-  function SendMail() {
-    const { register, handleSubmit, watch, errors } = useForm();
-    const dispatch = useDispatch();
-  
-    const onSubmit = (formData) => {
-      console.log(formData);
-      db.collection("emails").add({
-        to: formData.to,
-        subject: formData.subject,
-        message: formData.message,
-        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-      });
-  
-      dispatch(closeSendMessage());
-    };
-  
-    return (
-      <div className="sendMail">
-        <div className="sendMail__header">
-          <h3>New Message</h3>
-          <CloseIcon
-            onClick={() => dispatch(closeSendMessage())}
-            className="sendMail__close"
-          />
-        </div>
-  
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <input
-            name="to"
-            placeholder="To"
-            type="email"
-            ref={register({ required: true })}
-          />
-          {errors.to && <p className="sendMail__error">To is Required!</p>}
-  
-          <input
-            name="subject"
-            placeholder="Subject"
-            type="text"
-            ref={register({ required: true })}
-          />
-          {errors.subject && (
-            <p className="sendMail__error">Subject is Required!</p>
-          )}
-  
-          <input
-            name="message"
-            placeholder="Message..."
-            type="text"
-            className="sendMail__message"
-            ref={register({ required: true })}
-          />
-          {errors.message && (
-            <p className="sendMail__error">Message is Required!</p>
-          )}
-  
-          <div className="sendMail__options">
-            <Button
-              className="sendMail__send"
-              variant="contained"
-              color="primary"
-              type="submit"
-            >
-              Send
-            </Button>
-          </div>
-        </form>
-      </div>
-    );
-  }
-  
-  export default SendMail;
-  
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};
-
-const Tutorial331010 = () => {
-  const test = `
-  .sendMail {
-      position: absolute;
-      bottom: 0px;
-      right: 50px;
-      background-color: #404040;
-      width: 40%;
-      height: 40%;
-      max-width: 500px;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      border: 1px solid whitesmoke;
-      box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.24);
-    }
-    
-    .sendMail__header {
-      padding: 13px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: gray;
-    }
-    
-    .sendMail__header > h3 {
-      color: whitesmoke;
-      font-size: 13px;
-    }
-    
-    .sendMail__send {
-      background-color: #3079ed !important;
-      text-transform: capitalize !important;
-      margin: 15px !important;
-    }
-    
-    .sendMail__close {
-      cursor: pointer;
-    }
-    
-    .sendMail > form {
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-    }
-    
-    .sendMail__error {
-      background-color: white;
-      color: red;
-      text-align: right;
-      padding: 2px;
-    }
-    
-    .sendMail > form > input {
-      height: 30px;
-      padding: 10px;
-      border: none;
-      border-bottom: 1px solid whitesmoke;
-      outline: none;
-    }
-    
-    .sendMail__message {
-      flex: 1;
-    }
-    
-  `
-  return (
-      <SyntaxHighlighter language="js" style={syntaxStyle} >
-          {test}
-      </SyntaxHighlighter>
-  );
-};

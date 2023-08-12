@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import { useRouter } from 'next/router'
 import { Header_only } from '../../components/header/header';
-import { AWS, DATASCIENCE, DESIGN, Docker, GIT, HTML, JavaScript, LINUX, Nodejs, PHP, Python, SCRAPING, SQL, TypeScript } from '../../components/engineer';
+import { AWS, DATASCIENCE, DESIGN, Docker, GIT, HTML, JavaScript, LINUX, Nodejs, PHP, Python, SCRAPING, SQL, TypeScript, JQUERY } from '../../components/engineer';
 
 const Post = () => {
     const router = useRouter()
@@ -72,6 +72,12 @@ const Post = () => {
     ];
 
     const htmls = [
+        { id: 1, name: "HTML&CSS初級編", title: "Djangoブログシステム構築", href: "./html/engineer_html_detail" },
+        { id: 2, name: "HTML&CSS中級編", title: "Djangoブログシステム構築", href: "./html/engineer_html2_detail" },
+
+    ];
+
+    const jquerys = [
         { id: 1, name: "HTML&CSS初級編", title: "Djangoブログシステム構築", href: "./html/engineer_html_detail" },
         { id: 2, name: "HTML&CSS中級編", title: "Djangoブログシステム構築", href: "./html/engineer_html2_detail" },
 
@@ -262,6 +268,28 @@ const Post = () => {
                                 </div>
                                 <div className="flex flex-col mb-5">
                                     {htmls && htmls.map((html) => <HTML key={html.id} html={html} />)}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ) : id == "engineer_jquery_chapter" ? (
+                    <div>
+                        <Header_only />
+                        <div className='flex justify-start'>
+                            <Link href="/engineer/engineer">
+                                <div className="text-4xl pl-10 pt-4">
+                                    <FontAwesomeIcon icon={faArrowCircleLeft} size="lg" />
+                                </div>
+                            </Link>
+                        </div>
+                        <div className='flex justify-center'>
+                            <div className="w-1/2 m-10 ">
+                                <div className='text-center'>
+                                    <h1>JQuery</h1>
+                                    <p></p>
+                                </div>
+                                <div className="flex flex-col mb-5">
+                                    {jquerys && jquerys.map((jquery) => <JQUERY key={jquery.id} jquery={jquery} />)}
                                 </div>
                             </div>
                         </div>

@@ -35,7 +35,7 @@ const Post = () => {
                             <div class="flex flex-nowrap">
                                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -51,7 +51,7 @@ const Post = () => {
 
                                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -67,7 +67,7 @@ const Post = () => {
 
                                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -83,7 +83,7 @@ const Post = () => {
 
                                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -167,7 +167,7 @@ const Post = () => {
                             <div class="flex content-between">
                                 <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2 w-1/5">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-3">
                                         <a href="#">
@@ -205,7 +205,7 @@ const Post = () => {
                                         <span class="font-medium">なぜBabel(=トランスコンパイラ)が必要なのか</span>全てのブラウザがES6に対応していないから。そのためES6で書いたJavaScriptをES5に変換してから利用する必要がある
                                     </div>
                                 </div>
-                                <p>このスクリプトでやっていることはid="root"のElementを取り出してReactDOM.renderで用意したエレメントを表示しているだけです</p>
+                                <p>このスクリプトでやっていることはid=&quot;root&quot;のElementを取り出してReactDOM.renderで用意したエレメントを表示しているだけです</p>
 
                                 <p>JSXで記述した値はそのまま仮想DOMのElementオブジェクトとして扱うことができます。つまりcreateElementしなくてもいいのです</p>
 
@@ -238,7 +238,7 @@ const Post = () => {
                         <div class="flex flex-nowrap">
                             <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                 <a href="#">
-                                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                 </a>
                                 <div class="p-5">
                                     <a href="#">
@@ -254,7 +254,7 @@ const Post = () => {
 
                             <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                 <a href="#">
-                                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                 </a>
                                 <div class="p-5">
                                     <a href="#">
@@ -270,7 +270,7 @@ const Post = () => {
 
                             <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                 <a href="#">
-                                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                 </a>
                                 <div class="p-5">
                                     <a href="#">

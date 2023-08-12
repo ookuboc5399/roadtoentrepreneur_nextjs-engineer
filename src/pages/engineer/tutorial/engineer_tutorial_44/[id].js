@@ -229,7 +229,7 @@ const Post = () => {
                 <h4>useQueryTodos.ts</h4>
                 <p>新しくhooksフォルダを作成し、useQueryTodos.tsを作成します。 </p>
                 <p>rafceでreactコンポーネントを作成 </p>
-                <p>supabase.from('todos')でtodosのテーブルから.select('*')で全ての列要素を取得してorder('created_at')で古いものからデータを取得しています</p>
+                <p>supabase.from(&apos;todos&apos;)でtodosのテーブルから.select(&apos*&apos)で全ての列要素を取得してorder(&apos;created_at&apos;)で古いものからデータを取得しています</p>
                 <p>await delay(2000)とすることで2秒待機</p>
                 <p>react-queryはsupabaseから取得したデータをクライアントサイドにキャッシュしてくれる</p>
                 <p>キャッシュの格納場所を特定するためのkey</p>
@@ -294,7 +294,7 @@ const Post = () => {
                 <p>componentsフォルダにAuthenForm.tsxを作成します。 </p>
                 <p>rafcでreactコンポーネントを作成 </p>
                 <p>Yupのschema</p>
-                <p>Yup.ref('password')でpasswordに設定されている値を取得しoneOfで配列内のいずれかに一致しているかどうかバリデーションすることができる</p>
+                <p>Yup.ref(&apospassword&apos)でpasswordに設定されている値を取得しoneOfで配列内のいずれかに一致しているかどうかバリデーションすることができる</p>
                 <p>termsOfService</p>
                 <p className='text-red-400'>components/AuthenForm.tsx</p>
                 <Tutorial4481 />

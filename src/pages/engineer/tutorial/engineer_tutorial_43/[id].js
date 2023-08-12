@@ -221,7 +221,7 @@ const Post = () => {
                 <Tutorial4377 />
                 <h4>サインイン画面の修正</h4>
                 <p>providerが複数ある場合map関数で繰り返し表示させる</p>
-                <p>callbackUrlを"/"でトップ画面に飛ぶ</p>
+                <p>callbackUrlを&quot/&quotでトップ画面に飛ぶ</p>
                 <p className='text-red-400'>auth/signin.js</p>
                 <Tutorial43715 />
                 <h4>MiniProfile.jsの修正</h4>
@@ -267,7 +267,7 @@ const Post = () => {
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -308,7 +308,7 @@ const Post = () => {
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -339,7 +339,7 @@ const Post = () => {
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">

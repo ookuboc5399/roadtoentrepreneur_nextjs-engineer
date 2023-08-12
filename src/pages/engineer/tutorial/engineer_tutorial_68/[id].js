@@ -128,7 +128,7 @@ const Post = () => {
 
           </Layout_tutorial_68>
         ) : id == 6 ? (
-          <Layout_tutorial_67>
+          <Layout_tutorial_68>
             <div className='flex'>
               <div className=''>
 
@@ -137,7 +137,7 @@ const Post = () => {
                 <p></p>
                 <p>grid grid-cols-2にすることでlabelとinputを横並びにさせることができる</p>
                 <p className='text-red-400'>create.tsx</p>
-                <Tutorial6561 />
+           
                 <h3>Suggestions</h3>
                 <p>componentsフォルダにSuggestions.jsファイルを作ります。</p>
                 <p>rfceでreactコンポーネントを作成 </p>
@@ -145,7 +145,7 @@ const Post = () => {
               </div>
             </div>
 
-          </Layout_tutorial_67>
+          </Layout_tutorial_68>
         ) : (
           <></>
         )}

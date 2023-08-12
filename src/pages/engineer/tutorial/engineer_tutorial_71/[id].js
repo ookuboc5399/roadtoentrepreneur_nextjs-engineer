@@ -161,7 +161,7 @@ const Post = () => {
                 <p></p>
                 <p>grid grid-cols-2にすることでlabelとinputを横並びにさせることができる</p>
                 <p className='text-red-400'>create.tsx</p>
-                <Tutorial6561 />
+             
                 <h3>Suggestions</h3>
                 <p>componentsフォルダにSuggestions.jsファイルを作ります。</p>
                 <p>rfceでreactコンポーネントを作成 </p>

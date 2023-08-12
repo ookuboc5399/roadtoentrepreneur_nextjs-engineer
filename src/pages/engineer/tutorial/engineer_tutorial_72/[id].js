@@ -191,8 +191,8 @@ const Post = () => {
                 <Tutorial7275 />
                 <h3>next-sanityインストール</h3>
                 <Tutorial7276 />
-                <p>作成したnextjs13-sanity-blogのpackage.jsonからプロジェクトのpackage.jsonにdependenciesの"@sanity/vision"、"sanity"、"styled-components"をコピーします。</p>
-                <p>また、"devDependencies"の"@sanity/eslint-config-studio"も追加します。            </p>
+                <p>作成したnextjs13-sanity-blogのpackage.jsonからプロジェクトのpackage.jsonにdependenciesの@sanity/vision、sanity、styled-componentsをコピーします。</p>
+                <p>また、devDependenciesの@sanity/eslint-config-studioも追加します。            </p>
                 <p>sanityのプロジェクトからschemasフォルダ、sanity.cli.ts、sanity.config.tsもプロジェクト直下に移動させます。</p>
                 <p>sanityプロジェクトを削除します。</p>
                 <h4></h4>

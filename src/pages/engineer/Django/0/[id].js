@@ -1,8 +1,9 @@
 import { useRouter } from 'next/router'
 import React from 'react';
+import Image from 'next/image';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Datascience } from '../../../../components/layout/engineer/engineer';
+import { Django } from '../../../../components/layout/engineer/engineer';
 
 
 const Post = () => {
@@ -38,7 +39,7 @@ const Post = () => {
                             <div class="flex flex-nowrap">
                                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -54,7 +55,7 @@ const Post = () => {
 
                                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -70,7 +71,7 @@ const Post = () => {
 
                                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -86,7 +87,7 @@ const Post = () => {
 
                                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -297,7 +298,7 @@ const Post = () => {
                             <div class="flex content-between">
                                 <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2 w-1/5">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-3">
                                         <a href="#">
@@ -313,7 +314,7 @@ const Post = () => {
 
                                 <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2 w-1/5">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-3">
                                         <a href="#">
@@ -328,7 +329,7 @@ const Post = () => {
                                 </div>
                                 <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2 w-1/5">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-3">
                                         <a href="#">
@@ -343,7 +344,7 @@ const Post = () => {
                                 </div>
                                 <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2 w-1/5">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-3">
                                         <a href="#">
@@ -358,7 +359,7 @@ const Post = () => {
                                 </div>
                                 <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2 w-1/5">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-3">
                                         <a href="#">

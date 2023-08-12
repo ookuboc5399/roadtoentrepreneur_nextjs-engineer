@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_66 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_66 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -121,7 +121,7 @@ const Post = () => {
 
           </Layout_tutorial_66>
         ) : id == 6 ? (
-          <Layout_tutorial_43>
+          <Layout_tutorial_66>
             <div className='flex'>
               <div className=''>
 
@@ -138,9 +138,9 @@ const Post = () => {
               </div>
             </div>
 
-          </Layout_tutorial_43>
+          </Layout_tutorial_66>
         ) : id == 7 ? (
-          <Layout_tutorial_43>
+          <Layout_tutorial_66>
             <div className='flex'>
               <div className=''>
                 <h3>NextAuth</h3>
@@ -199,9 +199,9 @@ const Post = () => {
                 <Tutorial43712 />
               </div>
             </div>
-          </Layout_tutorial_43>
+          </Layout_tutorial_66>
         ) : id == 8 ? (
-          <Layout_tutorial_43>
+          <Layout_tutorial_66>
             <h3>_app.js</h3>
             <h4>Recoilのインストール</h4>
             <Tutorial4381 />
@@ -227,7 +227,7 @@ const Post = () => {
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -268,7 +268,7 @@ const Post = () => {
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -282,9 +282,9 @@ const Post = () => {
                 </div>
               </div>
             </div>
-          </Layout_tutorial_43>
+          </Layout_tutorial_66>
         ) : id == 9 ? (
-          <Layout_tutorial_43>
+          <Layout_tutorial_66>
             <div className='flex'>
               <div className='mr-4 w-1/2'>
                 <h3>NextAuth</h3>
@@ -319,16 +319,16 @@ const Post = () => {
                 <Tutorial43710 />
               </div>
             </div>
-          </Layout_tutorial_43>
+          </Layout_tutorial_66>
         ) : id == 10 ? (
-          <Layout_tutorial_33>
+          <Layout_tutorial_66>
             <h3>Redux</h3>
             <p>mailとuserのreducerを作成します。</p>
             <p>できます </p>
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -343,23 +343,23 @@ const Post = () => {
               </div>
             </div>
             <p className='text-red-400'>app/store.js</p>
-            <Tutorial3381 />
+          
             <p className='text-red-400'>features/mailSlice.js</p>
-            <Tutorial3382 />
+        
             <p className='text-red-400'>features/userSlice.js</p>
-            <Tutorial3383 />
+          
             <p>Django REST Framework には多くの汎用ビューが存在しますので、どんどん活用していきましょう。 </p>
             <p>公式ドキュメント - Generic views </p>
-          </Layout_tutorial_33>
+          </Layout_tutorial_66>
         ) : id == 11 ? (
-          <Layout_tutorial_43>
+          <Layout_tutorial_66>
             <h3>Redux</h3>
             <p>mailとuserのreducerを作成します。</p>
             <p>できます </p>
 
-          </Layout_tutorial_43>
+          </Layout_tutorial_66>
         ) : id == 12 ? (
-          <Layout_tutorial_43>
+          <Layout_tutorial_66>
             <h3>準備 </h3>
             <p>開発の準備をします。 </p>
             <h3>仮想環境の作成 </h3>
@@ -427,9 +427,9 @@ const Post = () => {
             <Tutorial431211 />
             <h4>superuser作成</h4>
             <Tutorial431212 />
-          </Layout_tutorial_43>
+          </Layout_tutorial_66>
         ) : id == 13 ? (
-          <Layout_tutorial_43>
+          <Layout_tutorial_66>
             <h3>serializer</h3>
             <p>新規アカウント作成の際のemailやpasswordに対してvalidationをかけることができる。</p>
             <p>モデルオブジェクトをjson型にしてクライアントに返す</p>
@@ -464,16 +464,16 @@ const Post = () => {
               </div>
             </div>
             <Tutorial43135 />
-          </Layout_tutorial_43>
+          </Layout_tutorial_66>
         ) : id == 14 ? (
-          <Layout_tutorial_43>
+          <Layout_tutorial_66>
             <h3>Redux</h3>
             <p>mailとuserのreducerを作成します。</p>
             <p>できます </p>
 
-          </Layout_tutorial_43>
+          </Layout_tutorial_66>
         ) : id == 15 ? (
-          <Layout_tutorial_43>
+          <Layout_tutorial_66>
             <h3>準備 </h3>
             <p>開発の準備をします。 </p>
             <h3>仮想環境の作成 </h3>
@@ -541,9 +541,9 @@ const Post = () => {
 
             <h4>superuser作成</h4>
 
-          </Layout_tutorial_43>
+          </Layout_tutorial_66>
         ) : id == 16 ? (
-          <Layout_tutorial_43>
+          <Layout_tutorial_66>
             <h3>serializer</h3>
             <p>新規アカウント作成の際のemailやpasswordに対してvalidationをかけることができる。</p>
             <p>モデルオブジェクトをjson型にしてクライアントに返す</p>
@@ -578,7 +578,7 @@ const Post = () => {
               </div>
             </div>
             <Tutorial43135 />
-          </Layout_tutorial_43>
+          </Layout_tutorial_66>
         ) : (
           <></>
         )}

@@ -35,7 +35,7 @@ const Post = () => {
                             <div class="flex flex-nowrap">
                                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -51,7 +51,7 @@ const Post = () => {
 
                                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -67,7 +67,7 @@ const Post = () => {
 
                                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -83,7 +83,7 @@ const Post = () => {
 
                                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -167,7 +167,7 @@ const Post = () => {
                             <div class="flex content-between">
                                 <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2 w-1/5">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                     </a>
                                     <div class="p-3">
                                         <a href="#">
@@ -205,7 +205,7 @@ const Post = () => {
                                         <span class="font-medium">なぜBabel(=トランスコンパイラ)が必要なのか</span>全てのブラウザがES6に対応していないから。そのためES6で書いたJavaScriptをES5に変換してから利用する必要がある
                                     </div>
                                 </div>
-                                <p>このスクリプトでやっていることはid="root"のElementを取り出してReactDOM.renderで用意したエレメントを表示しているだけです</p>
+                                <p>このスクリプトでやっていることはid=&quot;root&quot;のElementを取り出してReactDOM.renderで用意したエレメントを表示しているだけです</p>
 
                                 <p>JSXで記述した値はそのまま仮想DOMのElementオブジェクトとして扱うことができます。つまりcreateElementしなくてもいいのです</p>
 
@@ -238,7 +238,7 @@ const Post = () => {
                         <div class="flex flex-nowrap">
                             <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                 <a href="#">
-                                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                 </a>
                                 <div class="p-5">
                                     <a href="#">
@@ -254,7 +254,7 @@ const Post = () => {
 
                             <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                 <a href="#">
-                                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                 </a>
                                 <div class="p-5">
                                     <a href="#">
@@ -270,7 +270,7 @@ const Post = () => {
 
                             <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                 <a href="#">
-                                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                 </a>
                                 <div class="p-5">
                                     <a href="#">
@@ -357,14 +357,14 @@ const Post = () => {
                         <div>
                             <p>Reactの表示を組み込むタグのElementオブジェクトを取得します。</p>
                             <Code18 />
-                            <p>ここではquerySelectorというメソッドを使ってid="root"のタグのオブジェクトを取り出しています。</p>
+                            <p>ここではquerySelectorというメソッドを使ってid=&quot;root&quot;のタグのオブジェクトを取り出しています。</p>
 
 
                             <div className='text-2xl text-center m-4 border-b-4 border-blue-400'>仮想Elementの作成</div>
                             <p>ReactというオブジェクトのcreateElementというメソッドを使ってエレメントを作成しています</p>
                             <Code19 />
                             <p>React.createElementはReactの仮想DOMによるElementを作成するものです。</p>
-                            <p>第一引数には作成するタグの名前を指定します。例えば＜p＞タグのエレメントを作るなら'p'とします。</p>
+                            <p>第一引数には作成するタグの名前を指定します。例えば＜p＞タグのエレメントを作るなら&apos;p&apos;とします。</p>
                             <p>第二引数にはそのエレメントに用意される属性のオブジェクトを用意します</p>
                             <p>第三引数には作成するエレメントの内部に組み込まれるものを用意します</p>
                         </div>

@@ -70,7 +70,7 @@ const Post = () => {
                 </div>
             </div>
             <p>end= で文字列を指定することで末尾を変更できる</p>
-            <p>end=""は末尾に何も出力しない</p>
+            <p>end=&quot;&quot;は末尾に何も出力しない</p>
             <div className='flex'>
                 <div className='m-6'>
                     <p>コード入力</p>
@@ -108,7 +108,7 @@ const Post = () => {
                 </div>
             </div>
             <p>int関数は小数点以下を切り捨てて整数としている</p>
-            <p>end=""は末尾に何も出力しない</p>
+            <p>end=&quot;&quot;は末尾に何も出力しない</p>
             <div className='flex'>
                 <div className='m-6'>
                     <p>コード入力</p>

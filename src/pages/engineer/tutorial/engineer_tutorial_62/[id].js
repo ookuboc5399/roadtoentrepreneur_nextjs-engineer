@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_62 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_62 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -354,7 +354,7 @@ const Post = () => {
 
           </Layout_tutorial_62>
         ) : id == 7 ? (
-          <Layout_tutorial_60>
+          <Layout_tutorial_62>
             <h3>Serializer追加</h3>
             <p>Serializer とは？</p>
             <p>Serializer とは、クエリセットやモデルインスタンスのような複雑なデータを、Json 形式のフォーマットに変換することを役割としています</p>
@@ -362,7 +362,7 @@ const Post = () => {
             <p>serializers の ModelSerializer クラスを継承すことにより、簡単に書くことができます</p>
 
 
-          </Layout_tutorial_60>
+          </Layout_tutorial_62>
         ) : id == 8 ? (
 l
         ) : (

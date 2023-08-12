@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_58 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_58} from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -14,7 +14,7 @@ const Post = () => {
     <div>
       {
         id == 1 ? (
-          <Layout_tutorial_52>
+          <Layout_tutorial_58>
             <h3>はじめに </h3>
             <p></p>
             <p>バックエンドは Django REST Framework を使用して API サーバーを構築します。</p>
@@ -48,7 +48,7 @@ const Post = () => {
             <h3>#前提知識</h3>
 
             <p>では、始めて行きましょう！！</p>
-          </Layout_tutorial_52>
+          </Layout_tutorial_58>
         ) : id == 2 ? (
           <Layout_tutorial_58>
             <div className='flex'>
@@ -61,7 +61,7 @@ const Post = () => {
                 <div class="flex flex-nowrap">
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                      <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                      <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                       <a href="#">
@@ -204,7 +204,7 @@ const Post = () => {
 
           </Layout_tutorial_58>
         ) : id == 6 ? (
-          <Layout_tutorial_52>
+          <Layout_tutorial_58>
 
             <h3>URL追加</h3>
             <p>ルーティングを設定します。</p>
@@ -218,9 +218,9 @@ const Post = () => {
             <p className='text-red-400'>api/urls.py</p>
             <Tutorial5262 />
 
-          </Layout_tutorial_52>
+          </Layout_tutorial_58>
         ) : id == 7 ? (
-          <Layout_tutorial_52>
+          <Layout_tutorial_58>
             <h3>Serializer追加</h3>
             <p>Serializer とは？</p>
             <p>Serializer とは、クエリセットやモデルインスタンスのような複雑なデータを、Json 形式のフォーマットに変換することを役割としています</p>
@@ -229,9 +229,9 @@ const Post = () => {
             <p className='text-red-400'>api/serializers.py</p>
             <Tutorial5271 />
 
-          </Layout_tutorial_52>
+          </Layout_tutorial_58>
         ) : id == 8 ? (
-          <Layout_tutorial_52>
+          <Layout_tutorial_58>
             <div className='flex'>
               <div className='mr-4 w-1/2'>
                 <h3>Views追加</h3>
@@ -249,7 +249,7 @@ const Post = () => {
               </div>
             </div>
 
-          </Layout_tutorial_52>
+          </Layout_tutorial_58>
         ) : (
           <></>
         )}
@@ -728,19 +728,19 @@ const Tutorial5251 = () => {
 
 
 
-const Tutorial5252 = () => {
-  const test = `
-  from django.contrib import admin 
-  from .models import Task, Tag 
-  admin.site.register(Task) 
-  admin.site.register(Tag)
-    `
-  return (
-    <SyntaxHighlighter language="js" style={syntaxStyle} >
-      {test}
-    </SyntaxHighlighter>
-  );
-};
+// const Tutorial5252 = () => {
+//   const test = `
+//   from django.contrib import admin 
+//   from .models import Task, Tag 
+//   admin.site.register(Task) 
+//   admin.site.register(Tag)
+//     `
+//   return (
+//     <SyntaxHighlighter language="js" style={syntaxStyle} >
+//       {test}
+//     </SyntaxHighlighter>
+//   );
+// };
 
 
 

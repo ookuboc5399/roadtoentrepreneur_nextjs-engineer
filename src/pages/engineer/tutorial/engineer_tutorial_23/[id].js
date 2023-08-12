@@ -124,7 +124,7 @@ const Post = () => {
                 <p></p>
                 <Tutorial2344 />
                 <h4>set Nicknameボタンをクリックしたとき関数</h4>
-                <p>ユーザーかつnicknameがあるなら設定、nicknameがない場合「Can't set empty nickname」と表示する。</p>
+                <p>ユーザーかつnicknameがあるなら設定、nicknameがない場合「Can&apos;t set empty nickname」と表示する。</p>
                 <p>ユーザー出ない場合「No user」と表示する</p>
                 <Tutorial2345 />
               </div>

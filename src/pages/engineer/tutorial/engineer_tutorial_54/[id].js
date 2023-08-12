@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_49 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_54 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -60,7 +60,7 @@ const Post = () => {
                           <div class="flex flex-nowrap">
                               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                   <a href="#">
-                                      <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                      <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                   </a>
                                   <div class="p-5">
                                       <a href="#">
@@ -218,7 +218,7 @@ const Post = () => {
                   </div>
                 </Layout_tutorial_54>
                 ) : id == 6 ? (
-                  <Layout_tutorial_53>
+                  <Layout_tutorial_54>
 
                   <h3>URL追加</h3>
                   <p>ルーティングを設定します。</p>
@@ -232,7 +232,7 @@ const Post = () => {
                   <p className='text-red-400'>api/urls.py</p>
                   <Tutorial5362 />
         
-            </Layout_tutorial_53>
+            </Layout_tutorial_54>
                 ) : id == 7 ? (
                   <Layout_tutorial_54>
                   <h3>Serializer追加</h3>
@@ -245,7 +245,7 @@ const Post = () => {
       
               </Layout_tutorial_54>
                 ) : id == 8 ? (
-                  <Layout_tutorial_53>
+                  <Layout_tutorial_54>
                   <div className='flex'>
                     <div className='mr-4 w-1/2'>
                     <h3>Views追加</h3>
@@ -263,7 +263,7 @@ const Post = () => {
                     </div>
                   </div>
             
-                </Layout_tutorial_53>
+                </Layout_tutorial_54>
                 ): (
                     <></>
                 )}
@@ -909,18 +909,6 @@ const Tutorial5453 = () => {
       e.target.value = ""; 
     } 
   };
-    `
-  return (
-    <SyntaxHighlighter language="js" style={syntaxStyle} >
-      {test}
-    </SyntaxHighlighter>
-  );
-};
-
-
-const Tutorial5454 = () => {
-  const test = `
-  (myvenv) ~$ python3 manage.py runserver
     `
   return (
     <SyntaxHighlighter language="js" style={syntaxStyle} >

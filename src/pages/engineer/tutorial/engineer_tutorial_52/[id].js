@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_52 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_52 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -61,7 +61,7 @@ const Post = () => {
                 <div class="flex flex-nowrap">
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                      <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                      <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                       <a href="#">
@@ -75,7 +75,7 @@ const Post = () => {
                   </div>
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                     <a href="#">
-                      <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                      <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                       <a href="#">
@@ -92,7 +92,7 @@ const Post = () => {
                 <Tutorial5221 />
                 <h4>サンプルコード</h4>
                 <p>サンプルコードをscript.jsに追加します。 </p>
-                <p>L.map('map')とすることでhtmlのなかでのid="map"のdivタグにおいて地図が表示される</p>
+                <p>L.map(&aposmap&apos)とすることでhtmlのなかでのid=&quot;map&quot;のdivタグにおいて地図が表示される</p>
                 <Tutorial5222 />
                 <h4>現在値を取得</h4>
                 <h4>地図上の位置を取得</h4>

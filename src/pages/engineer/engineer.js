@@ -7,7 +7,7 @@ export default function Engineer() {
     const contents = [
         { id: 1, name: "HTML&CSS", title: "多様な可能性を秘めたフロントエンド言語", href: "./engineer_html_chapter" },
         { id: 2, name: "javaScript", title: "Djangoブログ新機能追加", href: "/engineer/engineer_javascript_chapter" },
-        { id: 3, name: "jQuery", title: "ポートフォリオ構築", href: "/engineer/tutorial/engineer_tutorial_3/engineer_tutorial_3_1" },
+        { id: 3, name: "jQuery", title: "ポートフォリオ構築", href: "/engineer/engineer_jquery_chapter" },
         { id: 4, name: "Ruby", title: "カスタムユーザー構築", href: "/engineer/tutorial/engineer_tutorial_4/engineer_tutorial_4_1" },
         { id: 5, name: "Ruby on Rails", title: "多様な可能性を秘めたフロントエンド言語", href: "./html/engineer_html_chapter" },
         { id: 6, name: "TypeScript", title: "", href: "./engineer_typescript_chapter" },
@@ -47,7 +47,7 @@ export default function Engineer() {
                 <div className=" grid grid-cols-4 m-10 mb-5 justify-center text-center">
                     {contents.map((content) => {
                         return (
-                            <Link href={content.href}>
+                            <Link href={content.href} key={content.id}>
                                 <div className="shadow-md bg-white m-6">
                                     <h1 className="">{content.name}</h1>
                                     <Image

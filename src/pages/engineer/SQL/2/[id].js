@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import React from 'react';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import Python from '../../../../components/layout/engineer/python/python';
+import { Mongo } from '../../../../components/layout/engineer/engineer';
 
 const Post = () => {
   const router = useRouter()
@@ -61,7 +61,7 @@ const Post = () => {
                 </div>
             </div>
             <p>end= で文字列を指定することで末尾を変更できる</p>
-            <p>end=""は末尾に何も出力しない</p>
+         
             <div className='flex'>
                 <div className='m-6'>
                     <p>コード入力</p>
@@ -99,7 +99,7 @@ const Post = () => {
                 </div>
             </div>
             <p>int関数は小数点以下を切り捨てて整数としている</p>
-            <p>end=""は末尾に何も出力しない</p>
+     
             <div className='flex'>
                 <div className='m-6'>
                     <p>コード入力</p>
@@ -242,7 +242,7 @@ const Post = () => {
                 </div>
             </div>
             <p>end= で文字列を指定することで末尾を変更できる</p>
-            <p>end=""は末尾に何も出力しない</p>
+ 
             <div className='flex'>
                 <div className='m-6'>
                     <p>コード入力</p>
@@ -280,7 +280,7 @@ const Post = () => {
                 </div>
             </div>
             <p>int関数は小数点以下を切り捨てて整数としている</p>
-            <p>end=""は末尾に何も出力しない</p>
+          
             <div className='flex'>
                 <div className='m-6'>
                     <p>コード入力</p>
@@ -422,7 +422,7 @@ const Post = () => {
                 </div>
             </div>
             <p>end= で文字列を指定することで末尾を変更できる</p>
-            <p>end=""は末尾に何も出力しない</p>
+        
             <div className='flex'>
                 <div className='m-6'>
                     <p>コード入力</p>
@@ -460,7 +460,7 @@ const Post = () => {
                 </div>
             </div>
             <p>int関数は小数点以下を切り捨てて整数としている</p>
-            <p>end=""は末尾に何も出力しない</p>
+            <p>end=&quot;&quot;は末尾に何も出力しない</p>
             <div className='flex'>
                 <div className='m-6'>
                     <p>コード入力</p>
@@ -603,7 +603,7 @@ const Post = () => {
                 </div>
             </div>
             <p>end= で文字列を指定することで末尾を変更できる</p>
-            <p>end=""は末尾に何も出力しない</p>
+           
             <div className='flex'>
                 <div className='m-6'>
                     <p>コード入力</p>
@@ -641,7 +641,7 @@ const Post = () => {
                 </div>
             </div>
             <p>int関数は小数点以下を切り捨てて整数としている</p>
-            <p>end=""は末尾に何も出力しない</p>
+            
             <div className='flex'>
                 <div className='m-6'>
                     <p>コード入力</p>
@@ -961,76 +961,76 @@ const Code21 = () => {
 
 
 
-const Code4 = () => {
-    const test = `
-    db.dogs.updateOne({name: 'ポチ'}, {$set: {age:5, breed
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
+// const Code4 = () => {
+//     const test = `
+//     db.dogs.updateOne({name: 'ポチ'}, {$set: {age:5, breed
+//     `
+//     return (
+//         <SyntaxHighlighter language="js" style={syntaxStyle} >
+//             {test}
+//         </SyntaxHighlighter>
+//     );
+// };
 
 
-const Code7 = () => {
-    const test = `
-    HelloWorld
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
+// const Code7 = () => {
+//     const test = `
+//     HelloWorld
+//     `
+//     return (
+//         <SyntaxHighlighter language="js" style={syntaxStyle} >
+//             {test}
+//         </SyntaxHighlighter>
+//     );
+// };
 
-const Code8 = () => {
-    const test = `
-    # print("Hello World") この行は実行されない
-    print("Hello paiza")  # "Hello paiza" を出力
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
+// const Code8 = () => {
+//     const test = `
+//     # print("Hello World") この行は実行されない
+//     print("Hello paiza")  # "Hello paiza" を出力
+//     `
+//     return (
+//         <SyntaxHighlighter language="js" style={syntaxStyle} >
+//             {test}
+//         </SyntaxHighlighter>
+//     );
+// };
 
-const Code9 = () => {
-    const test = `
-    print("Hello paiza") 
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
+// const Code9 = () => {
+//     const test = `
+//     print("Hello paiza") 
+//     `
+//     return (
+//         <SyntaxHighlighter language="js" style={syntaxStyle} >
+//             {test}
+//         </SyntaxHighlighter>
+//     );
+// };
 
 
-const Code13 = () => {
-    const test = `
-    3
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
+// const Code13 = () => {
+//     const test = `
+//     3
+//     `
+//     return (
+//         <SyntaxHighlighter language="js" style={syntaxStyle} >
+//             {test}
+//         </SyntaxHighlighter>
+//     );
+// };
 
-const Code14 = () => {
-    const test = `
-    print(6+2)
-    print(3.14+2.71)
-    print(8+3.13)
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
+// const Code14 = () => {
+//     const test = `
+//     print(6+2)
+//     print(3.14+2.71)
+//     print(8+3.13)
+//     `
+//     return (
+//         <SyntaxHighlighter language="js" style={syntaxStyle} >
+//             {test}
+//         </SyntaxHighlighter>
+//     );
+// };
 
 
 const Code17 = () => {
@@ -1066,76 +1066,76 @@ const Code18 = () => {
 };
 
 
-const Code4 = () => {
-    const test = `
-    db.dogs.updateOne({name: 'ポチ'}, {$set: {age:5, breed
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
+// const Code4 = () => {
+//     const test = `
+//     db.dogs.updateOne({name: 'ポチ'}, {$set: {age:5, breed
+//     `
+//     return (
+//         <SyntaxHighlighter language="js" style={syntaxStyle} >
+//             {test}
+//         </SyntaxHighlighter>
+//     );
+// };
 
 
-const Code7 = () => {
-    const test = `
-    HelloWorld
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
+// const Code7 = () => {
+//     const test = `
+//     HelloWorld
+//     `
+//     return (
+//         <SyntaxHighlighter language="js" style={syntaxStyle} >
+//             {test}
+//         </SyntaxHighlighter>
+//     );
+// };
 
-const Code8 = () => {
-    const test = `
-    # print("Hello World") この行は実行されない
-    print("Hello paiza")  # "Hello paiza" を出力
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
+// const Code8 = () => {
+//     const test = `
+//     # print("Hello World") この行は実行されない
+//     print("Hello paiza")  # "Hello paiza" を出力
+//     `
+//     return (
+//         <SyntaxHighlighter language="js" style={syntaxStyle} >
+//             {test}
+//         </SyntaxHighlighter>
+//     );
+// };
 
-const Code9 = () => {
-    const test = `
-    print("Hello paiza") 
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
+// const Code9 = () => {
+//     const test = `
+//     print("Hello paiza") 
+//     `
+//     return (
+//         <SyntaxHighlighter language="js" style={syntaxStyle} >
+//             {test}
+//         </SyntaxHighlighter>
+//     );
+// };
 
 
-const Code13 = () => {
-    const test = `
-    3
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
+// const Code13 = () => {
+//     const test = `
+//     3
+//     `
+//     return (
+//         <SyntaxHighlighter language="js" style={syntaxStyle} >
+//             {test}
+//         </SyntaxHighlighter>
+//     );
+// };
 
-const Code14 = () => {
-    const test = `
-    print(6+2)
-    print(3.14+2.71)
-    print(8+3.13)
-    `
-    return (
-        <SyntaxHighlighter language="js" style={syntaxStyle} >
-            {test}
-        </SyntaxHighlighter>
-    );
-};
+// const Code14 = () => {
+//     const test = `
+//     print(6+2)
+//     print(3.14+2.71)
+//     print(8+3.13)
+//     `
+//     return (
+//         <SyntaxHighlighter language="js" style={syntaxStyle} >
+//             {test}
+//         </SyntaxHighlighter>
+//     );
+// };
 
 
 const Code19 = () => {

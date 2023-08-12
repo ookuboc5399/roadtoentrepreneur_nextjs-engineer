@@ -208,28 +208,28 @@ const Post = () => {
                 <Tutorial7375 />
                 <h3>next-sanityインストール</h3>
                 <Tutorial7376 />
-                <p>作成したnextjs13-sanity-blogのpackage.jsonからプロジェクトのpackage.jsonにdependenciesの"@sanity/vision"、"sanity"、"styled-components"をコピーします。</p>
-                <p>また、"devDependencies"の"@sanity/eslint-config-studio"も追加します。            </p>
+                <p>作成したnextjs13-sanity-blogのpackage.jsonからプロジェクトのpackage.jsonにdependenciesの@sanity/vision、sanity、styled-componentsをコピーします。</p>
+                <p>また、devDependenciesの@sanity/eslint-config-studioも追加します。            </p>
                 <p>sanityのプロジェクトからschemasフォルダ、sanity.cli.ts、sanity.config.tsもプロジェクト直下に移動させます。</p>
                 <p>sanityプロジェクトを削除します。</p>
                 <h4></h4>
                 <p>変更を反映させます。</p>
-                <Tutorial73710 />
+                {/* <Tutorial73710 /> */}
                 <h3>.env.localファイル作成</h3>
-                <Tutorial7377 />
+                {/* <Tutorial7377 /> */}
                 <p className='text-red-400'>sanity.config.ts</p>
-                <Tutorial7378 />
+                {/* <Tutorial7378 /> */}
                 <p className='text-red-400'>sanity.cli.ts</p>
-                <Tutorial7379 />
+                {/* <Tutorial7379 /> */}
                 <p>appフォルダ直下にstudio/[[...index]]/page.tsxを作成します  </p>
                 <p className='text-red-400'>page.tsx</p>
-                <Tutorial73711 />
+                {/* <Tutorial73711 /> */}
                 <p></p>
                 <p className='text-red-400'>head.tsx</p>
-                <Tutorial73712 />
+                {/* <Tutorial73712 /> */}
                 <p></p>
                 <p className='text-red-400'>loading.tsx</p>
-                <Tutorial73713 />
+                {/* <Tutorial73713 /> */}
                 <p>componentsフォルダにSuggestions.jsファイルを作ります。</p>
                 <p>rfceでreactコンポーネントを作成 </p>
                 <p>Feed.jsにPostコンポーネントを読み込ませる</p>
@@ -243,15 +243,15 @@ const Post = () => {
               <div className=''>
                 <h3>準備 </h3>
                 <p>プロジェクトを作成します</p>
-                <Tutorial7381 />
+                {/* <Tutorial7381 /> */}
                 <h3>MiniProfile</h3>
                 <p>pagesフォルダのindex.tsxと_app.tsxを削除します。</p>
                 <p>プロジェクト直下にtheme.tsxを作成します。</p>
                 <p className='text-red-400'>theme.tsx</p>
-                <Tutorial7382 />
+                {/* <Tutorial7382 /> */}
                 <p>sanity.config.tsに設定を追加します。</p>
                 <p className='text-red-400'>next.config.js</p>
-                <Tutorial7383 />
+                {/* <Tutorial7383 /> */}
                 <h4></h4>
                 <p>componentsフォルダを作成し、StudioNavbar.tsxファイルを作ります。</p>
                 <p className='text-red-400'>StudioNavbar.tsx</p>
@@ -582,6 +582,83 @@ const Tutorial7347 = () => {
   `
   return (
     <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial7371 = () => {
+  const test = `
+
+  `;
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle}>
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial7373 = () => {
+  const test = `
+
+  `;
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle}>
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial7374 = () => {
+  const test = `
+  
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial7375 = () => {
+  const test = `
+  
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial7376 = () => {
+  const test = `
+  
+  `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial7384 = () => {
+  const test = `
+
+  `;
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle}>
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial7385 = () => {
+  const test = `
+
+  `;
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle}>
       {test}
     </SyntaxHighlighter>
   );

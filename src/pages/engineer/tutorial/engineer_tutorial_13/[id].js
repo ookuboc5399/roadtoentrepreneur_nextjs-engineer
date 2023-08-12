@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_13 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_13 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -198,68 +198,39 @@ const Post = () => {
                 ) : id == 4 ? (
                     <Layout_tutorial_13>
                         <div className="w-3/4">
-                            <div className="text-3xl m-4">
-                                TOYOTA
-                            </div>
                             <div className="ml-80">
-                                <p>セキュリティ対策 </p>
-                                <p>デプロイは成功しましたが、セキュリティ上に問題があります。 </p>
-                                <p>現在、Debug機能が有効になっているため、もしエラーが発生した場合、詳細な情報が表示されてしまいます </p>
-                                <p>ローカルではいいのですが、本番環境で詳細な情報は表示されたくありません </p>
-                                <p>gitignore</p>
-                                <p>.gitignoreファイルに、local_settings.pyを追記します。</p>
-                                <Tutorial1241 />
-                                <p>local_settings</p>
-                                <p>local_settings.pyファイルを作成します。</p>
-                                <p>ローカルのみDEBUG機能を有効にします</p>
-                                <Tutorial1242 />
+                                <p>デプロイ設定
+                                    デプロイに必要な設定をします。
+
+                                    ローカルで開発しているだけでは設定を変える必要はないですが、デプロイするとなると、セキュリティ面を考慮して設定を変更する必要があります。 </p>
+                                <p>#.gitignore</p>
+                                <p> GitHubにコミットしないように、追加します。</p>
+                                <p className='text-red-400'>.gitignore</p>
+                                <Tutorial1341 />
+                                <p> #requirements.txt</p>
+                                <p>django-environとgunicornを追加します。</p>
+
+                                <p className='text-red-400'>requirements.txt</p>
+                                <Tutorial1342 />
 
                                 <p>settings</p>
                                 <p>setting.pyを変更します。</p>
-                                <Tutorial1243 />
+                                <p className='text-red-400'>mysite/settings.py</p>
+                                <Tutorial1343 />
 
 
-                                <p>GitHubにコミット</p>
-                                <p>GitHubにコミットします</p>
-                                <p>Herokuにデプロイ</p>
-                                <p>Herokuにデプロイしていきます</p>
-                                <Tutorial1244 />
-                                <p>これで本番環境でデバッグ機能が無効になり、詳細な情報が表示されなくなりました</p>
-                                <p>SECRET KEYがハードコーディングされている</p>
-                                <p>セキュリティ上、SECRET KEYを直接書くのは良くありません</p>
-                                <p>local_settings</p>
-                                <p>先ほど作成した、local_settings.pyにSECRET_KEYを移動させましょう。</p>
-                                <Tutorial1245 />
-                                <p>settings</p>
-                                <p>settings.pyのSECRET_KEYは削除します。</p>
-                                <Tutorial1246 />
-                                <p>環境設定</p>
-                                <p>本番環境でSECRET_KEYを設定するには、heroku config:setコマンドで環境設定を登録します。</p>
-                                <p>実際のSECRET_KEYに置き換えて実行しましょう。</p>
-                                <Tutorial1247 />
-                                <p>環境設定確認</p>
-                                <p>heroku configコマンドでHerokuの環境変数を見ることができます</p>
-                                <Tutorial1248 />
-                                <p>SECRET_KEYが表示されていれば成功です</p>
-                                <p>GitHubにコミット</p>
-                                <p>GitHubにコミットします</p>
-                                <p>Herokuにデプロイ</p>
-                                <p>Herokuにデプロイしていきます。</p>
-                                <Tutorial1249 />
-                                <p>Procfile作成</p>
                             </div>
                         </div>
                     </Layout_tutorial_13>
                 ) : id == 5 ? (
                     <Layout_tutorial_13>
                         <div className="w-3/4">
-                            <div className="text-3xl m-4">
-                                TOYOTA
-                            </div>
                             <div className="ml-80">
-                                <p>Herokuで画像を使用する場合 </p>
-                                <p>Herokuは画像、動画のアップロードに対応していません </p>
-                                <p>Herokuで画像、動画のアップロードをするには、クラウドサービスを使用する必要があります。 </p>
+                                <p>デプロイ用の設定が完了したので、デプロイしていきます。 </p>
+                                <p>サーバーの構成は、クライアント → Nginx → gnicorn → djangoとなります。 </p>
+                                <h2>クローン</h2>
+                                <p>アプリケーションをGitHubからクローンします。 </p>
+                                <Tutorial1351 />
                                 <p>ここでは、Cloudinaryを使用します </p>
                                 <p>Cloudinaryとは？</p>
                                 <p>Cloudinaryは、メディアファイルのアップロードやクラウド上のストレージへの保管ができるサービスです。</p>
@@ -268,32 +239,32 @@ const Post = () => {
                                 <p>Cloudinary</p>
                                 <p>右上ボタンの「SING UP FOR FREE」ボタンを押して、アカウントを作成して下さい</p>
                                 <p>Account Detailにユーザー情報が表示されますす</p>
-                                <Tutorial1251 />
+                                
 
                                 <p>cloudinaryをインストール</p>
                                 <p>cloudinaryをインストールします。</p>
-                                <Tutorial1252 />
+                              
 
 
                                 <p>設定変更</p>
                                 <p>Account Detailに表示された情報をCLOUDINARY_STORAGEに追加しますす</p>
-                                <Tutorial1253 />
+                                
                                 <p>確認</p>
                                 <p>ローカルでcloudinaryに画像がアップロードできるか試してみましょう</p>
-                                <Tutorial1254 />
+                                
                                 <p>パッケージ定義</p>
                                 <p>新しいパッケージをインストールしたので、requirements.txtにパッケージをまとめます</p>
-                                <Tutorial1255 />
+                                
                                 <p>GitHubにコミット</p>
                                 <p>GitHubにコミットします</p>
                                 <p>Herokuにcloudinaryをインストール</p>
                                 <p>Herokuにcloudinaryのaddonをインストールします</p>
                                 <p>addonインストール</p>
                                 <p>addonはクレジットカードをHerokuに登録する必要があります</p>
-                                <Tutorial1256 />
+                                
                                 <p>Herokuにデプロイ</p>
                                 <p>Herokuにデプロイします</p>
-                                <Tutorial1257 />
+                              
                                 <p>本番環境でcloudinaryに画像がアップロードできるか試してみましょう。</p>
 
                             </div>
@@ -313,17 +284,17 @@ const Post = () => {
                                 <p>アプリ確認</p>
                                 <p>Herokuにログインしてから、下記コマンドでHerokuに登録されているアプリを確認します。</p>
 
-                                <Tutorial1261 />
+                                
 
                                 <p>紐づけ</p>
                                 <p>GitHubリポジトリに移動して、下記コマンドを実行して、GitHubとHerokuアプリを紐づけします。</p>
-                                <Tutorial1262 />
+                               
 
 
                                 <p>xxxは既存のHerokuアプリ名</p>
                                 <p>Herokuにデプロイ</p>
                                 <p>Herokuアプリを登録できたら、Herokuにデプロイします</p>
-                                <Tutorial1253 />
+                                
 
                             </div>
                         </div>
@@ -379,9 +350,18 @@ const Tutorial1322 = () => {
     );
 };
 
-const Tutorial1321 = () => {
+const Tutorial1341 = () => {
     const test = `
-    $ ssh-keygen -t rsa
+    myvenv
+                        db.sqlite3
+                        .vscode
+                        __pycache__
+                        *.pyc
+                        .DS_Store
+                        images
+                        media
+                        local_settings.py
+                        .env
     `
     return (
         <SyntaxHighlighter language="js" style={syntaxStyle} >
@@ -390,11 +370,247 @@ const Tutorial1321 = () => {
     );
 };
 
-
-
-const Tutorial1322 = () => {
+const Tutorial1342 = () => {
     const test = `
-    $ cat ~/.ssh/id_rsa.pub
+    Django~=3.1.4
+    Pillow~=8.1.0
+    django-widget-tweaks~=1.4.8
+    django-environ~=0.4.5
+    gunicorn~=20.0.4
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial1343 = () => {
+    const test = `
+    import os
+
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'app',
+    'widget_tweaks',
+    ]
+
+    MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    ]
+
+    ROOT_URLCONF = 'mysite.urls'
+
+    TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+    'DIRS': [],
+    'APP_DIRS': True,
+    'OPTIONS': {
+        'context_processors': [
+    'django.template.context_processors.debug',
+    'django.template.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
+    'django.contrib.messages.context_processors.messages',
+    ],
+},
+},
+    ]
+
+    WSGI_APPLICATION = 'mysite.wsgi.application'
+
+    DATABASES = {
+        'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+}
+}
+
+    AUTH_PASSWORD_VALIDATORS = [
+    {
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+},
+    {
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+},
+    {
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+},
+    {
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+},
+    ]
+
+    LANGUAGE_CODE = 'ja'
+
+    TIME_ZONE = 'Asia/Tokyo'
+
+    USE_I18N = True
+
+    USE_L10N = True
+
+    USE_TZ = True
+
+    STATIC_URL = '/static/'
+    MEDIA_URL = '/media/'
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial1344 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial1351 = () => {
+    const test = `
+    cd
+    mkdir src
+    cd src
+    git clone https://github.com/xxxx/deploytest.git
+    cd deploytest
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial1352 = () => {
+    const test = `
+    haruyasu@vultr:~/src/deploytest$ python3 -m venv myvenv
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial1353 = () => {
+    const test = `
+    haruyasu@vultr:~/src/deploytest$ source myvenv/bin/activate
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial1354 = () => {
+    const test = `
+    (myvenv) haruyasu@vultr:~/src/deploytest$ pip3 install --upgrade pip setuptools
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial1355 = () => {
+    const test = `
+    (myvenv) haruyasu@vultr:~/src/deploytest$ pip3 install -r requirements.txt
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial1356 = () => {
+    const test = `
+    $ sudo mkdir /usr/share/nginx/html/static
+    $ sudo mkdir /usr/share/nginx/html/media
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial1357 = () => {
+    const test = `
+    (myvenv) haruyasu@vultr:~/src/deploytest$ sudo python3 manage.py collectstatic
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial1358 = () => {
+    const test = `
+    (myvenv) haruyasu@vultr:~/src/deploytest$ python3 manage.py migrate
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial1359 = () => {
+    const test = `
+    $ sudo nano /etc/nginx/sites-available/default
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial13510 = () => {
+    const test = `
+    server {
+        listen 80;
+    server_name xxx.xxx.xxx.xxx;
+
+    location /static {
+        alias / usr / share / nginx / html / static;
+}
+
+    location /media {
+        alias / usr / share / nginx / html / media;
+}
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_redirect off;
+    proxy_set_header X-Forwarded-Proto $scheme;
+}
+}
     `
     return (
         <SyntaxHighlighter language="js" style={syntaxStyle} >

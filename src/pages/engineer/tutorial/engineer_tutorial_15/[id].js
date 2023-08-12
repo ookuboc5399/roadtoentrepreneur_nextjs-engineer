@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_15 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_15 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -47,7 +47,23 @@ const Post = () => {
             <p>DRF 参照コード</p>
             <p>Next.js 参照コード</p>
             <p>では、始めて行きましょう！！</p>
-
+            <div class="w-44 rounded overflow-hidden shadow-2xl bg-blue-300 text-center flex float-right mr-20">
+                        <div class="inline-block flex-1">
+                            <div class="">
+                                NEXT
+                            </div>
+                            <div class="">
+                                準備
+                            </div>
+                        </div>
+                        <div className="inline-block align-middle cursor-pointer">
+                            {/* <Link href="./engineer_tutorial_14_2">
+                                <div className="inline-block align-middle h-full">
+                                    <FontAwesomeIcon icon={faArrowRight} size="3x" />
+                                </div>
+                            </Link> */}
+                        </div>
+                    </div>
 
           </Layout_tutorial_15>
         ) : id == 2 ? (
@@ -123,7 +139,7 @@ const Post = () => {
             <div class="flex justify-between">
               <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -139,7 +155,7 @@ const Post = () => {
 
               <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -186,7 +202,7 @@ const Post = () => {
             <p>ユーザーの内容を変更するために、UserViewSetを追加します。</p>
             <Tutorial1557 />
             <p>ビュー </p>
-            <p>画像を表示するために、UserSerializerの引数に、context=｛"request": request｝を追加します</p>
+            <p>画像を表示するために、UserSerializerの引数に、context=｛&quot;request&quot;: request｝を追加します</p>
             <p>これがないと、API から画像を取得することができません。</p>
             <p>UserViewSet クラスを作成して、ModelViewSet を継承します。</p>
             <Tutorial1558 />
@@ -395,6 +411,48 @@ const Post = () => {
             <p>詳細画面で削除ボタンをクリックして、投稿を削除してみましょう。</p>
           </Layout_tutorial_15>
         ) : id == 14 ? (
+          <Layout_tutorial_15>
+          <p>プロフィール編集</p>
+          <p>プロフィール編集機能を構築していきます。</p>
+          <p>プロフィール編集</p>
+          <p>プロフィール編集画面を作成します。</p>
+          <p>プロフィールの名前と画像を変更できるようにします。</p>
+          <p>名前はuser状態から取得することができます。</p>
+          <p>送信ボタンをクリックするとアクションのedit_profile関数がコールされます。</p>
+          <p>プロフィール編集が成功したら、トップページに遷移します。</p>
+          <Tutorial15141 />
+          <p>action</p>
+          <p>プロフィール編集と状態解除のアクションタイプを定義します。</p>
+          <Tutorial15142 />
+          <p>アクションにedit_profile関数を追加します。</p>
+          <p>画像を扱うので、FormDataオブジェクトに格納して送信します</p>
+          <Tutorial15143 />
+          <p>API</p>
+          <p>フロントエンド API は coolkie からアクセストークンを取得します。</p>
+          <Tutorial15144 />
+          <p>reducer</p>
+          <p>プロフィール編集用のアクションタイプを追加して、プロフィール編集が成功したら、edit_profile_successを true に設定します。</p>
+          <Tutorial15145 />
+          <p>トップページ</p>
+          <p>トップページに認証用の状態解除関数を追加します</p>
+          <Tutorial15146 />
+          <p>動作確認</p>
+          <p>プロフィール編集画面で名前とプロフィール画像を変更してみましょう。</p>
+        </Layout_tutorial_15>
+        ) : id == 15 ? (
+          <Layout_tutorial_15>
+      <p>アカウント登録</p>
+      <p>アカウント登録後にログインするように調整します。</p>
+      <p>action</p>
+      <p>アクションのregister関数でアカウント登録が成功したら、login関数を実行するようにします</p>
+      <p>これでアカウント登録したらすぐにログインされるようになります。</p>
+      <Tutorial15151 />
+      <p>完成</p>
+      <p>画像投稿システムが完成しましたので、投稿、編集、削除がうまくいくか動作確認をしましょう</p>
+
+      <p>以上で、Django REST Framework と Next.js でインスタ風画像投稿サイトの構築が完了しました。</p>
+    </Layout_tutorial_15>
+        ) : id == 16 ? (
           <Layout_tutorial_15>
           <p>プロフィール編集</p>
           <p>プロフィール編集機能を構築していきます。</p>
@@ -2870,4 +2928,56 @@ useEffect(() => {
             {test}
         </SyntaxHighlighter>
     );
+};
+
+const Tutorial15151 = () => {
+  const test = `
+    // ユーザー登録
+    export const register = (name, email, password) => async (dispatch) => {
+      dispatch({
+        type: SET_AUTH_LOADING,
+      })
+    
+      const body = JSON.stringify({
+        name,
+        email,
+        password,
+      })
+    
+      try {
+        const res = await fetch('/api/account/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: body,
+        })
+    
+        if (res.status === 200) {
+          dispatch({
+            type: REGISTER_SUCCESS,
+          })
+          // 追加
+          await dispatch(login(email, password))
+        } else {
+          dispatch({
+            type: REGISTER_FAIL,
+          })
+        }
+      } catch (err) {
+        dispatch({
+          type: REGISTER_FAIL,
+        })
+      }
+    
+      dispatch({
+        type: REMOVE_AUTH_LOADING,
+      })
+    }
+    `
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+      {test}
+    </SyntaxHighlighter>
+  );
 };

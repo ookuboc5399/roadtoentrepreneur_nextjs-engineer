@@ -5,7 +5,7 @@ import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow
 import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Typescript } from '../../../components/layout/engineer/engineer';
+import { Typescript,HTML } from '../../../components/layout/engineer/engineer';
 import { Nodejs, VSCode } from '../../../components/Blog_comp';
 
 const Post = () => {

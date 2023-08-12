@@ -10,7 +10,7 @@ import {Chaptertutorial11,Chaptertutorial12,Chaptertutorial13,Chaptertutorial14,
 import {Chaptertutorial21,Chaptertutorial22,Chaptertutorial23,Chaptertutorial24,Chaptertutorial25,Chaptertutorial26,Chaptertutorial27,Chaptertutorial28,Chaptertutorial29,Chaptertutorial30} from '../../chapter/engineer/tutorial/chapter_programing_tutorial';
 import {Chaptertutorial31,Chaptertutorial32,Chaptertutorial33,Chaptertutorial34,Chaptertutorial35,Chaptertutorial36,Chaptertutorial37,Chaptertutorial38,Chaptertutorial39,Chaptertutorial40} from '../../chapter/engineer/tutorial/chapter_programing_tutorial';
 import {Chaptertutorial41,Chaptertutorial42,Chaptertutorial43,Chaptertutorial44,Chaptertutorial45,Chaptertutorial46,Chaptertutorial47,Chaptertutorial48,Chaptertutorial49,Chaptertutorial50} from '../../chapter/engineer/tutorial/chapter_programing_tutorial';
-import {Chaptertutorial51,Chaptertutorial52,Chaptertutorial53,Chaptertutorial54,Chaptertutorial55,Chaptertutorial56,Chaptertutorial57,Chaptertutorial59,Chaptertutorial60,Chaptertutorial61,Chaptertutorial62, Chaptertutorial63, Chaptertutorial64} from '../../chapter/engineer/tutorial/chapter_programing_tutorial';
+import {Chaptertutorial51,Chaptertutorial52,Chaptertutorial53,Chaptertutorial54,Chaptertutorial55,Chaptertutorial56,Chaptertutorial57,Chaptertutorial58,Chaptertutorial59,Chaptertutorial60,Chaptertutorial61,Chaptertutorial62, Chaptertutorial63, Chaptertutorial64} from '../../chapter/engineer/tutorial/chapter_programing_tutorial';
 import {Chaptertutorial71,Chaptertutorial72} from '../../chapter/engineer/tutorial/chapter_programing_tutorial';
 
 export function Layout_tutorial_chapter(props) {
@@ -3111,6 +3111,61 @@ export function Layout_tutorial_57(props) {
       <div className="flex ">
         <div className="w-1/4">
           <Chaptertutorial57/>
+        </div>
+        <div className="w-3/4">
+          <div className="w-10/12 m-auto">
+            {props.children}
+          </div>
+          <div className="flex justify-between m-10">
+            <div class="w-44 rounded overflow-hidden shadow-2xl bg-blue-300 text-center flex float-left mr-20">
+              <div className="inline-block align-middle cursor-pointer">
+                <Link href="./engineer_tutorial_16_2">
+                  <div className="inline-block align-middle h-full">
+                    <FontAwesomeIcon icon={faArrowLeft} size="3x" />
+                  </div>
+                </Link>
+              </div>
+              <div class="inline-block flex-1">
+                <div class="">
+                  BEFORE
+                </div>
+                <div class="">
+                  はじめに
+                </div>
+              </div>
+
+            </div>
+            <div class="w-44 rounded overflow-hidden shadow-2xl bg-blue-300 text-center flex float-right mr-20">
+              <div class="inline-block flex-1">
+                <div class="">
+                  NEXT
+                </div>
+                <div class="">
+                  プロジェクト作成
+                </div>
+              </div>
+              <div className="inline-block align-middle cursor-pointer">
+                <Link href="./engineer_tutorial_16_2">
+                  <div className="inline-block align-middle h-full">
+                    <FontAwesomeIcon icon={faArrowRight} size="3x" />
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function Layout_tutorial_58(props) {
+  return (
+    <div class="">
+      <Header_engineer />
+      <div className="flex ">
+        <div className="w-1/4">
+          <Chaptertutorial58/>
         </div>
         <div className="w-3/4">
           <div className="w-10/12 m-auto">

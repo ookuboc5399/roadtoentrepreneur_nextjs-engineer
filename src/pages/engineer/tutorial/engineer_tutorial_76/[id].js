@@ -82,7 +82,7 @@ const Post = () => {
           </p>
           <p>
             import React from
-            'react'はReact17から不必要になったので、"react/react-in-jsx-scopeのルールをオフにしてあります。
+            &apos;react&apos;はReact17から不必要になったので、react/react-in-jsx-scopeのルールをオフにしてあります。
           </p>
           <p>
             import/orderはimportの順番をアルファベット順に昇順で並べる設定にします
@@ -134,7 +134,7 @@ const Post = () => {
 
               <h4></h4>
               <p>検索窓に入力した値はinputに格納されます</p>
-              <Tutorial7631 />
+              {/* <Tutorial7631 /> */}
               <p>
                 検索窓に入力されていない場合はボタンを押すことができないようにdisabled属性を設定します。
               </p>
@@ -245,29 +245,29 @@ Maps JavaScript APIを有効化します
             <div className="">
               <h3>準備 </h3>
               <p>プロジェクトを作成します</p>
-              <Tutorial7671 />
+              {/* <Tutorial7671 /> */}
               <h3>MiniProfile</h3>
               <p>pagesフォルダのindex.tsxと_app.tsxを削除します。</p>
               <p>プロジェクト直下にappフォルダを作成します。</p>
               <p>page.tsxを作成します。</p>
               <p className="text-red-400">app/page.tsx</p>
-              <Tutorial7676 />
+              {/* <Tutorial7676 /> */}
               <p>next.config.jsにappディレクトリの設定を追加します。</p>
               <p className="text-red-400">next.config.js</p>
-              <Tutorial7676 />
+              {/* <Tutorial7676 /> */}
 
               <p>変更を適用するためnpm run devを再度実行します。</p>
               <p>appフォルダに新しくhead.tsxとlayout.tsxが作成されます。</p>
               <h3>Sanityインストール</h3>
-              <Tutorial7674 />
-              <Tutorial7676 />
+              {/* <Tutorial7674 />
+              <Tutorial7676 /> */}
               <h3>next-sanityインストール</h3>
-              <Tutorial7676 />
+              {/* <Tutorial7676 /> */}
               <p>
-                作成したnextjs13-sanity-blogのpackage.jsonからプロジェクトのpackage.jsonにdependenciesの"@sanity/vision"、"sanity"、"styled-components"をコピーします。
+                作成したnextjs13-sanity-blogのpackage.jsonからプロジェクトのpackage.jsonにdependenciesの&quot;@sanity/vision&quot;、&quot;sanity&quot;、styled-componentsをコピーします。
               </p>
               <p>
-                また、"devDependencies"の"@sanity/eslint-config-studio"も追加します。{" "}
+                また、&quot;devDependencies&quot;の&quot;@sanity/eslint-config-studioも追加します。{" "}
               </p>
               <p>
                 sanityのプロジェクトからschemasフォルダ、sanity.cli.ts、sanity.config.tsもプロジェクト直下に移動させます。
@@ -699,6 +699,73 @@ const Tutorial7646 = () => {
 const Tutorial7647 = () => {
   const test = `
   stepzen init
+  `;
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle}>
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial7681 = () => {
+  const test = `
+
+  `;
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle}>
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial7682 = () => {
+  const test = `
+
+  `;
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle}>
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial7683 = () => {
+  const test = `
+
+  `;
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle}>
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial7684 = () => {
+  const test = `
+
+  `;
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle}>
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+const Tutorial7685 = () => {
+  const test = `
+
+  `;
+  return (
+    <SyntaxHighlighter language="js" style={syntaxStyle}>
+      {test}
+    </SyntaxHighlighter>
+  );
+};
+
+
+const Tutorial76710 = () => {
+  const test = `
+
   `;
   return (
     <SyntaxHighlighter language="js" style={syntaxStyle}>

@@ -12,7 +12,7 @@ export function File() {
     <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">
@@ -37,7 +37,7 @@ export function Nextauth() {
     <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">
@@ -61,7 +61,7 @@ export function JWT() {
     <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">
@@ -85,7 +85,7 @@ export function Recoil() {
     <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">
@@ -109,7 +109,7 @@ export function Map() {
     <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">
@@ -133,7 +133,7 @@ export function Moralis() {
     <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">
@@ -157,7 +157,7 @@ export function Netlify() {
     <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">
@@ -181,7 +181,7 @@ export function Openbusiness() {
     <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">
@@ -205,7 +205,7 @@ export function Blog_c() {
     <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">
@@ -229,7 +229,7 @@ export function Zustand() {
     <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">
@@ -253,7 +253,7 @@ export function Pathname() {
     <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">
@@ -277,7 +277,7 @@ export function VSCode() {
     <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">
@@ -301,7 +301,7 @@ export function Nodejs() {
     <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">
@@ -325,7 +325,7 @@ export function Firebase() {
 <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">
@@ -342,14 +342,14 @@ export function Firebase() {
   )
 }
 
-export function styled_components() {
+export function StyledComponents() {
   const router = useRouter()
   console.log(router.pathname)
   return (
     <div class="flex flex-nowrap">
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
         <a href="#">

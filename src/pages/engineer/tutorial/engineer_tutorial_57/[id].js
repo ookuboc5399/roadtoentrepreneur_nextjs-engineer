@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_57 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_57 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -50,7 +50,7 @@ const Post = () => {
             <p>では、始めて行きましょう！！</p>
           </Layout_tutorial_57>
         ) : id == 2 ? (
-          <Layout_tutorial_55>
+          <Layout_tutorial_57>
             <div className='flex'>
               <div className='w-1/2 mr-2'>
                 <h3>準備 </h3>
@@ -91,9 +91,9 @@ const Post = () => {
                 <Tutorial5529 />
               </div>
             </div>
-          </Layout_tutorial_55>
+          </Layout_tutorial_57>
         ) : id == 3 ? (
-          <Layout_tutorial_55>
+          <Layout_tutorial_57>
             <div className='flex'>
               <div className='w-1/2 mr-2'>
                 <h3>洋服の画像データを活用しよう</h3>
@@ -137,7 +137,7 @@ const Post = () => {
               </div>
 
             </div>
-          </Layout_tutorial_55>
+          </Layout_tutorial_57>
         ) : id == 4 ? (
           <Layout_tutorial_57>
             <div className='flex'>
@@ -944,16 +944,16 @@ const Tutorial5753 = () => {
 };
 
 
-const Tutorial5757 = () => {
-  const test = `
-  (myvenv) ~$ python3 manage.py runserver
-    `
-  return (
-    <SyntaxHighlighter language="js" style={syntaxStyle} >
-      {test}
-    </SyntaxHighlighter>
-  );
-};
+// const Tutorial5757 = () => {
+//   const test = `
+//   (myvenv) ~$ python3 manage.py runserver
+//     `
+//   return (
+//     <SyntaxHighlighter language="js" style={syntaxStyle} >
+//       {test}
+//     </SyntaxHighlighter>
+//   );
+// };
 
 const Tutorial5755 = () => {
   const test = `

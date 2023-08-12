@@ -87,7 +87,7 @@ const Post = () => {
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img
+                  <Image
                     class="rounded-t-lg"
                     src="/docs/images/blog/image-1.jpg"
                     alt=""
@@ -126,7 +126,7 @@ const Post = () => {
 
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img
+                  <Image
                     class="rounded-t-lg"
                     src="/docs/images/blog/image-1.jpg"
                     alt=""
@@ -165,7 +165,7 @@ const Post = () => {
 
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img
+                  <Image
                     class="rounded-t-lg"
                     src="/docs/images/blog/image-1.jpg"
                     alt=""
@@ -204,7 +204,7 @@ const Post = () => {
 
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img
+                  <Image
                     class="rounded-t-lg"
                     src="/docs/images/blog/image-1.jpg"
                     alt=""
@@ -472,10 +472,10 @@ const Post = () => {
                   このqueryというプロパティにパースされたクエリパラメーターのオブジェクトが保管されています。
                 </p>
                 <p>
-                  例えばurlがhttp://localhost:3000/?msg=helloだとtrueをつけることでクエリパラメーターの値が｛'msg'：'hello'｝
+                  例えばurlがhttp://localhost:3000/?msg=helloだとtrueをつけることでクエリパラメーターの値が｛&apos;msg&apos;：&apos;hello&apos;｝
                 </p>
                 <p>
-                  trueをつけないとqueryの値はmsg='helloというただのテキストになります。
+                  trueをつけないとqueryの値はmsg=&apos;helloというただのテキストになります。
                 </p>
                 <p>
                   ユーザーからの入力をサーバーに送って処理をするという場合、クエリパラメーターはあまり便利なものではありません。それよりフォームを利用することが多いでしょう
@@ -502,11 +502,11 @@ const Post = () => {
                 </p>
                 <table className="border-collapse">
                   <tr>
-                    <th>'data'イベント</th>{" "}
+                    <th>&apos;data&apos;イベント</th>{" "}
                     <td>クライアントからデータを受け取ると発生するイベント</td>
                   </tr>
                   <tr>
-                    <th>'end'イベント</th>{" "}
+                    <th>&apos;end&apos;イベント</th>{" "}
                     <td>データの受け取りが完了すると発生するイベントです</td>
                   </tr>
                 </table>
@@ -555,13 +555,13 @@ const Post = () => {
                 <p>変換された値が用意で来たらそれを指定のキーの値に設定して保存します。</p>
                 <p>クッキーはそれぞれ名前(キー)とそれに設定される値がセットになっています。こうして用意した配列をSet-Cookieの値に用意し、setHeaderすればそれがクッキーとしてヘッダー情報に追加されてクライアントへ送られるのです</p>
                 <h4>クッキーから値を取り出す</h4>
-                <p>Cookieの値は['キー = 値','キー = 値']といった配列になっています。これは実際には'キー = 値;'キー = 値;'というようにセミコロンでつなげた1つのテキストの形でクッキーに保管されています</p>
+                <p>Cookieの値は[&apos;キー = 値&apos;,&apos;キー = 値&apos;]といった配列になっています。これは実際には&apos;キー = 値;&apos;キー = 値;&apos;というようにセミコロンでつなげた1つのテキストの形でクッキーに保管されています</p>
                 <p>クッキーの値を取り出すためにはまずこれらの値を1つ1つ切り離して取り出したいキーを探してその値だけを取り出さないといけません。</p>
                 <p>requestのheadersはヘッダー情報がまとめられているプロパティでその中のcookieというプロパティにクッキーの値が保管されています。</p>
                 <p>場合によってはクッキーがまだないこともあるのでこのcookieの値がundefined出ないならクッキーのテキストを取り出し、そうでない場合は空のテキストを返すようにしています。</p>
                 <Code13 />
-                <p>data[i]のテキストをトリム(前後の余白を取り除く)し、startsWithでkey + '='というテキストで始まっているかどうかをチェックするものです。</p>
-                <p>これで始まっているならsubstringを使って'キー='の後のテキスト部分を取り出し、それをunescapeという関数を使ってクッキーの形式から普通のテキストに戻す処理</p>
+                <p>data[i]のテキストをトリム(前後の余白を取り除く)し、startsWithでkey + &apos;=&apos;というテキストで始まっているかどうかをチェックするものです。</p>
+                <p>これで始まっているならsubstringを使って&apos;キー=&apos;の後のテキスト部分を取り出し、それをunescapeという関数を使ってクッキーの形式から普通のテキストに戻す処理</p>
                 <p></p>
                 <p>クライアントごとにデータを保存するものとしてローカルストレージがあります。これもブラウザにデータを保存するための機能</p>
                 <p>ただ問題が1つあり、クライアント側でしか動かないということ</p>
@@ -587,7 +587,7 @@ const Post = () => {
             <div class="flex content-between">
               <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2 w-1/5">
                 <a href="#">
-                  <img
+                  <Image
                     class="rounded-t-lg"
                     src="/docs/images/blog/image-1.jpg"
                     alt=""
@@ -625,7 +625,7 @@ const Post = () => {
 
               <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2 w-1/5">
                 <a href="#">
-                  <img
+                  <Image
                     class="rounded-t-lg"
                     src="/docs/images/blog/image-1.jpg"
                     alt=""
@@ -662,7 +662,7 @@ const Post = () => {
               </div>
               <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2 w-1/5">
                 <a href="#">
-                  <img
+                  <Image
                     class="rounded-t-lg"
                     src="/docs/images/blog/image-1.jpg"
                     alt=""
@@ -699,7 +699,7 @@ const Post = () => {
               </div>
               <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2 w-1/5">
                 <a href="#">
-                  <img
+                  <Image
                     class="rounded-t-lg"
                     src="/docs/images/blog/image-1.jpg"
                     alt=""
@@ -736,7 +736,7 @@ const Post = () => {
               </div>
               <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2 w-1/5">
                 <a href="#">
-                  <img
+                  <Image
                     class="rounded-t-lg"
                     src="/docs/images/blog/image-1.jpg"
                     alt=""
@@ -788,7 +788,7 @@ const Post = () => {
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img
+                  <Image
                     class="rounded-t-lg"
                     src="/docs/images/blog/image-1.jpg"
                     alt=""
@@ -827,7 +827,7 @@ const Post = () => {
 
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img
+                  <Image
                     class="rounded-t-lg"
                     src="/docs/images/blog/image-1.jpg"
                     alt=""

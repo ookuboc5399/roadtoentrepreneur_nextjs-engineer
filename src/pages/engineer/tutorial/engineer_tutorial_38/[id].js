@@ -61,7 +61,7 @@ const Post = () => {
                   <div class="flex flex-nowrap">
                       <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                           <a href="#">
-                              <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                              <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                           </a>
                           <div class="p-5">
                               <a href="#">
@@ -174,7 +174,7 @@ const Post = () => {
                 
               </Layout_tutorial_38>
                 ) : id == 7 ? (
-                  <Layout_tutorial_23>
+                  <Layout_tutorial_38>
                   <h3>コンタクトフォーム作成</h3>
                   <p></p>
                   <p className='text-red-400'>[slug].tsx</p>
@@ -183,9 +183,9 @@ const Post = () => {
       
                   <p></p>
       
-                  </Layout_tutorial_23>
+                  </Layout_tutorial_38>
                 ) : id == 8 ? (
-                  <Layout_tutorial_17>
+                  <Layout_tutorial_38>
                   <h3>Views追加</h3>
                   <p>Django REST Framework は、GenericAPIView の中に一般的に必要な開発のコードをすでに用意してくれています。</p>
                   <p>それを継承することで、簡単に開発をすることができます </p>
@@ -194,9 +194,9 @@ const Post = () => {
                   <Tutorial1681 />
                   <p>Django REST Framework には多くの汎用ビューが存在しますので、どんどん活用していきましょう。 </p>
                   <p>公式ドキュメント - Generic views </p>
-                  </Layout_tutorial_17>
+                  </Layout_tutorial_38>
                 ) : id == 9 ? (
-                  <Layout_tutorial_17>
+                  <Layout_tutorial_38>
                   <h3>API確認</h3>
                   <p>サーバー起動</p>
                   <p>サーバーを起動させます</p>
@@ -217,7 +217,7 @@ const Post = () => {
                   <p>フロントエンドから GET、PUT、PUT/PATCH、DELETE などのメソッドを使うことで、データの取得や作成、更新、削除が用意になり、設計がしやすくなります。 </p>
                   <p>ぜひ API を活用した設計にしてみましょう。</p>
                   <p>次は Next.js を構築して、Django で構築した API をコールしていきます。</p>
-                  </Layout_tutorial_17>
+                  </Layout_tutorial_38>
                 ) : (
                     <></>
                 )}

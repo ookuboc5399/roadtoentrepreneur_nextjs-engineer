@@ -105,25 +105,25 @@ const Post = () => {
                 <p>rfceでreactコンポーネントを作成 </p>
                 <p>index.jsにFeedコンポーネントを読み込ませておきます</p>
                 <p className='text-red-400'>components/Feed.js</p>
-                <Tutorial4341 />
+               
 
                 <h3>Stories.js作成</h3>
                 <p>Feed.jsにStoriesコンポーネントを読み込ませておきます</p>
 
                 <h3>fakerインストール</h3>
-                <Tutorial4342 />
+             
                 <p></p>
 
                 <h3>Story.js作成</h3>
                 <p>rfceでreactコンポーネントを作成 </p>
                 <p>truncateはoverflow: hidden; 、text-overflow: ellipsis; 、white-space: nowrap;を合わせたclass</p>
-                <Tutorial4343 />
+                
                 <h3>tailwind-scrollbarインストール</h3>
-                <Tutorial4344 />
+              
                 <h3>tailwind-scrollbar-hideインストール</h3>
-                <Tutorial4345 />
+           
                 <p>tailwind.config.jsに追加します </p>
-                <Tutorial4346 />
+            
               </div>
             </div>
 
@@ -198,30 +198,30 @@ const Post = () => {
           <Layout_tutorial_65>
             <h3>_app.js</h3>
             <h4>Recoilのインストール</h4>
-            <Tutorial4381 />
+         
             <p>mailとuserのreducerを作成します。</p>
             <p>RecoilRootで</p>
             <p className='text-red-400'>_app.js</p>
-            <Tutorial4382 />
+          
             <p>atomsフォルダを作成</p>
             <p>modalAtom.jsファイルを作成</p>
             <p className='text-red-400'>atoms/modalAtom.js</p>
-            <Tutorial4383 />
+         
 
             <p className='text-red-400'>Header.js</p>
             <h4>Modal</h4>
             <p>Modal.jsファイル作成</p>
 
-            <Tutorial4384 />
+          
 
             <h4>headlessuiインストール</h4>
-            <Tutorial4385 />
+        
             <p></p>
             <p>index.jsにModalを追加します</p>
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -237,32 +237,31 @@ const Post = () => {
             </div>
             <h4>useRef</h4>
             <p>画像ファイルを選択している場合</p>
-            <Tutorial4386 />
+        
             <h4>useRef</h4>
             <p>画像ファイルを選択していない場合、カメラアイコンをクリックした時addImageToPostが実行される</p>
-            <Tutorial4387 />
-            <Tutorial4388 />
+       
             <p>FileReaderオブジェクトを使用するとユーザーのコンピュータに保存されているファイルの内容を非同期に読み取ることができる</p>
             <p>FileReader.readAsDataURLで指定されたBlobの内容の読み込みを開始し、result属性にファイルのデータを表すURLが格納される</p>
-            <Tutorial4389 />
+      
             <h4>ダイアログのタイトル</h4>
-            <Tutorial43810 />
+           
             <h4>ダイアログのcaption</h4>
-            <Tutorial43811 />
+       
             <h4>ダイアログアップロードボタン</h4>
-            <Tutorial43812 />
+           
             <h4>Firebaseへのデータ格納</h4>
             <p>firestoreから以下をインポート</p>
-            <Tutorial43814 />
+            
             <p>storageから以下をインポート</p>
-            <Tutorial43815 />
+          
             <h4>アップロード</h4>
             <p>uploadString()メソッドを使用してdata_url</p>
-            <Tutorial43816 />
+            
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -283,7 +282,7 @@ const Post = () => {
               <div className='mr-4 w-1/2'>
                 <h3>NextAuth</h3>
                 <h4>NextAuthのインストール</h4>
-                <Tutorial4371 />
+              
                 <div class="flex p-4 mb-4 text-xl text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
                   <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
                   <div>
@@ -292,7 +291,7 @@ const Post = () => {
                 </div>
                 <h4>[...nextauth].js作成</h4>
                 <p className='text-red-400'>[...nextauth].js</p>
-                <Tutorial4374 />
+               
                 <h4>プロジェクト作成</h4>
                 <h5>データベース作成</h5>
                 <p>構築→Firestore Database→データベースの作成→有効にする</p>
@@ -302,27 +301,27 @@ const Post = () => {
                 <p>プロジェクト設定→アプリを登録→Googleを選択→有効にする→保存→</p>
                 <h4>firebase.js作成</h4>
                 <p className='text-red-400'>firebase.js</p>
-                <Tutorial4372 />
+              
                 <h4>firebaseインストール</h4>
-                <Tutorial4373 />
+           
               </div>
               <div className='w-1/2'>
                 <p className='text-red-400'>[...nextauth].js</p>
-                <Tutorial4379 />
+                
                 <p className='text-red-400'>firebase.js</p>
-                <Tutorial43710 />
+             
               </div>
             </div>
           </Layout_tutorial_65>
         ) : id == 10 ? (
-          <Layout_tutorial_33>
+          <Layout_tutorial_65>
             <h3>Redux</h3>
             <p>mailとuserのreducerを作成します。</p>
             <p>できます </p>
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -337,14 +336,14 @@ const Post = () => {
               </div>
             </div>
             <p className='text-red-400'>app/store.js</p>
-            <Tutorial3381 />
+          
             <p className='text-red-400'>features/mailSlice.js</p>
-            <Tutorial3382 />
+         
             <p className='text-red-400'>features/userSlice.js</p>
-            <Tutorial3383 />
+           
             <p>Django REST Framework には多くの汎用ビューが存在しますので、どんどん活用していきましょう。 </p>
             <p>公式ドキュメント - Generic views </p>
-          </Layout_tutorial_33>
+          </Layout_tutorial_65>
         ) : id == 11 ? (
           <Layout_tutorial_65>
             <h3>Redux</h3>
@@ -359,14 +358,14 @@ const Post = () => {
             <h3>仮想環境の作成 </h3>
             <p>myvenvという名前で仮想環境を構築します。 </p>
 
-            <Tutorial43121 />
+           
             <h3>#仮想環境の実行</h3>
-            <Tutorial43122 />
+          
             <p>#requirements.txt作成</p>
-            <Tutorial43123 />
+        
             <p>requirements.txtファイルを作成してください。</p>
             <p>開発で必要なパッケージを記載します。</p>
-            <Tutorial43124 />
+          
 
             <div class="flex p-4 mb-4 text-xl text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
               <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -378,37 +377,37 @@ const Post = () => {
             </div>
             <h3>model</h3>
             <h4>UserManager作成</h4>
-            <Tutorial43125 />
+          
             <h4>UserManager作成</h4>
             <p>unique=trueで重複するemailが登録されないようにしている</p>
             <p>objects=UderManager()でUserクラスの中でUserManagerの中の関数を使用することができる</p>
-            <Tutorial43126 />
+            
             <h4>Profile作成</h4>
             <p>unique=trueで重複するemailが登録されないようにしている</p>
             <div className='flex'>
               <div className='mr-4 w-1/2'>
-                <Tutorial43128 />
+               
                 <h4>upload_avatar_path</h4>
                 <p>ファイルの保存先(/avatars)を指定し、指定のファイル名にして保存することができる</p>
                 <p>extにはファイルの拡張子が格納される</p>
-                <Tutorial43129 />
+             
               </div>
               <div className='w-1/2'>
-                <Tutorial43127 />
+               
               </div>
             </div>
             <h4>Post作成</h4>
             <p>OneToManyをForeignKeyで可能にしている</p>
             <div className='flex'>
               <div className='mr-4 w-1/2'>
-                <Tutorial43128 />
+                
                 <h4>upload_avatar_path</h4>
                 <p>ファイルの保存先(/avatars)を指定し、指定のファイル名にして保存することができる</p>
                 <p>extにはファイルの拡張子が格納される</p>
-                <Tutorial43129 />
+               
               </div>
               <div className='w-1/2'>
-                <Tutorial43127 />
+              
               </div>
             </div>
             <h4>settings.py</h4>
@@ -416,11 +415,11 @@ const Post = () => {
             <p>ログインしていなくてもユーザーに見せたいviewについては設定を上書きする</p>
             <p>認証の方法についてはDEFAULT_AUTHENTICATION_CLASSESでJWTを使う</p>
             <p>JWTの有効時間については60分に設定</p>
-            <Tutorial431210 />
+          
             <h4>マイグレーション実行</h4>
-            <Tutorial431211 />
+         
             <h4>superuser作成</h4>
-            <Tutorial431212 />
+      
           </Layout_tutorial_65>
         ) : id == 13 ? (
           <Layout_tutorial_65>
@@ -440,9 +439,7 @@ const Post = () => {
             <p className='text-red-400'>app/store.js</p>
             <p>.request.userで現在ログインしているユーザー情報を取得することができる</p>
             <p>queryset object.allで全てのデータを取得することができる</p>
-            <Tutorial43131 />
-
-            <Tutorial43132 />
+         
             <h3>Url</h3>
             <div className='flex'>
               <div className='mr-4 w-1/2'>
@@ -450,14 +447,14 @@ const Post = () => {
                 <h4>ModelViewSetの場合</h4>
                 <p>ファイルの保存先(/avatars)を指定し、指定のファイル名にして保存することができる</p>
                 <p>extにはファイルの拡張子が格納される</p>
-                <Tutorial43133 />
+              
               </div>
               <div className='w-1/2'>
                 <h4>ModelViewSetの場合</h4>
-                <Tutorial43134 />
+               
               </div>
             </div>
-            <Tutorial43135 />
+        
           </Layout_tutorial_65>
         ) : id == 14 ? (
           <Layout_tutorial_65>
@@ -473,14 +470,14 @@ const Post = () => {
             <h3>仮想環境の作成 </h3>
             <p>myvenvという名前で仮想環境を構築します。 </p>
 
-            <Tutorial43151 />
+       
             <h3>#仮想環境の実行</h3>
-            <Tutorial43152 />
+       
             <p>#requirements.txt作成</p>
-            <Tutorial43153 />
+     
             <p>requirements.txtファイルを作成してください。</p>
             <p>開発で必要なパッケージを記載します。</p>
-            <Tutorial43154 />
+     
 
             <div class="flex p-4 mb-4 text-xl text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
               <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -554,9 +551,7 @@ const Post = () => {
             <p className='text-red-400'>app/store.js</p>
             <p>.request.userで現在ログインしているユーザー情報を取得することができる</p>
             <p>queryset object.allで全てのデータを取得することができる</p>
-            <Tutorial43131 />
-
-            <Tutorial43132 />
+            
             <h3>Url</h3>
             <div className='flex'>
               <div className='mr-4 w-1/2'>
@@ -564,14 +559,14 @@ const Post = () => {
                 <h4>ModelViewSetの場合</h4>
                 <p>ファイルの保存先(/avatars)を指定し、指定のファイル名にして保存することができる</p>
                 <p>extにはファイルの拡張子が格納される</p>
-                <Tutorial43133 />
+              
               </div>
               <div className='w-1/2'>
                 <h4>ModelViewSetの場合</h4>
-                <Tutorial43134 />
+           
               </div>
             </div>
-            <Tutorial43135 />
+          
           </Layout_tutorial_65>
         ) : (
           <></>

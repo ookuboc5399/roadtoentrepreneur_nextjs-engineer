@@ -198,7 +198,7 @@ const Post = () => {
               <div class="flex flex-nowrap">
                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                   <a href="#">
-                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                   </a>
                   <div class="p-5">
                     <a href="#">
@@ -214,7 +214,7 @@ const Post = () => {
 
                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                   <a href="#">
-                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                   </a>
                   <div class="p-5">
                     <a href="#">
@@ -230,7 +230,7 @@ const Post = () => {
 
                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                   <a href="#">
-                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                   </a>
                   <div class="p-5">
                     <a href="#">
@@ -246,7 +246,7 @@ const Post = () => {
 
                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                   <a href="#">
-                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                   </a>
                   <div class="p-5">
                     <a href="#">
@@ -350,7 +350,7 @@ const Post = () => {
               <div class="flex flex-nowrap">
                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                   <a href="#">
-                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                   </a>
                   <div class="p-5">
                     <a href="#">
@@ -366,7 +366,7 @@ const Post = () => {
 
                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                   <a href="#">
-                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                   </a>
                   <div class="p-5">
                     <a href="#">
@@ -382,7 +382,7 @@ const Post = () => {
 
                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                   <a href="#">
-                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                   </a>
                   <div class="p-5">
                     <a href="#">
@@ -398,7 +398,7 @@ const Post = () => {
 
                 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                   <a href="#">
-                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                   </a>
                   <div class="p-5">
                     <a href="#">

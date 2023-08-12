@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import React from 'react';
+import Link from 'next/link';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
 import { Python } from '../../../../components/layout/engineer/engineer';
@@ -79,7 +80,7 @@ const Post = () => {
               </div>
           </div>
           <p>end= で文字列を指定することで末尾を変更できる</p>
-          <p>end=""は末尾に何も出力しない</p>
+          <p>end=&quot;&quot;は末尾に何も出力しない</p>
           <div className='flex'>
               <div className='m-6'>
                   <p>コード入力</p>
@@ -117,7 +118,7 @@ const Post = () => {
               </div>
           </div>
           <p>int関数は小数点以下を切り捨てて整数としている</p>
-          <p>end=""は末尾に何も出力しない</p>
+          <p>end=&quot;&quot;は末尾に何も出力しない</p>
           <div className='flex'>
               <div className='m-6'>
                   <p>コード入力</p>
@@ -519,8 +520,8 @@ const Post = () => {
           <div>
               <p>Jupyter Notebookは記述したプログラムは随時自動で保存されます</p>
               <p></p>
-              <p></p>print('こんにちは')の文字列の部分「'こんにちは'」のみ赤色で表示されています。
-              <p></p>これはJupyter Notebookの機能によるものであり「'」で囲まれた文字列の部分は自動で赤色になります
+              <p></p>print(&apos;こんにちは&apos;)の文字列の部分「&apos;こんにちは&apos;」のみ赤色で表示されています。
+              <p></p>これはJupyter Notebookの機能によるものであり「&apos;」で囲まれた文字列の部分は自動で赤色になります
 
               <p></p>この機能によってコードがより読みやすく編集しやすくなります。
               <p></p>

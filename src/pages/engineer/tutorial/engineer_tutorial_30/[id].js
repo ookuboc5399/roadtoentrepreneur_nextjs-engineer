@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_44 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_30 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -103,19 +103,19 @@ const Post = () => {
                     <p>componentsフォルダを作成し、その中にSidebar.tsxファイルを作ります。</p>
                     <p>rafceでreactコンポーネントを作成 </p>
                     <p className='text-red-400'>components/Sidebar.js</p>
-                    <Tutorial2331/>
+                  
                     <p> Twitterのサイドバーで使われているアイコンを実現するためにheroiconsを使用します</p>
                     <p>下記コマンドでインストールします</p>
                    
-                    <Tutorial2332/>
+                 
                     <h3>アイコンの表示</h3>
                     <p className='text-red-400'>components/Sidebar.js</p>
-                    <Tutorial2333/>
+               
                     
                     
                     <p>SidebarRow.tsxファイルを作成</p>
                     <p className='text-red-400'>components/SidebarRow.js</p> 
-                    <Tutorial2334/>          
+                        
                     <p>Sidebar.tsxからpropsを使ってIconとtitleを渡せるようにしています</p>
                  
                   
@@ -130,7 +130,7 @@ const Post = () => {
                     </div>
                        <p>max-w-fit</p>
                     <p className='text-red-400'>components/SidebarRow.js</p>
-                    <Tutorial2335/> 
+                  
                     <h4>tailwind.config.js</h4>
                     <p>マウスをhoverした時にテキストがtwitterと同じ色に設定できます</p>
                     <p className='text-red-400'>tailwind.config.js</p>
@@ -177,7 +177,7 @@ const Post = () => {
                   <Tutorial38510 />
               </Layout_tutorial_30>
                 ) : id == 6 ? (
-                  <Layout_tutorial_38>
+                  <Layout_tutorial_30>
                   <h3>詳細ページ</h3>
                   <p>ルーティングを設定します。</p>
                   <p>プロジェクト用 URL を作成 </p>
@@ -187,9 +187,9 @@ const Post = () => {
                   <p className='text-red-400'>components/SideBar.tsx</p>
                   <Tutorial3861 />
                 
-              </Layout_tutorial_38>
+              </Layout_tutorial_30>
                 ) : id == 7 ? (
-                  <Layout_tutorial_23>
+                  <Layout_tutorial_30>
                   <h3>コンタクトフォーム作成</h3>
                   <p></p>
                   <p className='text-red-400'>[slug].tsx</p>
@@ -198,9 +198,9 @@ const Post = () => {
       
                   <p></p>
       
-                  </Layout_tutorial_23>
+                  </Layout_tutorial_30>
                 ) : id == 8 ? (
-                  <Layout_tutorial_17>
+                  <Layout_tutorial_30>
                   <h3>Views追加</h3>
                   <p>Django REST Framework は、GenericAPIView の中に一般的に必要な開発のコードをすでに用意してくれています。</p>
                   <p>それを継承することで、簡単に開発をすることができます </p>
@@ -209,9 +209,9 @@ const Post = () => {
                   <Tutorial1681 />
                   <p>Django REST Framework には多くの汎用ビューが存在しますので、どんどん活用していきましょう。 </p>
                   <p>公式ドキュメント - Generic views </p>
-                  </Layout_tutorial_17>
+                  </Layout_tutorial_30>
                 ) : id == 9 ? (
-                  <Layout_tutorial_17>
+                  <Layout_tutorial_30>
                   <h3>API確認</h3>
                   <p>サーバー起動</p>
                   <p>サーバーを起動させます</p>
@@ -232,7 +232,7 @@ const Post = () => {
                   <p>フロントエンドから GET、PUT、PUT/PATCH、DELETE などのメソッドを使うことで、データの取得や作成、更新、削除が用意になり、設計がしやすくなります。 </p>
                   <p>ぜひ API を活用した設計にしてみましょう。</p>
                   <p>次は Next.js を構築して、Django で構築した API をコールしていきます。</p>
-                  </Layout_tutorial_17>
+                  </Layout_tutorial_30>
                 ) : (
                     <></>
                 )}

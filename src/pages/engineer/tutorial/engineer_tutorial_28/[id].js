@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_44 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_28 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
   const router = useRouter()
@@ -105,7 +105,7 @@ const Post = () => {
                 <Tutorial2831 />
                 <h4>reacr-native-elementのインストール</h4>
                 <p> reacr-native-elementのインストールの際、safe-area-contextのバージョンが新しいとインストールできない場合は、バージョンを落としてインストールします </p>
-                <p>react-native-safe-area-context@"^3.1.9" from react-native-elements@3.4.2</p>
+                <p>react-native-safe-area-context@&quot;^3.1.9&quot; from react-native-elements@3.4.2</p>
                 <Tutorial2832 />
                 <h4>iconsインストール</h4>
 
@@ -188,7 +188,7 @@ const Post = () => {
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -227,7 +227,7 @@ const Post = () => {
 
           </Layout_tutorial_28>
         ) : id == 7 ? (
-          <Layout_tutorial_35>
+          <Layout_tutorial_28>
             <div className='flex'>
               <div className='mr-4 w-1/2'>
 
@@ -251,16 +251,16 @@ const Post = () => {
                 <Tutorial33710 />
               </div>
             </div>
-          </Layout_tutorial_35>
+          </Layout_tutorial_28>
         ) : id == 8 ? (
-          <Layout_tutorial_33>
+          <Layout_tutorial_28>
             <h3>Redux</h3>
             <p>mailとuserのreducerを作成します。</p>
             <p>できます </p>
             <div class="flex flex-nowrap">
               <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                 <a href="#">
-                  <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                  <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
                 <div class="p-5">
                   <a href="#">
@@ -282,16 +282,16 @@ const Post = () => {
             <Tutorial3383 />
             <p>Django REST Framework には多くの汎用ビューが存在しますので、どんどん活用していきましょう。 </p>
             <p>公式ドキュメント - Generic views </p>
-          </Layout_tutorial_33>
+          </Layout_tutorial_28>
         ) : id == 9 ? (
-          <Layout_tutorial_33>
+          <Layout_tutorial_28>
             <div className='flex'>
               <div className='mr-4 w-1/2'>
 
                 <h3>SendMail.js</h3>
                 <p>iconを表示させます。</p>
                 <p className='text-red-400'>Mail.js</p>
-                <Tutorial3391 />
+             
                 <div class="flex p-4 mb-4 text-xl text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
                   <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
                   <div>
@@ -299,25 +299,25 @@ const Post = () => {
                   </div>
                 </div>
                 <h4>React Hook formのインストール</h4>
-                <Tutorial3392 />
+            
               </div>
               <div className='w-1/2'>
                 <p className='text-red-400'>SendMail.js</p>
-                <Tutorial3399 />
+              
                 <p className='text-red-400'>SendMail.css</p>
-                <Tutorial33910 />
+            
               </div>
             </div>
-          </Layout_tutorial_33>
+          </Layout_tutorial_28>
         ) : id == 10 ? (
-          <Layout_tutorial_33>
+          <Layout_tutorial_28>
             <div className='flex'>
               <div className='mr-4 w-1/2'>
 
                 <h3>firebase.js</h3>
                 <p>firebaseをインストールします。</p>
 
-                <Tutorial33101 />
+              
                 <p>srcフォルダの直下にfirebase.jsを作成します。</p>
                 <div class="flex p-4 mb-4 text-xl text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
                   <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -326,16 +326,16 @@ const Post = () => {
                   </div>
                 </div>
                 <h4>React Hook formのインストール</h4>
-                <Tutorial33102 />
+               
               </div>
               <div className='w-1/2'>
                 <p className='text-red-400'>SendMail.js</p>
-                <Tutorial33109 />
+               
                 <p className='text-red-400'>SendMail.css</p>
-                <Tutorial331010 />
+             
               </div>
             </div>
-          </Layout_tutorial_33>
+          </Layout_tutorial_28>
         ) : (
           <></>
         )}

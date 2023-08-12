@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_14 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_14 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -146,7 +146,7 @@ const Post = () => {
                             </div>
                             <div className='m-6'>
                                 <p>get_user_model()は現時点で有効になっているUserモデルを呼び出してくれる</p>
-                                <p>ここではsettings.pyのAUTH_USER_MODEL='accounts.UserAccount'</p>
+                                <p>ここではsettings.pyのAUTH_USER_MODEL=&apos;accounts.UserAccount&apos;</p>
                                 <p>UserAdminクラスを継承し、新たなクラスを作成→そのクラスをadmin.site.registerで登録</p>
                             </div>
                         </div>
@@ -379,7 +379,7 @@ const Post = () => {
                         <div class="flex flex-nowrap">
                             <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                 <a href="#">
-                                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                 </a>
                                 <div class="p-5">
                                     <a href="#">
@@ -395,7 +395,7 @@ const Post = () => {
 
                             <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
                                 <a href="#">
-                                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                                    <Image class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                                 </a>
                                 <div class="p-5">
                                     <a href="#">
@@ -856,54 +856,49 @@ const Post = () => {
                         <p>下記のように 200 ステータスが返ってきたら成功です</p>
                         <Tutorial14308 />
                     </Layout_tutorial_14>
-                ) : id == 22 ? (
-                    <Layout_tutorial_14>
-                        <p>ナビゲーション修正</p>
-                        <p>ナビゲーションを認証状態(isAuthenticated)によって変更していきます。</p>
-                        <p>ログアウトボタンを押したときにログアウト関数がコールされるようにします</p>
-                        <Tutorial14221 />
-                        <p>動作確認</p>
-                        <p>ログイン、ログアウトができるようになりましたので、動作を確認してみてください</p>
-                    </Layout_tutorial_14>
-                ) : id == 23 ? (
-                    <Layout_tutorial_14>
-                        <p>トップページ修正</p>
-                        <p>トップページを認証状態(isAuthenticated)によって変更していきます</p>
-                        <p>認証が通るとシステムはログイン状態となります</p>
-                        <p>認証が成功するとログインユーザーの名前が表示されます</p>
-
-                        <Tutorial14231 />
-                        <p>これでフロントエンドとバックエンドの認証システムが完成しました。</p>
-
-                        <p>次は Stripe でお支払い機能を構築して、無料会員と有料会員で表示が分かれるようにしていきます。</p>
-                    </Layout_tutorial_14>
-                ) : id == 24 ? (
-                    <Layout_tutorial_14>
-                        <p>Stripe導入</p>
-                        <p>ここからは Stripe を導入してサブスク有料会員の構築方法を学習していきます</p>
-                        <p>フロントエンドから Stripe API をコールして、Stripe Checkout画面でカード情報を入力します。</p>
-                        <p>お支払いが成功すると、Stripe の Webhook を受け取り、Djangoデータベースの有効期限を更新します。</p>
-                        <p>仕組みは下記のサブスクリプションの仕組みでしっかりと理解しておいてください</p>
-                        <p>バックエンドの Django から構築します</p>
-
-                        <p>モデル。</p>
-                        <p>UserAccount モデルに、顧客 ID(customer_id)と有料会員有効期限(current_period_end)を追加します</p>
-                        <p>有効期限までは有料コンテンツが表示されます。</p>
-                        <p>有効期限が過ぎてしまうと、無料コンテンツのみが表示されます。</p>
-                        <p>毎月のお支払いで Webhook を受信するので、受信したら有効期限を更新します。</p>
-                        <Tutorial14241 />
-                        <p>データベース再構築</p>
-                        <p>モデルを変更したので、データベースを再構築します。</p>
-                        <Tutorial14242 />
-
-                    </Layout_tutorial_14>
-                ) : id == 25 ? (
-                    <Layout_tutorial_14>
-                        <p>Serializer修正</p>
-                        <p>モデルを変更したので、Serializer の fields も変更します。</p>
-                        <p>顧客 ID と有効期限を追加します。</p>
-                        <Tutorial14251 />
-                    </Layout_tutorial_14>
+                ) : id == 32 ? (
+                  <Layout_tutorial_14>
+                  <p>トップページ修正</p>
+                      <p>トップページに、有料会員の場合は、有料コンテンツを表示するようにします。</p>
+                      <p>current_period_endに有効期限が格納されているので、本日が有効期限内であれば有料コンテンツが表示されます。</p>
+                      <Tutorial14321/>
+    </Layout_tutorial_14>
+                ) : id == 33 ? (
+                  <Layout_tutorial_14>
+                  <p>最終動作確認</p>
+                      <p>お支払いをして有料会員になれるか最終動作確認をします。</p>
+                      <p>念のため NextJS と Webhook サーバーを再起動しておいてください</p>
+                   
+                      <Tutorial14331/>
+                      <Tutorial14332/>
+                      <p>今は無料会員ですので、トップページのこちらからボタンをクリックします</p>
+                      <p>お支払いボタンをクリックします。</p>
+                      <p>Stripe のチェックアウト画面に遷移します。</p>
+                      <p>Stripe で設定した商品が表示されます。</p>
+                      <p>今はテストモードなので、カード情報はテスト用の番号を入力します</p>
+                      <Tutorial14333/>
+                      <p>カード番号を入力して、申し込むボタンをクリックします。</p>
+                      <p>お支払いが完了すると、チェックアウト完了画面に遷移します。</p>
+                      <p>トップページに遷移します。</p>
+                      <p>有料会員の期限と有料コンテンツが表示されています。</p>
+                      <p>こうなっていればお支払いが成功となります。</p>
+                      <p>もし有料コンテンツが表示されていない場合は、Webhook がうまくいっていない可能性もあるので、再起動するなど調べてみてください。</p>
+                      <p>DRF 参照コード</p>
+                      <p>Next.js 参照コード</p>
+      </Layout_tutorial_14>
+                ) : id == 34 ? (
+                  <Layout_tutorial_14>
+                  <p>おわりに</p>
+                      <p>チュートリアルを最後まで読んでいただき、誠にありがとうございました。</p>
+                      <p>Django REST Framework + NextJS + Stripeサブスク有料会員サイト構築チュートリアルはここまでで終わりとなります。</p>
+                      <p>Django REST Frameworkでの認証システムの構築方法やNextJSでReduxの構築方法、Stripeでお支払いの方法など多くのことを学習しました。</p>
+                      <p>Stripeの仕組みはしっかりとドキュメントを読んで理解しておいてください</p>
+                      <p>ぜひ有料会員サイトを構築してみてください</p>
+                      <p>式ドキュメントを参考にして、さらに理解を深めていきましょう。</p>
+                      <p>Django REST Framework 公式ドキュメント</p>
+                      <p>Next.js 公式ドキュメント</p>
+                      <p>Stripe 公式ドキュメント</p>
+      </Layout_tutorial_14>
                 ) : (
                     <></>
                 )}
@@ -2804,3 +2799,1020 @@ const Tutorial14195 = () => {
     );
 };
 
+const Tutorial14201= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14202= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14204= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+
+const Tutorial14211= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14212= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14213= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14214= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14221= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14231= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14241= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14242= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14251= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14261= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14271= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14281= () => {
+  const test = `
+  NEXT_PUBLIC_API_URL=http://localhost:8000
+  NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_xxxxx
+  NEXT_PUBLIC_STRIPE_SECRET_KEY=sk_test_xxxxx
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14282= () => {
+  const test = `
+  NEXT_PUBLIC_API_URL=http://localhost:8000
+  NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_xxxxx
+  NEXT_PUBLIC_STRIPE_SECRET_KEY=sk_test_xxxxx
+  NEXT_PUBLIC_STRIPE_PRICE=price_xxxxx
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+
+const Tutorial14291= () => {
+  const test = `
+  import { useEffect } from 'react'
+  import { useSelector, useDispatch } from 'react-redux'
+  import { create_checkout } from '../actions/auth'
+  import { useRouter } from 'next/router'
+  import Head from 'next/head'
+  import Loader from 'react-loader-spinner'
+  
+  const Checkout = () => {
+    const dispatch = useDispatch()
+    const router = useRouter()
+    const checkout_url = useSelector((state) => state.auth.checkout_url)
+    const user = useSelector((state) => state.auth.user)
+    const loading = useSelector((state) => state.auth.loading)
+  
+    useEffect(() => {
+      if (checkout_url) {
+        router.push(checkout_url)
+      }
+    }, [checkout_url])
+  
+    const checkoutHandle = async () => {
+      if (dispatch && dispatch !== null && dispatch !== undefined && user) {
+        await dispatch(create_checkout(user.email))
+      }
+    }
+  
+    return (
+      <>
+        <Head>
+          <title>有料会員サイト | お支払い</title>
+        </Head>
+  
+        <div className="border rounded w-1/3 mx-auto text-center shadow-sm">
+          <div className="p-4">
+            <h2 className="text-2xl font-medium mb-4">有料会員</h2>
+            <div className="text-gray-500 mb-4">有効コンテンツをご利用頂けます。</div>
+            <div className="mb-4">
+              <span className="text-4xl font-extrabold">1000円</span>
+              <span className="font-medium">/月</span>
+            </div>
+  
+            <div className="flex justify-center">
+              {loading ? (
+                <Loader type="Oval" color="#F59E00" width={50} height={50} />
+              ) : (
+                <div className="button-yellow cursor-pointer" onClick={checkoutHandle}>
+                  お支払い
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  }
+  
+  export default Checkout
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14292= () => {
+  const test = `
+  // チェックアウト完了
+export const CREATE_CHECKOUT_SUCCESS = 'CREATE_CHECKOUT_SUCCESS'
+export const CREATE_CHECKOUT_FAIL = 'CREATE_CHECKOUT_FAIL'
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14293= () => {
+  const test = `
+  import {
+    ...
+  
+    // チェックアウト完了
+    CREATE_CHECKOUT_SUCCESS, // 追加
+    CREATE_CHECKOUT_FAIL, // 追加
+  
+    ...
+  } from './types'
+  
+  // ↓追加
+  // チェックアウト
+  export const create_checkout = (email) => async (dispatch) => {
+    dispatch({
+      type: SET_AUTH_LOADING,
+    })
+  
+    const body = JSON.stringify({
+      email,
+    })
+  
+    try {
+      const res = await fetch('/api/account/create_checkout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: body,
+      })
+  
+      const data = await res.json()
+  
+      if (res.status === 200) {
+        dispatch({
+          type: CREATE_CHECKOUT_SUCCESS,
+          payload: data.url,
+        })
+        dispatch(verify())
+      } else {
+        dispatch({
+          type: CREATE_CHECKOUT_FAIL,
+        })
+      }
+    } catch (err) {
+      dispatch({
+        type: CREATE_CHECKOUT_FAIL,
+      })
+    }
+  
+    dispatch({
+      type: REMOVE_AUTH_LOADING,
+    })
+  }
+  
+  // ↑追加
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14294= () => {
+const test = `
+import Stripe from 'stripe'
+
+const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY, {
+  apiVersion: '2020-08-27',
+})
+
+export default async (req, res) => {
+  if (req.method === 'POST') {
+    const { email } = req.body
+
+    try {
+      const params = {
+        customer_email: email,
+        mode: 'subscription',
+        payment_method_types: ['card'],
+        line_items: [
+          {
+            price: process.env.NEXT_PUBLIC_STRIPE_PRICE,
+            quantity: 1,
+          },
+        ],
+        allow_promotion_codes: true,
+        success_url: \`＄{req.headers.origin}/result?session_id={CHECKOUT_SESSION_ID}\`,
+        cancel_url: \`＄{req.headers.origin}/checkout\`,
+      }
+
+      const checkoutSession = await stripe.checkout.sessions.create(params)
+
+      return res.status(200).json(checkoutSession)
+    } catch (err) {
+      return res.status(500).json({
+        error: 'チェックアウトに失敗しました',
+      })
+    }
+  } else {
+    res.setHeader('Allow', ['POST'])
+    return res.status(405).json({ error: \`Method ＄{req.method} now allowed\` })
+  }
+}
+
+`
+return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+        {test}
+    </SyntaxHighlighter>
+);
+};
+
+
+const Tutorial14295= () => {
+const test = `
+import {
+  ...
+
+  // チェックアウト完了
+  CREATE_CHECKOUT_SUCCESS, // 追加
+  CREATE_CHECKOUT_FAIL, // 追加
+
+  ...
+} from '../actions/types'
+
+const initialState = {
+  user: null,
+  isAuthenticated: null,
+  loading: false,
+  checkout_url: null, // 追加
+}
+
+const authReducer = (state = initialState, action) => {
+  const { type, payload } = action
+
+  switch (type) {
+    ...
+
+    // ↓追加
+    // チェックアウト完了
+    case CREATE_CHECKOUT_SUCCESS:
+      return {
+        ...state,
+        checkout_url: payload,
+      }
+    case CREATE_CHECKOUT_FAIL:
+      return {
+        ...state,
+      }
+    // ↑追加
+
+    ...
+  }
+}
+
+export default authReducer
+
+`
+return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+        {test}
+    </SyntaxHighlighter>
+);
+};
+
+// const Tutorial14296= () => {
+// const test = `
+// success_url: `${req.headers.origin}/result?session_id={CHECKOUT_SESSION_ID}`,
+
+// `
+// return (
+//     <SyntaxHighlighter language="js" style={syntaxStyle} >
+//         {test}
+//     </SyntaxHighlighter>
+// );
+// };
+
+// const Tutorial14301= () => {
+//   const test = `
+//   import { useEffect } from 'react'
+//   import { useSelector, useDispatch } from 'react-redux'
+//   import { detail_checkout } from '../actions/auth'
+//   import { useRouter } from 'next/router'
+//   import Head from 'next/head'
+  
+//   const Result = () => {
+//     const dispatch = useDispatch()
+//     const router = useRouter()
+//     const checkout_detail = useSelector((state) => state.auth.checkout_detail)
+//     const session_id = router.query.session_id
+  
+//     useEffect(() => {
+//       const fn = async () => {
+//         if (dispatch && dispatch !== null && dispatch !== undefined) {
+//           await dispatch(detail_checkout(session_id))
+//         }
+//       }
+//       if (session_id) {
+//         fn()
+//       }
+//     }, [session_id])
+  
+//     return (
+//       <>
+//         <Head>
+//           <title>有料会員サイト | お支払い完了</title>
+//         </Head>
+  
+//         {session_id && (
+//           <div className="text-center">
+//             <div className="text-2xl mb-3">{checkout_detail && checkout_detail.customer.name}様</div>
+//             <div className="text-3xl">お支払いが完了しました</div>
+//           </div>
+//         )}
+//       </>
+//     )
+//   }
+  
+//   export default Result
+  
+//   `
+//   return (
+//       <SyntaxHighlighter language="js" style={syntaxStyle} >
+//           {test}
+//       </SyntaxHighlighter>
+//   );
+// };
+
+const Tutorial14296= () => {
+  const test = `
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+// const Tutorial14302= () => {
+//   const test = `
+//   // チェックアウト詳細
+//   export const DETAIL_CHECKOUT_SUCCESS = 'DETAIL_CHECKOUT_SUCCESS'
+//   export const DETAIL_CHECKOUT_FAIL = 'DETAIL_CHECKOUT_FAIL'
+  
+//   `
+//   return (
+//       <SyntaxHighlighter language="js" style={syntaxStyle} >
+//           {test}
+//       </SyntaxHighlighter>
+//   );
+// };
+
+// const Tutorial14303= () => {
+//   const test = `
+//   import {
+//     ...
+  
+//     // チェックアウト詳細
+//     DETAIL_CHECKOUT_SUCCESS, // 追加
+//     DETAIL_CHECKOUT_FAIL, // 追加
+  
+//     ...
+//   } from './types'
+  
+//   // ↓追加
+//   // チェックアウト詳細
+//   export const detail_checkout = (session_id) => async (dispatch) => {
+//     dispatch({
+//       type: SET_AUTH_LOADING,
+//     })
+  
+//     const body = JSON.stringify({
+//       session_id,
+//     })
+  
+//     try {
+//       const res = await fetch('/api/account/detail_checkout', {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         body: body,
+//       })
+  
+//       const data = await res.json()
+  
+//       if (res.status === 200) {
+//         dispatch({
+//           type: DETAIL_CHECKOUT_SUCCESS,
+//           payload: data,
+//         })
+//       } else {
+//         dispatch({
+//           type: DETAIL_CHECKOUT_FAIL,
+//         })
+//       }
+//     } catch (err) {
+//       dispatch({
+//         type: DETAIL_CHECKOUT_FAIL,
+//       })
+//     }
+  
+//     dispatch({
+//       type: REMOVE_AUTH_LOADING,
+//     })
+//   }
+  
+//   // ↑追加
+  
+//   `
+//   return (
+//       <SyntaxHighlighter language="js" style={syntaxStyle} >
+//           {test}
+//       </SyntaxHighlighter>
+//   );
+// };
+
+// const Tutorial14304= () => {
+// const test = `
+// import Stripe from 'stripe'
+
+// const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY, {
+//   apiVersion: '2020-08-27',
+// })
+
+// export default async (req, res) => {
+//   if (req.method === 'POST') {
+//     const { session_id } = req.body
+
+//     if (!session_id.startsWith('cs_')) {
+//       return res.status(401).json({
+//         error: 'セッションIDがありません',
+//       })
+//     }
+
+//     try {
+//       const checkout_session = await stripe.checkout.sessions.retrieve(session_id, {
+//         expand: ['customer'],
+//       })
+
+//       return res.status(200).json(checkout_session)
+//     } catch (err) {
+//       return res.status(500).json({
+//         error: 'チェックアウト詳細取得に失敗しました',
+//       })
+//     }
+//   } else {
+//     res.setHeader('Allow', ['POST'])
+//     return res.status(405).json({ error: `Method ${req.method} now allowed` })
+//   }
+// }
+
+// `
+// return (
+//     <SyntaxHighlighter language="js" style={syntaxStyle} >
+//         {test}
+//     </SyntaxHighlighter>
+// );
+// };
+
+
+// const Tutorial14304= () => {
+// const test = `
+// import {
+//   ...
+
+//   // チェックアウト詳細
+//   DETAIL_CHECKOUT_SUCCESS, // 追加
+//   DETAIL_CHECKOUT_FAIL, // 追加
+
+//   ...
+// } from '../actions/types'
+
+// const initialState = {
+//   user: null,
+//   isAuthenticated: null,
+//   loading: false,
+//   checkout_url: null,
+//   checkout_detail: null, // 追加
+// }
+
+// const authReducer = (state = initialState, action) => {
+//   const { type, payload } = action
+
+//   switch (type) {
+//     ...
+
+//     // ↓追加
+//     // チェックアウト詳細
+//     case DETAIL_CHECKOUT_SUCCESS:
+//       return {
+//         ...state,
+//         checkout_detail: payload,
+//       }
+//     case DETAIL_CHECKOUT_FAIL:
+//       return {
+//         ...state,
+//       }
+//     // ↑追加
+
+//     ...
+//   }
+// }
+
+// export default authReducer
+
+// `
+// return (
+//     <SyntaxHighlighter language="js" style={syntaxStyle} >
+//         {test}
+//     </SyntaxHighlighter>
+// );
+// };
+
+// const Tutorial14301= () => {
+//   const test = `
+//   import { buffer } from 'micro'
+//   import Cors from 'micro-cors'
+//   import Stripe from 'stripe'
+  
+//   const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY, {
+//     apiVersion: '2020-08-27',
+//   })
+  
+//   export const config = {
+//     api: {
+//       bodyParser: false,
+//     },
+//   }
+  
+//   const cors = Cors({
+//     allowMethods: ['POST', 'HEAD'],
+//   })
+  
+//   const handleUpdate = async (email, customer_id, created) => {
+//     const body = JSON.stringify({
+//       email,
+//       customer_id,
+//       created,
+//     })
+  
+//     try {
+//       await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/subscription/`, {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         body: body,
+//       })
+//     } catch (err) {
+//       console.log(err)
+//     }
+//   }
+  
+//   const webhookHandler = async (req, res) => {
+//     if (req.method === 'POST') {
+//       const buf = await buffer(req)
+//       const sig = req.headers['stripe-signature']
+//       const webhookSecret = process.env.NEXT_PUBLIC_STRIPE_WEBHOOK_SECRET
+//       let event
+  
+//       try {
+//         event = stripe.webhooks.constructEvent(buf.toString(), sig, webhookSecret)
+//       } catch (err) {
+//         res.status(400).send(`Webhook Error: ${err.message}`)
+//         return
+//       }
+  
+//       try {
+//         // invoice.payment_succeededイベントを受信
+//         if (event.type === 'invoice.payment_succeeded') {
+//           const data = event.data.object
+//           const customer_id = data.customer
+//           const email = data.customer_email
+//           const created = data.created
+//           await handleUpdate(email, customer_id, created)
+//         }
+//       } catch (error) {
+//         return res.status(400).send('Webhookでエラーが発生しました')
+//       }
+  
+//       res.json({ received: true })
+//     } else {
+//       res.setHeader('Allow', 'POST')
+//       res.status(405).end('Method Not Allowed')
+//     }
+//   }
+  
+//   export default cors(webhookHandler)
+  
+//   `
+//   return (
+//       <SyntaxHighlighter language="js" style={syntaxStyle} >
+//           {test}
+//       </SyntaxHighlighter>
+//   );
+// };
+
+// const Tutorial14302= () => {
+//   const test = `
+//   $ stripe login
+  
+//   `
+//   return (
+//       <SyntaxHighlighter language="js" style={syntaxStyle} >
+//           {test}
+//       </SyntaxHighlighter>
+//   );
+// };
+
+const Tutorial14203= () => {
+  const test = `
+  $ stripe listen --forward-to localhost:3000/api/webhooks
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14301= () => {
+  const test = `
+
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14302= () => {
+  const test = `
+
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14303= () => {
+  const test = `
+
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14304= () => {
+const test = `
+⢿ Checking for new versions... A newer version of the Stripe CLI is available, please update to: v1.7.6
+⣟ Getting ready... > Ready! Your webhook signing secret is whsec_xxxxx (^C to quit)
+
+`
+return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+        {test}
+    </SyntaxHighlighter>
+);
+};
+
+const Tutorial14305= () => {
+const test = `
+NEXT_PUBLIC_API_URL=http://localhost:8000
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_xxxxx
+NEXT_PUBLIC_STRIPE_SECRET_KEY=sk_test_xxxxx
+NEXT_PUBLIC_STRIPE_PRICE=price_xxxxx
+NEXT_PUBLIC_STRIPE_WEBHOOK_SECRET=whsec_xxxxx
+
+`
+return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+        {test}
+    </SyntaxHighlighter>
+);
+};
+
+const Tutorial14306= () => {
+const test = `
+Ctrl + C
+npm run dev
+
+`
+return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+        {test}
+    </SyntaxHighlighter>
+);
+};
+
+const Tutorial14307= () => {
+const test = `
+$ stripe trigger payment_intent.succeeded
+
+`
+return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+        {test}
+    </SyntaxHighlighter>
+);
+};
+
+const Tutorial14308= () => {
+const test = `
+⢿ Checking for new versions... A newer version of the Stripe CLI is available, please update to: v1.7.6
+⣟ Getting ready... > Ready! Your webhook signing secret is whsec_xxxxx (^C to quit)
+2021-11-09 18:00:14   --> charge.succeeded [evt_3JtqBaGVeidGUX3h2cLMv3Pm]
+2021-11-09 18:00:14   --> payment_intent.succeeded [evt_3JtqBaGVeidGUX3h29EOLphe]
+2021-11-09 18:00:14   --> payment_intent.created [evt_3JtqBaGVeidGUX3h2OFMKOcP]
+2021-11-09 18:00:14  <--  [200] POST http://localhost:3000/api/webhooks [evt_3JtqBaGVeidGUX3h2cLMv3Pm]
+2021-11-09 18:00:14  <--  [200] POST http://localhost:3000/api/webhooks [evt_3JtqBaGVeidGUX3h29EOLphe]
+2021-11-09 18:00:14  <--  [200] POST http://localhost:3000/api/webhooks [evt_3JtqBaGVeidGUX3h2OFMKOcP]
+
+`
+return (
+    <SyntaxHighlighter language="js" style={syntaxStyle} >
+        {test}
+    </SyntaxHighlighter>
+);
+};
+
+const Tutorial14321= () => {
+  const test = `
+  import { useState, useEffect } from 'react'
+  import { useSelector } from 'react-redux'
+  import { format } from 'date-fns'
+  import Head from 'next/head'
+  import Link from 'next/link'
+  
+  const Index = () => {
+    const isAuthenticated = useSelector((state) => state.auth.isAuthenticated)
+    const user = useSelector((state) => state.auth.user)
+    const [member, setMember] = useState(false)
+  
+    useEffect(() => {
+      const today = new Date()
+      if (user && new Date(user.current_period_end) > today) {
+        setMember(true)
+      }
+    }, [user])
+  
+    return (
+      <>
+        <Head>
+          <title>有料会員サイト</title>
+        </Head>
+  
+        <div>
+          {isAuthenticated && user ? (
+            <div>
+              <div>ようこそ、{user.name}さん</div>
+              {member ? (
+                <div>
+                  あなたは、{format(new Date(user.current_period_end), 'yyy年MM月dd日')}
+                  まで有料会員です。
+                </div>
+              ) : (
+                <div>あなたは、無料会員です。</div>
+              )}
+              <div className="my-4 border-4 border-dashed border-gray-200 rounded">
+                <div className="flex justify-center items-center h-64">こちらは無料コンテンツ！</div>
+              </div>
+              {member ? (
+                <div className="my-4 border-4 border-dashed border-gray-200 rounded">
+                  <div className="flex justify-center items-center h-64">
+                    こちらは有料コンテンツ！
+                  </div>
+                </div>
+              ) : (
+                <div>
+                  <div className="mb-4">
+                    有料コンテンツを利用するには、有料会員の登録をお願いします。
+                  </div>
+                  <Link href="/checkout">
+                    <a className="button-yellow">こちらから</a>
+                  </Link>
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="text-center text-2xl">
+              フルスタックチャンネルによる有料会員サイトのチュートリアルです。
+            </div>
+          )}
+        </div>
+      </>
+    )
+  }
+  
+  export default Index
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+
+const Tutorial14331= () => {
+  const test = `
+  $ npm run dev
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14332= () => {
+  const test = `
+  $ stripe listen --forward-to localhost:3000/api/webhooks
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};
+
+const Tutorial14333= () => {
+  const test = `
+ 
+  
+  `
+  return (
+      <SyntaxHighlighter language="js" style={syntaxStyle} >
+          {test}
+      </SyntaxHighlighter>
+  );
+};

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_10 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_10 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -108,7 +108,7 @@ const Post = () => {
                         <p>フィールドにユーザー名を追加します。</p>
                         <Tutorial1032 />
                       
-                        <p>db.collection("users").doc(this.email)でデータベースのドキュメントを指定します。</p>
+                        <p>db.collection(&quot;users&quot;).doc(this.email)でデータベースのドキュメントを指定します。</p>
                         <Tutorial1033 />
                         <p>ref.get().then(docでデータベースのドキュメント情報を取得します。</p>
                           <Tutorial1034 />
@@ -177,7 +177,7 @@ const Post = () => {
                       
                         <Tutorial1051 />
                         <p>コード解説</p>
-                        <p>v-on:keydown.enter.alt.exact="addMessage"でAlt + Enterを押した時にaddMessage関数がコールされるようにしています。</p>
+                        <p>v-on:keydown.enter.alt.exact=&quot;addMessage&quot;でAlt + Enterを押した時にaddMessage関数がコールされるようにしています。</p>
                         <p>メッセージは、Alt + Enterで送信されます。</p>
                         <Tutorial1052 />
                       

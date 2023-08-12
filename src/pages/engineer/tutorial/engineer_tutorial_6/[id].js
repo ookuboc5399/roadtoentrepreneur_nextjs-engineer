@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
-import { Layout_tutorial_6 } from '../../../../components/layout/engineer/tutorial/Layout_tutorial';
+import { Layout_tutorial_6 } from '../../../../components/layout/engineer/tutorial';
 
 const Post = () => {
     const router = useRouter()
@@ -300,8 +300,8 @@ const Post = () => {
                         <p>検索条件のテンプレートを作成します。</p>
                         <p>context_processorsで定義したので、pref_listとcategory_listをテンプレートで使用することができます。</p>
                         <p>こだわり条件</p>
-                        <p>checkboxを使用し、ボタンが送信(request.method == 'GET')されたら下記Viewの処理が実行されます。</p>
-                        <p>ランチ営業をチェックした場合、request.GET['lunch']は1になります。</p>
+                        <p>checkboxを使用し、ボタンが送信(request.method == &apos;GET&apos;)されたら下記Viewの処理が実行されます。</p>
+                        <p>ランチ営業をチェックした場合、request.GET[&apos;lunch&apos;]は1になります。</p>
 
                         <Tutorial6181 />
                         <p>すべての検索条件を使用しているので、コードが長くなっています。</p>
@@ -430,232 +430,164 @@ const Post = () => {
 
                     </Layout_tutorial_6>
                 ) : id == 30 ? (
-                    <Layout_tutorial_4>
-                        <p>プロフィール編集画面</p>
-                        <p>プロフィール情報を編集するための画面を作成します。</p>
-                        <p>アプリケーションURL </p>
-                        <p>編集画面用のURLを作成します。</p>
-                        <Tutorial491 />
-                        <p>フォーム </p>
-                        <p>プロフィール編集用のフォームを作成します。</p>
-                        <p>名前と所属を編集したいので、フォームにフィールドを追加します。</p>
-                        <Tutorial492 />
-                        <p>ビュー </p>
-                        <p>プロフィール編集用のビューを作成します。</p>
-                        <Tutorial493 />
-                        <p>コード解説 </p>
-                        <p>get関数は最初に呼ばれます。</p>
-                        <p>テンプレートでフォームを表示したいので、ProfileFormクラスを呼び出します。</p>
-                        <p>フォームに初期値を与えるために、initialにデータベースの情報を設定します。</p>
-                        <p>こうすることで、フォームに初期値を設定することができます。</p>
-                        <Tutorial494 />
-                        <p>post関数は、フォーム画面で登録ボタンを押した時にコールされる関数です。 </p>
-                        <p>formの内容をバリデーションして、問題がなければ、データベースの値をフォームからのデータに置き換えます。</p>
-                        <p>save関数をコールすることで保存となります。</p>
-                        <p>フォームに初期値を与えるために、initialにデータベースの情報を設定します。</p>
-                        <p>保存後は、プロフィール画面にリダイレクトします。</p>
-                        <p>バリデーションに問題があれば、プロフィール画面に遷移するようにしています。</p>
-                        <Tutorial495 />
-                        <p>テンプレート </p>
-                        <p>プロフィール編集画面のテンプレートを作成します。</p>
-                        <Tutorial496 />
-                        <p>コード解説 </p>
-                        <p>widget_tweaksはフォームをレンダリングする時に、CSSクラスやHTML属性を変更できるモジュールです。</p>
-                        <p>フォームを作る時はほぼ必須のモジュールになります。</p>
-                        <Tutorial497 />
-                        <p>登録するボタンを押した時に、ビューのpost関数がコールされます。</p>
-                        <Tutorial498 />
-                        <p>フォームの中に必ずcsrf_tokenを記載してください。</p>
-                        <p>これは、フォームでデータが改ざんされることを防ぐための記載になります。</p>
-                        <Tutorial499 />
-                        <p>フォームにクラスとplaceholderも追加しています。</p>
-                        <p>こうすることで、CSSでカスタマイズしやすくなります。</p>
-                        <Tutorial4910 />
-                        <p>リンク先追加</p>
-                        <p>プロフィール画面の編集するボタンのリンク先をプロフィール編集画面にします。</p>
-                        <Tutorial4911 />
-                        <p>CSS</p>
-                        <p>CSSでフォーム周りの見た目を変更します。</p>
-                        <Tutorial4912 />
-                        <p>確認</p>
-                        <p>プロフィール編集画面でデータを編集してみてください。</p>
-                        <p>http://127.0.0.1:8000/accounts/profile/edit/</p>
-                    </Layout_tutorial_4>
+                    <Layout_tutorial_6>
+                         <div className="text-3xl m-4">
+                        TOYOTA
+                    </div>
+                    <div className="ml-80">
+                        <p>View追加</p>
+                        <p>レストラン詳細ページで口コミを投稿するために、ShopInfo関数を変更します</p>
+                        <Tutorial6301 />
+                        <p>口コミを投稿した時のメッセージ機能も追加しています</p>
+                    </div>
+                    </Layout_tutorial_6>
                 ) : id == 31 ? (
-                    <Layout_tutorial_4>
-                        <h3>ログイン画面 </h3>
-                        <p>ログイン画面を作成します。</p>
-                        <p>プロジェクトURL </p>
-                        <p>プロジェクトURLにallauthのURLを追加します。 </p>
-                        <p className='text-red-400'>mysite/urls.py</p>
-                        <Tutorial4101 />
-                        <p>アプリケーションURL </p>
-                        <p>アプリケーションURLにログインのURLを追加します。</p>
-                        <p>ビューはLoginViewで、逆引き名は、account_loginとします。</p>
-                        <p className='text-red-400'>accounts/urls.py</p>
-                        <Tutorial4102 />
-                        <p>ビュー</p>
-                        <p>ログイン用のビューを作成します。</p>
-                        <p className='text-red-400'>accounts/views.py</p>
-                        <Tutorial4103 />
-                        <p>コード解説</p>
-                        <p>allauthのLoginViewクラスを継承させて、使用するテンプレートを上書きします。</p>
-                        <p>デフォルトでもlogin.htmlとなっていますが、すぐに拡張できるように、ビューを作成しておきます。</p>
-                        <Tutorial4104 />
-                        <p>テンプレート</p>
-                        <p>ログイン用のテンプレートを作成します。</p>
-                        <Tutorial4105 />
-                        <p>コード解説</p>
-                        <p>プロフィール編集画面と同様に、widget_tweaksを使用してフォームにオリジナルCSSクラスを追加します。</p>
-                        <Tutorial4106 />
-                        <p>CSS</p>
-                        <p>ログイン画面をいい感じに装飾します。</p>
-                        <Tutorial4107 />
-                        <p>ナビゲーション</p>
-                        <p>ナビゲーションにログインを追加します。</p>
-                        <Tutorial4107 />
-                        <p>コード解説</p>
-                        <p>user.is_authenticatedを使用して、ログイン状態かログアウト状態かを判定します。</p>
-                        <p>ログイン状態であれば、プロフィールナビゲーションを表示し、ログアウト状態であればログインナビゲーションを表示しています。</p>
-                        <Tutorial4108 />
-                        <p>確認</p>
-                        <p>ログイン画面を表示して、管理ユーザーでログインできるか試してみて下さい。</p>
-                        <p>http://127.0.0.1:8000/accounts/login/</p>
-                    </Layout_tutorial_4>
-                ) : id == 24 ? (
-                    <Layout_tutorial_4>
-
-                        <p>ログアウト画面</p>
-
-                        <p>ログアウト画面を作成します。</p>
-                        <p>アプリケーションURL</p>
-                        <p>ログアウトのURLを追加します。</p>
-                        <p>ビューはLogoutViewで逆引き名はaccount_logoutにします。 </p>
-                        <Tutorial4111 />
-                        <p>ビュー</p>
-                        <p>ログアウト用のビューを作成します。 </p>
-                        <Tutorial4112 />
-                        <p>コード解説 </p>
-                        <p>allauthのLogoutViewクラスを継承して、設定を上書きします。 </p>
-                        <Tutorial4113 />
-                        <p>ログアウトボタンを押した時の動作です。</p>
-                        <p>ログアウトボタンを押したらpost関数が実行されます。</p>
-                        <p>ログイン状態であれば、self.logout()でログアウトすることができます。</p>
-                        <p>そして、ログアウトしたら、リダイレクトでトップページに遷移します。</p>
-                        <Tutorial4114 />
-                        <p>テンプレート</p>
-                        <p>ログアウト画面のテンプレートを作成します。</p>
-                        <Tutorial4115 />
-                        <p>コード解説</p>
-                        <p>ログアウトは簡単で、フォームの中にログアウトボタンを設定するだけです。</p>
-                        <p>methodはpostに設定しているので、ボタンを押したらpost関数がコールされます。</p>
-                        <Tutorial4116 />
-                        <p>ナビゲーション</p>
-                        <p>ナビゲーションにログアウトを追加します。</p>
-                        <Tutorial4117 />
-                        <p>コード解説</p>
-                        <p>ログイン状態での表示になるので、｛% if user.is_authenticated %｝の中に入れます。</p>
-
-                        <p>確認</p>
-                        <p>ログアウト画面を表示して、ログアウトできるか試してみて下さい。</p>
-                        <p>http://127.0.0.1:8000/accounts/logout/</p>
-                    </Layout_tutorial_4>
-                ) : id == 25 ? (
-                    <Layout_tutorial_4>
-                        <p>サインアップ画面 </p>
-                        <p>サインアップ画面を作成します。</p>
-                        <p>アプリケーションURL </p>
-                        <p>サインアップのURLを追加します。 </p>
-                        <Tutorial4121 />
-                        <p>フォーム</p>
-                        <p>サインアップ用のフォームを作成します。</p>
-                        <Tutorial4122 />
-                        <p>コード解説</p>
-                        <p>allauthのSignupFormクラスを継承し、上書きしていきます。</p>
-                        <Tutorial4123 />
-                        <p>サインアップ時に必要なフォームを設定します。</p>
-                        <p>メールアドレスとパスワードは、allauthですでに設定してあるので必要ありません。</p>
-                        <p>ここでは名前のみ追加しておきます。</p>
-                        <p>もし所属などサインアップ時に入力してほしい場合は、ここに追加します。</p>
-                        <Tutorial4124 />
-                        <p>サインアップボタンが押された時の動作です。</p>
-                        <p>save関数が実行されます。</p>
-                        <p>self.cleaned_dataでフォームに記載された内容を取得し、save関数でデータベースに保存します。</p>
-                        <Tutorial4125 />
-                        <p>ビュー</p>
-                        <p>サインアップ用のビューを作成します。</p>
-                        <Tutorial4126 />
-                        <p>コード解説</p>
-                        <p>allauthのSignupViewクラスを継承して、上書きします。</p>
-                        <Tutorial4127 />
-                        <p>form_class変数に先ほど作成したSignupUserFormクラスを設定します。</p>
-                        <p>こうすることで、サインアップにオリジナルのフォームを使用することができます。</p>
-                        <Tutorial4128 />
-                        <p>テンプレート</p>
-                        <p>サインアップ用のテンプレートを作成します</p>
-                        <Tutorial4129 />
-                        <p>コード解説</p>
-                        <p>widget_tweaksを使用して、フォームにオリジナルCSSを追加します。</p>
-                        <p>今回は、サインアップ時に名前を入力するようにしたいので、テンプレートに名前のフォームも追加します。</p>
-                        <Tutorial41210 />
-                        <p>サインアップ時にpassword1と確認用のpassword2は必須になりますので、追加します。</p>
-                        <Tutorial41211 />
-                        <p>ナビゲーション</p>
-                        <p>ナビゲーションにサインアップを追加します。</p>
-                        <Tutorial41212 />
-                        <p>コード解説</p>
-                        <p>サインアップはログアウト状態の時に表示させるようにします。</p>
-                        <p>確認</p>
-                        <p>サインアップ画面を表示して、サインアップできるか試してみて下さい。</p>
-                        <p>http://127.0.0.1:8000/accounts/signup/</p>
-                    </Layout_tutorial_4>
-                ) : id == 26 ? (
-                    <Layout_tutorial_4>
-                        <h3>リダイレクト </h3>
-                        <p>ログインしていない状態で、メインコンテンツやプロフィール画面を表示させたくありません。</p>
-                        <p>その場合は、LoginRequiredMixinクラスを継承させることによって、ログインしていない状態でアクセスした場合にリダイレクトするように設定できます。 </p>
-                        <p>IndexView</p>
-                        <p>ログアウト状態でメインコンテンツに遷移した場合は、ログイン画面に遷移するように設定します。 </p>
-                        <p className='text-red-400'>app/views.py</p>
-                        <Tutorial4131 />
-                        <p>コード解説</p>
-                        <p>LoginRequiredMixinを継承させます</p>
-                        <Tutorial4132 />
-                        <p>login_url変数にログイン画面のURLを指定すると、リダイレクトしてくれます。</p>
-                        <Tutorial4133 />
-                        <p>ProfileView</p>
-                        <p>プロフィール画面も同様にLoginRequiredMixinクラスを継承させます。</p>
-                        <Tutorial4134 />
-                        <p>確認</p>
-                        <p>ログアウト状態でメインコンテンツを表示してみて下さい。</p>
-                        <p>ログイン画面に遷移します。</p>
-                        <p>完成</p>
-                        <p>これでカスタムユーザーのチュートリアルは完成です。</p>
-                        <p>全機能が動作するか試してみて下さい。</p>
-                        <p>後は、メインコンテンツを充実させれば、アプリケーションの完成です。</p>
-                    </Layout_tutorial_4>
-                ) : id == 27 ? (
-                    <Layout_tutorial_4>
-                        <p>おわりに </p>
-                        <p>チュートリアルを最後まで読んでいただき、誠にありがとうございました。</p>
-                        <p>カスタムユーザーのチュートリアルはここまでで終わりとなります。 </p>
-                        <p>カスタムユーザーの作り方</p>
-                        <p>allauthを使用したカスタムユーザーの作り方が理解出来ましたでしょうか！？ </p>
-                        <p>ユーザーに誕生日や住所など追加したり、パスワード変更、パスワード再設定、退会ページなど作成してみてください。</p>
-                        <p>allauthを使用しているので、楽に実装することができます。</p>
-
-                        <p>Djangoは奥の深いフレームワークで、多くの機能を搭載することができます。</p>
-
-                        <p>公式ドキュメントを参考にして、さらに理解を深めていきましょう。</p>
-                        <p>Djangoドキュメント</p>
-
-                        <p>allauthはさらにカスタマイズすることができるので、ドキュメントを読んで実装してみましょう。</p>
-                        <p>allauthドキュメント</p>
-                        <p>ぜひオリジナルのアプリケーションを開発してみてください。</p>
-
-                        <p>allauthはさらにカスタマイズすることができるので、ドキュメントを読んで実装してみましょう。</p>
-                    </Layout_tutorial_4>
-                ) : (
+                    <Layout_tutorial_6>
+                       <div className="text-3xl m-4">
+                        TOYOTA
+                    </div>
+                    <div className="ml-80">
+                        <p>shop_infoテンプレート追加</p>
+                        <p>口コミが投稿された時に、口コミの平均点を表示するようにします。</p>
+                        <Tutorial6311 />
+                        <p>口コミの一覧を、店情報の下に追加します。</p>
+                        <Tutorial6312 />
+                    </div>
+                    </Layout_tutorial_6>
+                ) : id == 32 ? (
+                    <Layout_tutorial_6>
+ <div className="text-3xl m-4">
+                        TOYOTA
+                    </div>
+                    <div className="ml-80">
+                        <p>Message追加</p>
+                        <p>メッセージは、全ページに対応するために、ベーステンプレートに追加します。</p>
+                        <Tutorial6321 />
+                       
+                    </div>
+                    </Layout_tutorial_6>
+                ) : id == 33 ? (
+                    <Layout_tutorial_6>
+                       <div className="ml-80">
+                        <p>View追加</p>
+                        <p> 新機能</p>
+                        <p>おすすめ機能を追加</p>
+                        <p>トップページにおすすめレストランを表示する機能を追加します。</p>
+                        <p>この条件でおすすめレストランを決めることができます</p>
+                        <Tutorial6331 />
+                        <p>ポイント</p>
+                        <p>get_context_data関数の戻り値に、テンプレートで使用したいデータを渡します。</p>
+                        <Tutorial6332 />
+                    </div>
+                    </Layout_tutorial_6>
+                ) : id == 34 ? (
+                    <Layout_tutorial_6>
+                       <div className="ml-80">
+                        <p>indexテンプレート追加</p>
+                        <p>おすすめレストランは、トップページの下に表示します。</p>
+                        <p>ポイント</p>
+                        <p>Viewから渡されたpickup_restaurantからレストラン情報を表示します。</p>
+                       
+                        <Tutorial6341 />
+                     
+                    </div>
+                    </Layout_tutorial_6>
+                ) : id == 35 ? (
+                    <Layout_tutorial_6>
+                       <p>View追加</p>
+                        <p> 新機能</p>
+                        <p>ページネーション機能を追加</p>
+                        <p>ポイント</p>
+                        <p>page_objに、ページネーション情報を代入して、テンプレートに渡します。</p>
+                        <Tutorial6351 />
+                    </Layout_tutorial_6>
+                ): id == 36 ? (
+                    <Layout_tutorial_6>
+                       <p>templatetags追加</p>
+                        <p>カスタムテンプレートタグを作成します。</p>
+                        <p>カスタムテンプレートタグとは？</p>
+                        <p>Djangoには、テンプレートで使用する｛% if ... %｝や｛% for ... in ... %｝などの、ビルトイン・テンプレートフィルタやタグが用意されています。</p>
+                        <p>これらのビルトイン・テンプレートフィルタやタグで十分ですが、Webアプリケーションが複雑になってくると、自作したフィルタやタグが必要な時があります。</p>
+                        <p>自分でタグやフィルタを作ることができる機能を、カスタムテンプレートタグ/フィルタといいます。</p>
+                        <p>カスタムテンプレートタグは、templatetagsフォルダを作成し、__init__.pyを追加します</p>
+                        <Tutorial6361 />
+                        <Tutorial6362 />
+                        <p>utils.pyファイルを追加して、カスタムテンプレートタグを作成します</p>
+                        <p>今回は、ページネーション機能を追加するために、GETパラメータを一部を置き換えるタグを用意します。</p>
+                        <Tutorial6363 />
+                        <Tutorial6364 />
+                    </Layout_tutorial_6>
+                ): id == 37 ? (
+                    <Layout_tutorial_6>
+                      <p>searchテンプレート追加</p>
+                        <p>検索結果の下にページネーションを追加します。</p>
+                        <p>今までは50件すべて表示されていたので、10件ずつ表示するようにします</p>
+                        <p>表示件数は自由にViewで設定できます</p>
+                        <p>カスタムテンプレートタグを読み込むために、下記を追加します</p>
+                        
+                        <Tutorial6371 />
+                        <Tutorial6372 />
+                        <p>10件ずつ表示されています。</p>
+                        <p>実際に別のページに遷移してみましょう。</p>
+                  
+                    </Layout_tutorial_6>
+                ) : id == 38 ? (
+                    <Layout_tutorial_6>
+                         <p>Herokuデプロイ</p>
+                        <p>ステップ1同様にHerokuにデプロイをして、公開します。</p>
+                        <p>設定</p>
+                        <p>ポイント</p>
+                        <p>django-herokuをインポートすることによって、デプロイに必要な設定をしてくれます</p>
+                        
+                       
+                        <p>Procfile作成</p>
+                        <p>Procfileは、アプリのプロセスタイプやエントリーポイントを宣言するファイルです。</p>
+                        <p>Procfileを作成します</p>
+                     
+                        <p>mysiteの部分はあなたが作成したプロジェクトのディレクトリ名を指定します。</p>
+                        <p>gunicornは、Djangoを動かすWebサーバーです。</p>
+                        <p>runtime.txt作成</p>
+                        <p>runtime.txtにはプログラム実行時に必要なものを定義します。</p>
+                        <p>ここではPythonが必要なのでPythonのバージョンを指定します。</p>
+                        <p>runtime.txtを作成します。</p>
+                      
+                        <p>Herokuを操作</p>
+                        <p>Herokuにデプロイする準備ができましたので、Herokuを操作していきます。</p>
+                        <p>Herokuがインストールされていることを確認してください。</p>
+                        <p>WSL</p>
+                        <p>WSLを使用している方は、sudoが必要になります。</p>
+                       
+                        <p>Herokuにログイン</p>
+                        <p>ターミナルからHerokuにログインします。</p>
+                      
+                        <p>Herokuプロジェクト作成</p>
+                        <p>Herokuにプロジェクトを作成します。</p>
+                        <p>好きなプロジェクト名を指定して下さい</p>
+                        <p>このプロジェクト名がURLになりますので、既に他の人に使われているプロジェクト名は指定できません。</p>
+                      
+                        <p>Herokuにpush</p>
+                        <p>GitHub</p>
+                        <p>Herokuにpushする前に、GitHubにすべてコミットしておいて下さい</p>
+                     
+                        <p>プロセスを起動</p>
+                        <p>下記コマンドでgunicornサーバーを起動します。</p>
+                      
+                        <p>Herokuのデータベースを構築</p>
+                        <p>migrateコマンドをしてデータベースを構築します。</p>
+                     
+                        <p>管理ユーザーを作成</p>
+                        <p>ローカルと同じようにHerokuでも管理ユーザーを作成することができます。</p>
+                      
+                        <p>パスワード</p>
+                        <p>ユーザー名、メールアドレス、パスワードを入力します。 パスワードの入力は表示されませんので、間違えずに入力して下さい。</p>
+                        <p>これで無事デプロイ完了です。</p>
+                        <p>デプロイしたURLにアクセスしてみましょう。</p>
+                        <p>ローカルと同じ画面が表示されているはずです</p>
+                        <p>データベース</p>
+                        <p>最初はデータがない初期状態なので、カテゴリと都道府県のデータを管理画面(/admin/)から登録する必要があります。</p>
+                        <p>https://xxxx.herokuapp.com/admin/</p>
+                    </Layout_tutorial_6>
+                ): (
                     <></>
                 )}
         </div>
@@ -2994,6 +2926,593 @@ const Tutorial6262 = () => {
             </form>
         </div>
     {% endblock %}
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial6271 = () => {
+    const test = `
+    <ul class="navbar-nav ml-auto">
+    {% if user.is_authenticated %}
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'account_logout' %}">ログアウト</a>
+        </li>
+    {% else %}
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'account_signup' %}">サインアップ</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'account_login' %}">ログイン</a>
+        </li>
+    {% endif %}
+</ul>
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial6281 = () => {
+    const test = `
+    from django.contrib.auth.models import User # 追加
+
+    class Review(models.Model): # 追加
+        SCORE_CHOICES = [
+            (1, '★'),
+            (2, '★★'),
+            (3, '★★★'),
+            (4, '★★★★'),
+            (5, '★★★★★'),
+        ]
+    
+        shop_id = models.CharField('レストランID', max_length=10, blank=False)
+        shop_name = models.CharField('レストラン名', max_length=200, blank=False)
+        user = models.ForeignKey(User, on_delete=models.PROTECT)
+        comment = models.TextField(verbose_name='口コミ', blank=False)
+        score = models.PositiveSmallIntegerField(verbose_name='スコア', choices=SCORE_CHOICES, default='3')
+        created_at = models.DateTimeField(auto_now_add=True)
+        updated_at = models.DateTimeField(auto_now=True)
+    
+        def get_score_percent(self):
+            score_percent = round(self.score / 5 * 100)
+            return score_percent
+    
+        class Meta:
+            unique_together = ('shop_id', 'user')
+    
+        def __str__(self):
+            return str(self.shop_id)
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+
+const Tutorial6282 = () => {
+    const test = `
+    (myvenv) ~$ python3 manage.py makemigrations
+    (myvenv) ~$ python3 manage.py migrate
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial6291 = () => {
+    const test = `
+
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial6301 = () => {
+    const test = `
+    from django.shortcuts import render, redirect # 追加
+    from django.views.generic import TemplateView
+    from .models import Pref, Category, Review # 追加
+    from .forms import SearchForm, ReviewForm # 追加
+    from django.db.models import Avg # 追加
+    from django.contrib import messages
+    import json
+    import requests
+    
+    def ShopInfo(request, restid):
+        query = get_gnavi_data(
+            restid,
+            "",
+            "",
+            "",
+            1
+        )
+        result = gnavi_api(query)
+        restaurants_info = get_restaurant_info(result)
+    
+        if request.method == 'GET':
+            review_count = Review.objects.filter(shop_id=restid).count()
+            score_ave = Review.objects.filter(shop_id=restid).aggregate(Avg('score'))
+            average = score_ave['score__avg']
+            if average:
+                average_rate = average / 5 * 100
+            else:
+                average_rate = 0
+            review_form = ReviewForm()
+            review_list = Review.objects.filter(shop_id=restid)
+    
+            params = {
+                'review_count': review_count,
+                'restaurants_info': restaurants_info,
+                'review_form': review_form,
+                'review_list': review_list,
+                'average': average,
+                'average_rate': average_rate,
+            }
+            return render(request, 'foodie/shop_info.html', params)
+        else:
+            form = ReviewForm(data=request.POST)
+    
+            if form.is_valid():
+                review = Review()
+                review.shop_id = restid
+                review.shop_name = restaurants_info[0][2]
+                review.user = request.user
+                review.score = request.POST['score']
+                review.comment = request.POST['comment']
+                is_exist = Review.objects.filter(shop_id = review.shop_id).filter(user = review.user).count()
+                
+                if is_exist:
+                    messages.error(request, '口コミを投稿済みです')
+                else:
+                    review.save()
+                    messages.success(request, '口コミを投稿しました')
+            else:
+                messages.error(request, 'エラーがあります')
+    
+            return redirect('shop_info', restid)
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial6311 = () => {
+    const test = `
+    <div class="col-md-8">
+    <div class="card-body">
+        <strong class="d-inline-block mb-2 text-success">{{ restaurants_info.0.32 }}</strong>
+        <h3 class="mb-2">{{ restaurants_info.0.2 }}</h3>
+        {% if not average_rate == 0 %}
+        <div class="d-flex flex-row">
+            <div class="star-rating">
+                <div class="star-rating-front" style="width: {{ average_rate }}%">★★★★★</div>
+                <div class="star-rating-back">★★★★★</div>
+            </div>
+            <div class="average ml-2">
+                {{ average|floatformat:2 }}
+            </div>
+            <div class="d-flex align-items-center ml-2">
+                <i class="fas fa-comment-dots fa-fw"></i>{{ review_count }}件
+            </div>
+        </div>
+        {% else %}
+            <p>まだ口コミはありません。</p>
+        {% endif %}
+        <hr>
+        <p class="card-text mb-1"><i class="fas fa-map-marker-alt fa-fw my-icon"></i>{{ restaurants_info.0.14 }}</p>
+        <p class="card-text mb-3"><i class="fas fa-subway fa-fw my-icon"></i>{{ restaurants_info.0.21 }}・徒歩{{ restaurants_info.0.23 }}分</p>
+        <p class="card-text mb-auto">{{ restaurants_info.0.27|linebreaksbr }}</p>   
+    </div>
+</div>
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+
+const Tutorial6312 = () => {
+    const test = `
+    <tr>
+    <td class="bg-light text-center">電子マネー</td>
+    <td>{{ restaurants_info.0.37 }}</td>
+</tr>
+</table>
+</div>
+</div>
+
+<div class="col-md-12">
+<p><i class="fas fa-store-alt fa-fw my-icon2"></i> 口コミ情報</p>
+<div class="card card-outline-secondary mb-3">
+<div class="card-header">
+口コミ一覧
+</div>
+<div class="card-body">
+{% if review_list %}
+    {% for item in review_list %}
+        <div class="d-flex flex-row">
+            <div class="star-rating mb-2">
+                <div class="star-rating-front" style="width: {{ item.get_score_percent }}%">★★★★★</div>
+                <div class="star-rating-back">★★★★★</div>
+            </div>
+        </div>
+        <p>{{ item.comment }}</p>
+        <small class="text-muted">Posted by {{ item.user }} on {{ item.created_at }}</small>
+        <hr>
+    {% endfor %}
+{% else %}
+    <p>まだ口コミはありません。</p>
+{% endif %}
+</div>
+</div>
+<div class="card card-outline-secondary">
+<div class="card-header">
+口コミを投稿する
+</div>
+<div class="card-body">
+{% if user.is_authenticated %}
+    <form class="login-form" action="" method="POST">
+        {{ review_form.non_field_errors }}
+        <div class="evaluation">
+            <input type="hidden" name="score" value="3">
+            <input id="score1" type="radio" name="score" value="5" />
+            <label for="score1"><span class="text">最高</span>★</label>
+            <input id="score2" type="radio" name="score" value="4" />
+            <label for="score2"><span class="text">良い</span>★</label>
+            <input id="score3" type="radio" name="score" value="3" />
+            <label for="score3"><span class="text">普通</span>★</label>
+            <input id="score4" type="radio" name="score" value="2" />
+            <label for="score4"><span class="text">悪い</span>★</label>
+            <input id="score5" type="radio" name="score" value="1" />
+            <label for="score5"><span class="text">最悪</span>★</label>
+        </div>
+
+        <div class="form-group text-center" type="text">
+            {{ review_form.comment }}
+        </div>
+
+        {% csrf_token %}
+        <div class="text-center">
+            <button type="submit" class="btn btn-success">投稿</button>
+        </div>
+
+        {% if form.errors %}
+            <br>
+            <p>エラー内容</p>
+            {% for field in form %}
+                {% for error in field.errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+    </form>
+{% else %}
+    <p class="mb-3">口コミを投稿するには、ログインして下さい。</p>
+    <a class="btn btn-success" href="{% url 'account_signup' %}">サインアップ</a>
+    <a class="btn btn-success" href="{% url 'account_login' %}">ログイン</a>
+{% endif %}
+</div>
+</div>
+</div>
+</div>
+{% endblock content %}
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial6321 = () => {
+    const test = `
+    <main>
+    <div class="container">
+        <!-- 通知メッセージ -->
+        {% if messages %}
+            <div class="row align-items-center my-3">
+                <div class="col-12">
+                    <div class="message text-center">
+                        {% for message in messages %}
+                            <div class="alert{% if message.tags %} alert-{{ message.tags }}{% endif %} alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">
+                                        &times;
+                                    </span>
+                                </button>
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        <!-- メイン -->
+        {% block content %}
+        {% endblock content %}
+    </div>
+</main>
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial6331 = () => {
+    const test = `
+    # おすすめレストラン
+category_l = "RSFST09000" # 居酒屋
+pref = "PREF13" # 東京都
+freeword = "歓送迎会"
+num = 6
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial6332 = () => {
+    const test = `
+    class IndexView(TemplateView):
+    template_name = 'foodie/index.html'
+
+    def get_context_data(self, *args, **kwargs):
+        searchform = SearchForm()
+
+        # おすすめレストラン
+        category_l = "RSFST09000" # 居酒屋
+        pref = "PREF13" # 東京都
+        freeword = "歓送迎会"
+        num = 6
+
+        query = get_gnavi_data(
+            "",
+            category_l,
+            pref,
+            freeword,
+            num
+        )
+
+        result = gnavi_api(query)
+        pickup_restaurant = get_restaurant_info(result)
+
+        params = {
+            'searchform': searchform,
+            'pickup_restaurant': pickup_restaurant,
+            }
+        return params
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial6341 = () => {
+    const test = `
+    <div class="text-center">
+                <button class="btn btn-success" type="submit">この条件で絞り込む</button>
+            </div>
+        </form>
+    </div>
+
+    <h2 class="mb-4">歓送迎会 おすすめのお店 <i class="fas fa-beer my-icon2"></i></h2>
+
+    <div class="row">
+        {% for restaurant in pickup_restaurant %}
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                {% if restaurant.11 %}
+                    <img class="card-img-top" src="{{ restaurant.11 }}" alt="{{ restaurant.2 }}">
+                {% else %}
+                    <img class="card-img-top" src="https://placehold.jp/300x300.png?text=No Image" alt="{{ restaurant.2 }}">
+                {% endif %}
+                <div class="card-body">
+                    <strong class="d-inline-block mb-2 text-success">{{ restaurant.32 }}</strong>
+                    <h4 class="mb-2">{{ restaurant.2 }}</h4>
+                    <p class="card-text mb-1"><i class="fas fa-subway fa-fw my-icon"></i>{{ restaurant.21 }}・徒歩{{ restaurant.23 }}分</p>
+                    <p class="card-text mb-2"><i class="fas fa-yen-sign fa-fw my-icon"></i>平均{{ restaurant.33 }}円</p>
+                    <p class="card-text mb-auto">{{ restaurant.26|linebreaksbr }}</p>
+                </div>
+                <a href="{% url 'shop_info' restaurant.0 %}" class="stretched-link"></a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial6351 = () => {
+    const test = `
+    from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger # 追加
+
+    def Search(request):
+        ...
+                result = gnavi_api(query)
+                total_hit_count = len(result)
+                restaurant_list = get_restaurant_info(result)
+                page_obj = paginate_queryset(request, restaurant_list, 10) # 追加
+    
+            context = {
+                'total_hit_count': total_hit_count,
+                'restaurant_list': page_obj.object_list, # 追加
+                'page_obj': page_obj, # 追加
+            }
+    
+            return render(request, 'foodie/search.html', context)
+    
+    def paginate_queryset(request, queryset, count): # 追加
+        paginator = Paginator(queryset, count)
+        page = request.GET.get('page')
+        try:
+            page_obj = paginator.page(page)
+        except PageNotAnInteger:
+            page_obj = paginator.page(1)
+        except EmptyPage:
+            page_obj = paginator.page(paginator.num_pages)
+        return page_obj
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial6361 = () => {
+    const test = `
+    foodie
+    └───templatetags
+    　　└───__init__.py
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial6362 = () => {
+    const test = `
+    # 中身なし
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+
+const Tutorial6363 = () => {
+    const test = `
+    foodie
+    └───templatetags
+    　　└───__init__.py
+    　　└───utils.py
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+
+const Tutorial6364 = () => {
+    const test = `
+    from django import template
+
+    register = template.Library()
+    
+    @register.simple_tag
+    def url_replace(request, field, value):
+        url_dict = request.GET.copy()
+        url_dict[field] = value
+        return url_dict.urlencode()
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial6371 = () => {
+    const test = `
+    {% load utils %}
+    `
+    return (
+        <SyntaxHighlighter language="js" style={syntaxStyle} >
+            {test}
+        </SyntaxHighlighter>
+    );
+};
+
+const Tutorial6372 = () => {
+    const test = `
+    {% extends 'foodie/base.html' %}
+{% load static %}
+<!-- 追加 -->
+{% load utils %}
+
+		<div class="col-md-9">
+            {% if restaurant_list %}
+                <!-- 追加 -->
+				<p class="my-4">検索結果 {{ total_hit_count }} 件 <small>{{ page_obj.start_index }}～{{ page_obj.end_index }}件を表示</small></p>
+				{% for resutaurant in restaurant_list %}
+                ...
+				{% endfor %}
+
+                <!-- 追加 -->
+				<ul class="pagination justify-content-center">
+					{% if page_obj.has_previous %}
+						<li class="page-item">
+							<a class="page-link" href="?{%  url_replace request 'page' page_obj.previous_page_number %}">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+					{% endif %}
+				
+					{% for num in page_obj.paginator.page_range %}
+						{% if page_obj.number == num %}
+							<li class="page-item active">
+								<a class="page-link" href="#!">
+									{{ num }}
+								</a>
+							</li>
+						{% else %}
+							<li class="page-item">
+								<a class="page-link" href="?{%  url_replace request 'page' num %}">
+									{{ num }}
+								</a>
+							</li>
+						{% endif %}
+					{% endfor %}
+				
+					{% if page_obj.has_next %}
+						<li class="page-item">
+							<a class="page-link" href="?{%  url_replace request 'page' page_obj.next_page_number %}">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					{% endif %}
+				</ul>
+			{% else %}
+				<h4 class="mt-5">該当するものはありません。</h4>
+			{% endif %}
+		</div>
+	</div>
+{% endblock content %}
     `
     return (
         <SyntaxHighlighter language="js" style={syntaxStyle} >
