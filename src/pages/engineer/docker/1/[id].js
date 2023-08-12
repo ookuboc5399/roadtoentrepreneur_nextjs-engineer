@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import React from 'react';
 import Image from 'next/image';
-import Docker from '../../../../components/layout/engineer/engineer';
+import { Docker } from '../../../../components/layout/engineer/engineer';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import syntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow';
 

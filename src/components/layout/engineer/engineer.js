@@ -4,8 +4,9 @@ import Link from 'next/link';
 import {Header_engineer} from '../../header/header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import {Chapterdocker,Chapterdatascience ,Chapterdatascience2, ChapterAws, ChapterHtml, ChapterHtml2, ChapterDesign3, ChapterDesign4, ChapterDesign, ChapterDesign2, ChapterDesign5, ChapterDjango, ChapterNodejs, ChapterExpress, ChapterPHP, ChapterSqlite, ChapterNet, ChapterBase, ChapterServer, ChapterWordpress, Chapterreact3, Chaptertypescript, Chapternextjs, ChapterJspreadsheet, ChapterPython2, Chapternextjs1, ChapterGallery} from '../../chapter/engineer/chapter_engineer';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {Chapterdocker,Chapterdatascience ,Chapterdatascience2, ChapterAws, ChapterHtml, ChapterHtml2, ChapterDesign3, ChapterDesign4, ChapterDesign, ChapterDesign2, ChapterDesign5, ChapterDjango, ChapterNodejs, ChapterExpress, ChapterPHP, ChapterSqlite, ChapterNet, ChapterBase, ChapterServer, ChapterWordpress, Chapterreact3, Chaptertypescript, Chapternextjs, ChapterJspreadsheet, ChapterPython2, Chapternextjs1, ChapterGallery, ChapterCommand} from '../../chapter/engineer/chapter_engineer';
 import {Chapterreact, ChapterGit,ChapterGit2,ChapterLinux} from '../../chapter/engineer/chapter_engineer';
 import { ChapterChartjs, Chapterjavascript, Chapterjavascript_google , ChapterSql } from '../../chapter/engineer/chapter_engineer';
 import { ChapterWebscraping, ChapterWebscraping2, ChapterWebscraping3,ChapterWebscraping5, ChapterWebscraping6 } from '../../chapter/engineer/chapter_engineer';
@@ -125,6 +126,41 @@ export function BASE(props) {
       <div className="flex ">
         <div className="w-1/4">
           <ChapterBase />
+        </div>
+        <div className="w-3/4">
+          <div className="w-10/12 m-auto">
+            <div className="m-4 flex">
+              <div className="flex-auto">
+                <Link href="/future_world/AI/ai">
+                  <div className="text-4xl">
+                    <FontAwesomeIcon icon={faYoutube} size="lg" style={{ color: 'red' }} />
+                  </div>
+                </Link>
+              </div>
+              <div className="flex-auto">
+                <Link href="/future_world/AI/ai">
+                  <div className="text-4xl">
+                    <FontAwesomeIcon icon={faGithub} size="lg" style={{ color: '' }} />
+                  </div>
+                </Link>
+              </div>
+            </div>
+            {props.children}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function Command(props) {
+  return (
+    <div class="">
+      <Header_engineer />
+      <div className="flex ">
+        <div className="w-1/4">
+          <ChapterCommand />
         </div>
         <div className="w-3/4">
           <div className="w-10/12 m-auto">

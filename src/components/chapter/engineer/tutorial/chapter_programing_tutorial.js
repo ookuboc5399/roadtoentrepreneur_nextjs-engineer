@@ -7407,6 +7407,133 @@ export function Chaptertutorial57() {
   )
 }
 
+export function Chaptertutorial58() {
+  const router = useRouter()
+  console.log(router.pathname)
+  return (
+
+    <ul class="bg-gray-900">
+      <div>
+        <Link href="/engineer/tutorial/engineer_tutorial_chapter">
+          <div className="text-4xl flex justify-start">
+            <FontAwesomeIcon icon={faArrowCircleLeft} size="lg" style={{ color: 'white' }} />
+          </div>
+        </Link>
+      </div>
+      <div className='pl-28'>
+        <li class="py-3">
+          <Link href="./engineer_tutorial_57_1">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_57/1' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">宿泊予約サイトのユーザーデータを活用しよう</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">宿泊予約サイトのユーザーデータを活用しよう</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./engineer_tutorial_57_2">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_57/2' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">準備</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">準備</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./3">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_57/3' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">洋服の画像データを活用しよう</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">洋服の画像データを活用しよう</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./4">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_57/4' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">ECサイトの購入履歴データを活用しよう</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">ECサイトの購入履歴データを活用しよう</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./5">
+            {router.pathname == '/engineer/tutorial/engineer_tutorial_57/5' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">ユーザー評価データを活用しよう</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">ユーザー評価データを活用しよう</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./6">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_57/6' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">Dynamic routes</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">Dynamic routes</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./7">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_57/7' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">Django REST Framework</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">Django REST Framework</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./8">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_57/8' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">Views追加</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">Views追加</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./9">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_57/9' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">Blog+Todos</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">Blog+Todos</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./10">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_57/10' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">フォーム作成</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">フォーム作成</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./11">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_57/11' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">フy</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">フォy</span>
+            )}
+          </Link>
+        </li>
+        <li class="py-3">
+          <Link href="./12">
+            {router.pathname == '/engineer/Django/tutorial/engineer_tutorial_57/12' ? (
+              <span class="mx-3 text-2xl text-white bg-gray-500">フy</span>
+            ) : (
+              <span class="mx-3 text-2xl text-white">フォy</span>
+            )}
+          </Link>
+        </li>
+      </div>
+    </ul>
+  )
+}
+
 export function Chaptertutorial59() {
   const router = useRouter()
   console.log(router.pathname)
